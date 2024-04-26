@@ -1,5 +1,8 @@
 import { GetStaticPropsContext, GetStaticPropsResult } from "next"
 import { DrupalNode } from "next-drupal"
+
+import { DrupalJsonApiParams } from "drupal-jsonapi-params"
+
 import { useTranslation } from "next-i18next"
 
 import { drupal } from "lib/drupal"
@@ -50,14 +53,18 @@ export default function ArticlesPage({
 export async function getStaticProps(
   context: GetStaticPropsContext
 ): Promise<GetStaticPropsResult<ArticlePageProps>> {
+  const params = new DrupalJsonApiParams()
+    .addFields("node--blog_post", ["title", "path", "body", "uid"])
+    .addFilter("status", "1")
+    .addInclude(["uid.user_picture"])
+    .addSort("created", "DESC")
+
   // Fetch all published articles sorted by date.
   const articles = await drupal.getResourceCollectionFromContext<DrupalNode[]>(
     "node--article",
     context,
     {
-      params: getParams("node--article", "card")
-        .addSort("created", "DESC")
-        .getQueryObject(),
+      params: params.getQueryObject(),
     }
   )
 

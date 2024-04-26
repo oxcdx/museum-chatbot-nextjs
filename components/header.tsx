@@ -27,10 +27,8 @@ export function Header({ menus }: HeaderProps) {
             <LocaleSwitcher />
           </div>
           <div className="flex justify-center">
-            <FormSearch />
           </div>
           <div className="flex justify-end">
-            <MenuUser />
           </div>
         </div>
       </div>
@@ -42,7 +40,7 @@ export function Header({ menus }: HeaderProps) {
           </a>
         </Link>
         <button
-          className="absolute transition-all border beorder-transparent md:hidden right-4 top-8 hover:border-link"
+          className="absolute transition-all border border-transparent md:hidden right-4 top-8 p-2 hover:opacity-50"
           onClick={() => setShowMenu(!showMenu)}
         >
           <svg
@@ -50,8 +48,8 @@ export function Header({ menus }: HeaderProps) {
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            strokeLinecap="butt"
+            strokeLinejoin="miter"
             className="w-8 h-8"
           >
             <path d="M3 12h18M3 6h18M3 18h18" />
