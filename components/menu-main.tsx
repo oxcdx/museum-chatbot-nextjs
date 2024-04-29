@@ -12,7 +12,7 @@ export function MenuMain({ items, ...props }: MenuMainProps) {
 
   return (
     <nav {...props}>
-      <ul className="flex flex-col items-center justify-center w-full pt-8 space-y-6 md:pt-0 md:space-y-0 md:flex-row md:space-x-14">
+      <ul className="flex flex-col items-end justify-center w-full pt-8 space-y-6">
         {items.map((item) => {
           const isActive =
             router.asPath === item.url ||

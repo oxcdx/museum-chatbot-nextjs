@@ -10,15 +10,18 @@ import { Layout, LayoutProps } from "components/layout"
 import { BlockBanner } from "components/block--banner"
 import { NodeArticleCardAlt } from "components/node--article--card-alt"
 import { NodeRecipeCard } from "components/node--recipe--card"
+import { NodeObjectCard } from "components/node--collection-object--card"
 
 interface IndexPageProps extends LayoutProps {
   banner: DrupalBlock
+  promotedObjects: DrupalNode[]
   promotedArticles: DrupalNode[]
   promotedRecipes: DrupalNode[]
 }
 
 export default function IndexPage({
   banner,
+  promotedObjects,
   promotedArticles,
   promotedRecipes,
   menus,
@@ -28,8 +31,8 @@ export default function IndexPage({
 
   return (
     <Layout meta={{ title: t("home") }} menus={menus} blocks={blocks}>
-      <BlockBanner block={banner} />
-      <div className="container grid gap-8 py-8 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr]">
+      {/* <BlockBanner block={banner} /> */}
+      {/* <div className="container grid gap-8 py-8 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr]">
         {promotedArticles?.length
           ? promotedArticles.map((node, index) => (
               <NodeArticleCardAlt
@@ -42,9 +45,18 @@ export default function IndexPage({
               />
             ))
           : null}
-      </div>
-      {promotedRecipes?.length ? (
-        <div className="container">
+      </div> */}
+      {promotedObjects?.length ? (
+        <div className="container py-8">
+          <div className="grid gap-8 sm:grid-cols-2">
+            {promotedObjects.map((node) => (
+              <NodeObjectCard node={node} key={node.id} />
+            ))}
+          </div>
+        </div>
+      ) : null}
+      {/* {promotedRecipes?.length ? (
+        <div className="container py-8">
           <p className="py-10 font-serif text-3xl text-center text-text">
             {t(
               "explore-recipes-across-every-type-of-occasion-ingredient-and-skill-level"
@@ -56,7 +68,7 @@ export default function IndexPage({
             ))}
           </div>
         </div>
-      ) : null}
+      ) : null} */}
     </Layout>
   )
 }
@@ -71,6 +83,15 @@ export async function getStaticProps(
       .addFilter("promote", "1")
       .addPageLimit(3)
       .addSort("created", "DESC")
+      .getQueryObject(),
+  })
+
+  const promotedObjects = await drupal.getResourceCollectionFromContext<
+    DrupalNode[]
+  >("node--collection_object", context, {
+    params: getParams("node--collection_object", "card")
+      .addSort("created", "DESC")
+      .addPageLimit(1)
       .getQueryObject(),
   })
 
@@ -98,6 +119,7 @@ export async function getStaticProps(
     props: {
       ...(await getGlobalElements(context)),
       banner,
+      promotedObjects,
       promotedArticles,
       promotedRecipes,
     },

@@ -3,6 +3,8 @@ import Image, { ImageProps } from "next/image"
 import { absoluteURL } from "lib/utils"
 import { MediaProps } from "components/media"
 
+import styled from "styled-components"
+
 interface MediaImageProps extends MediaProps, Partial<ImageProps> {}
 
 export function MediaImage({
@@ -29,7 +31,7 @@ export function MediaImage({
         }
 
   return (
-    <div className="media__content image__wrapper" {...props}>
+    <div className="media__content image__wrapper relative" {...props}>
       <Image
         src={absoluteURL(image.uri.url)}
         layout={layout}
@@ -42,3 +44,7 @@ export function MediaImage({
     </div>
   )
 }
+
+// create a styledimage component to replicate old behavior of next/image
+export const StyledImage = styled(Image)`
+`

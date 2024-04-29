@@ -89,6 +89,36 @@ export function getParams(
       .addFields("taxonomy_term--tags", ["name", "path"])
   }
 
+  // add resource type called collection_object
+  if (name === "node--collection_object--card") {
+    return params
+      .addFilter("status", "1")
+      .addInclude(["field_main_image.field_media_image", "uid.user_picture"])
+      .addFields("node--article", [
+        "title",
+        "path",
+        "field_media_image",
+      ])
+      .addFields("media--image", ["field_media_image"])
+  }
+
+  if (name === "node--collection_object") {
+    return params
+      .addInclude([
+        "field_main_image.field_media_image",
+        "field_object_category",
+      ])
+      .addFields("node--recipe", [
+        "title",
+        "status",
+        "path",
+        "field_object_category",
+        "field_media_image",
+      ])
+      .addFields("media--image", ["field_media_image"])
+      .addFields("taxonomy_term--object_category", ["name", "path"])
+  }
+
   if (name === "block_content--banner_block") {
     return params
       .addInclude(["field_media_image.field_media_image"])

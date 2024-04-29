@@ -6,6 +6,7 @@ import { drupal } from "lib/drupal"
 import { getGlobalElements } from "lib/get-global-elements"
 import { getParams } from "lib/get-params"
 import { Layout, LayoutProps } from "components/layout"
+import { BlockBanner } from "components/block--banner"
 import { NodeArticle, NodeArticleProps } from "components/node--article"
 import { NodeRecipe } from "components/node--recipe"
 import { NodePage } from "components/node--page"
@@ -46,6 +47,8 @@ export default function ResourcePage({
         title: resource.title || resource.name,
       }}
     >
+      {/* add a block banner to individual recipe pages */}
+      {/* <BlockBanner block={banner} /> */}
       {resource.type === "node--page" && (
         <NodePage node={resource as DrupalNode} />
       )}

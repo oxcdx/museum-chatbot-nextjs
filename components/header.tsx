@@ -32,7 +32,7 @@ export function Header({ menus }: HeaderProps) {
           </div>
         </div>
       </div>
-      <div className="container relative flex-wrap items-center justify-between py-6 md:flex lg:py-10">
+      <div className="container relative flex-wrap items-center justify-between py-6 lg:py-10">
         <Link href="/" passHref legacyBehavior={true}>
           <a className="flex justify-start">
             <Logo className="w-48 h-12 text-primary lg:h-16 lg:w-52" />
@@ -40,7 +40,7 @@ export function Header({ menus }: HeaderProps) {
           </a>
         </Link>
         <button
-          className="absolute transition-all border border-transparent md:hidden right-4 top-8 p-2 hover:opacity-50"
+          className="absolute transition-all border border-transparent right-4 top-8 p-2 hover:opacity-50"
           onClick={() => setShowMenu(!showMenu)}
         >
           <svg
@@ -57,7 +57,7 @@ export function Header({ menus }: HeaderProps) {
         </button>
         <div
           className={classNames(
-            "max-h-0 transition-all overflow-hidden md:max-h-screen",
+            "max-h-0 transition-all overflow-hidden pe-4 md:pe-0",
             {
               "max-h-screen": showMenu,
             }
