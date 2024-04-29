@@ -39,11 +39,7 @@ export function MediaImage({
         alt={image.resourceIdObjMeta.alt || "Image"}
         title={image.resourceIdObjMeta.title}
         priority={priority}
-        {...sizeProps}
-        style={{
-          maxWidth: "100%",
-          height: "auto"
-        }} />
+        {...sizeProps} />
     </div>
   );
 }
