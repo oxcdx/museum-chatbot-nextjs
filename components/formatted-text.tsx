@@ -3,7 +3,7 @@ import parse, {
   HTMLReactParserOptions,
   domToReact,
 } from "html-react-parser"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Link from "next/link"
 
 import { isRelative } from "lib/utils"
