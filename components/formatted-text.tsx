@@ -28,11 +28,13 @@ const options: HTMLReactParserOptions = {
                 width={parseInt(width)}
                 height={parseInt(height)}
                 alt={alt}
-                layout="intrinsic"
-                objectFit="cover"
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  objectFit: "cover"
+                }} />
             </div>
-          )
+          );
         }
       }
 

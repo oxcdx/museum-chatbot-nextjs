@@ -71,9 +71,12 @@ export function NodeArticle({ node, additionalContent }: NodeArticleProps) {
                 }
                 width={785}
                 height={525}
-                layout="responsive"
-                objectFit="cover"
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "cover"
+                }} />
             </figure>
           )}
           {node.body && (
@@ -94,5 +97,5 @@ export function NodeArticle({ node, additionalContent }: NodeArticleProps) {
         )}
       </article>
     </div>
-  )
+  );
 }

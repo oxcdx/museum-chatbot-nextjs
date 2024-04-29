@@ -34,15 +34,18 @@ export function MediaImage({
     <div className="media__content image__wrapper relative" {...props}>
       <Image
         src={absoluteURL(image.uri.url)}
-        layout={layout}
+        layout="responsive"
         objectFit={objectFit}
         alt={image.resourceIdObjMeta.alt || "Image"}
         title={image.resourceIdObjMeta.title}
         priority={priority}
         {...sizeProps}
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
     </div>
-  )
+  );
 }
 
 // create a styledimage component to replicate old behavior of next/image
