@@ -3,14 +3,14 @@ import Link from "next/link"
 
 import { LeftArrowCircle } from "@styled-icons/boxicons-solid"
 
-export interface BreadcrumbsProps {
+export interface BackButtonProps {
   items: {
     title: string
     url?: string
   }[]
 }
 
-export function Breadcrumbs({ items, ...props }: BreadcrumbsProps) {
+export function BackButton({ items, ...props }: BackButtonProps) {
   const { t } = useTranslation()
   if (!items?.length) {
     return null
@@ -25,16 +25,19 @@ export function Breadcrumbs({ items, ...props }: BreadcrumbsProps) {
     <nav className="py-4 text-text" {...props}>
       <ol className="flex">
         {items.map((item, index) => (
-          <li key={index} className="flex items-center leading-none truncate">
+          <li key={index} className="flex items-center leading-none">
             {item.url ? (
               <Link href={item.url} passHref legacyBehavior={true}>
-                <a className="underline text-link">{item.title}</a>
+                <a className="">
+                  <span className="sr-only">{item.title}</span>
+                  <LeftArrowCircle className="w-10 h-10" />
+                </a>
               </Link>
             ) : (
               item.title
             )}
             
-            <LeftArrowCircle className="w-6 h-6 text-black" />
+            
             {index !== items.length - 1 && (
               <svg
                 className="w-3 h-3 mx-1"

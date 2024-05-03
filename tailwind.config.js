@@ -3,8 +3,10 @@ const { fontFamily } = require("tailwindcss/defaultTheme")
 module.exports = {
   mode: "jit",
   content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/js/**/*.js",
   ],
   theme: {
     fontFamily: {
@@ -24,10 +26,11 @@ module.exports = {
         white: "#ffffff",
         black: "#000000",
         text: "#464646",
-        primary: "#da3c13",
-        secondary: "#d93760",
-        link: "#008068",
-        body: "#fbf5ee",
+        primary: "#b6294b",
+        secondary: "#332984",
+        link: "#000",
+        "link-hover": "#06e3dc",
+        body: "#b6294b",
         border: "#fcece7",
         pink: "#eec2cb",
         "gray-lighter": "#dbdbdb",
@@ -38,9 +41,11 @@ module.exports = {
       },
     },
   },
+  darkMode: "class",
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
+    require("tw-elements/plugin.cjs"),
   ],
 }

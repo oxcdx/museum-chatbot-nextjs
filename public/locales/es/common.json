@@ -49,5 +49,7 @@
 	"your-email-address": "Su dirección de correo electrónico",
 	"your-message-has-been-sent": "Tu mensaje ha sido enviado.",
 	"your-name": "Su nombre",
-	"your-search-yielded-no-results": "Tu búsqueda no dio resultados."
+	"your-search-yielded-no-results": "Tu búsqueda no dio resultados.",
+
+  "start-chat": "Iniciar chat"
 }

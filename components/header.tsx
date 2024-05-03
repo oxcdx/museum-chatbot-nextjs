@@ -10,6 +10,8 @@ import { MenuMain } from "components/menu-main"
 import { MenuUser } from "components/menu-user"
 import { FormSearch } from "components/form--search"
 
+import styled from "styled-components"
+
 export interface HeaderProps {
   menus: {
     main: DrupalMenuLinkContent[]
@@ -20,27 +22,27 @@ export function Header({ menus }: HeaderProps) {
   const [showMenu, setShowMenu] = React.useState<Boolean>(false)
 
   return (
-    <header className="bg-white">
+    <StyledHeader className="">
       <div className="container">
-        <div className="grid items-center justify-between grid-cols-3 py-4 border-b border-gray-lighter md:py-6">
+        <div className="grid items-center justify-between grid-cols-3 pt-4 md:pt-6">
           <div>
-            <LocaleSwitcher />
           </div>
           <div className="flex justify-center">
           </div>
           <div className="flex justify-end">
+            <LocaleSwitcher />
           </div>
         </div>
       </div>
-      <div className="container relative flex-wrap items-center justify-between py-6 lg:py-10">
+      <div className="container relative flex-wrap items-center justify-between pt-0 pb-6 lg:pt-0 lg:pb-10">
         <Link href="/" passHref legacyBehavior={true}>
-          <a className="flex justify-start">
-            <Logo className="w-48 h-12 text-primary lg:h-16 lg:w-52" />
+          <a className="inline-flex justify-start">
+            <Logo className="w-72 h-24 text-primary lg:h-32 lg:w-96 " />
             <span className="sr-only">{siteConfig.name}</span>
           </a>
         </Link>
         <button
-          className="absolute transition-all border border-transparent right-4 top-8 p-2 hover:opacity-50"
+          className="absolute transition-all border border-transparent right-0 md:right-4 me-1 top-4 p-2 link-button"
           onClick={() => setShowMenu(!showMenu)}
         >
           <svg
@@ -57,15 +59,22 @@ export function Header({ menus }: HeaderProps) {
         </button>
         <div
           className={classNames(
-            "max-h-0 transition-all overflow-hidden pe-4 md:pe-0",
+            "max-h-0 transition-all pe-4 md:pe-0 ",
             {
-              "max-h-screen": showMenu,
+              "max-h-screen visible": showMenu,
+              "overflow-hidden invisible": !showMenu,
             }
           )}
         >
           <MenuMain items={menus.main} />
         </div>
       </div>
-    </header>
+    </StyledHeader>
   )
 }
+
+// styled component for the header
+const StyledHeader = styled.header`
+  position: relative;
+  background: linear-gradient(0deg, rgba(63, 94, 251, 0) -20%, rgba(255, 216, 208, 1) 100%);
+`

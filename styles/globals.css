@@ -2,12 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+    @apply text-black transition-all hover:text-link-hover;
+  }
+  .link-button {
+    @apply text-black transition-all hover:text-link-hover;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+}
+
 @layer components {
   .container {
     @apply px-4 md:px-8 mx-auto max-w-full;
   }
+  .stretched-link::after {
+    content: "";
+    @apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
+  }
+  .card {
+    @apply relative flex flex-col min-w-0 rounded-3xl break-words bg-white shadow-lg overflow-hidden;
+  }
+  .card-body {
+    @apply flex-auto p-4;
+  }
+  .card-link {
+    @apply pointer-events-auto cursor-pointer inline-block rounded bg-primary px-6 pb-2 pt-2.5 font-medium uppercase leading-normal text-white shadow-primary hover:shadow-primary-2;
+  }
+  /* card-link not last of type */
+  .card-link:not(:last-of-type) {
+    @apply mr-4;
+  }
+  .second-card-link {
+    @apply inline-flex items-center pointer-events-auto cursor-pointer text-white font-normal leading-normal transition;
+  }
+  .second-card-link:not(:last-of-type) {
+    @apply mr-4;
+  }
+  .row {
+    @apply flex flex-wrap;
+  }
+
 }
 
 #nprogress .bar {
   background: #da3c13;
+}
+
+.bg-body {
+  background-color: rgb(201 0 72);
+}
+
+.stretched-link::after {
+  content: "";
+  @apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
+}
+
+.ox-max-width {
+  max-width: 1280px;
 }

@@ -12,7 +12,7 @@ export function MenuMain({ items, ...props }: MenuMainProps) {
 
   return (
     <nav {...props}>
-      <ul className="flex flex-col items-end justify-center w-full pt-8 space-y-6">
+      <ul className="flex flex-col items-end justify-center w-full py-1 space-y-6">
         {items.map((item) => {
           const isActive =
             router.asPath === item.url ||
@@ -25,7 +25,7 @@ export function MenuMain({ items, ...props }: MenuMainProps) {
               <Link href={item.url} passHref legacyBehavior={true}>
                 <a
                   className={classNames(
-                    "text-xl border-b-[3px] flex border-b-transparent font-serif transition-colors hover:text-primary",
+                    "text-xl border-b-[3px] flex border-b-transparent transition-colors",
                     {
                       "border-b-primary": isActive,
                     }

@@ -53,7 +53,7 @@ export async function getGlobalElements(
     DrupalBlock[]
   >("block_content--disclaimer_block", context, {
     params: getParams("block_content--disclaimer_block")
-      .addFilter("info", "Umami Disclaimer")
+      .addFilter("info", "Museum Chat Disclaimer")
       .addPageLimit(1)
       .getQueryObject(),
   })

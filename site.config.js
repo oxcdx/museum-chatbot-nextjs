@@ -5,7 +5,7 @@ module.exports = {
   drupalBaseUrl: process.env.NEXT_PUBLIC_DRUPAL_BASE_URL,
   defaultLocale: "en",
   locales: {
-    en: "English",
-    es: "Español",
+    en: "En",
+    de: "De",
   },
 }

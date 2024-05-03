@@ -18,7 +18,7 @@ Router.events.on("routeChangeStart", function (path) {
 Router.events.on("routeChangeComplete", () => NProgress.done())
 Router.events.on("routeChangeError", () => NProgress.done())
 
-function App({ Component, pageProps: { session, ...pageProps } }) {
+function App({ Component, pageProps: { session, ...pageProps } }) {  
   const queryClientRef = React.useRef<QueryClient>()
   if (!queryClientRef.current) {
     queryClientRef.current = new QueryClient()

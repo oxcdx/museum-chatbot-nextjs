@@ -7,6 +7,9 @@ import config from "site.config"
 export function LocaleSwitcher({ ...props }) {
   const { locales, asPath, locale: currentLocale } = useRouter()
 
+  console.log("locale", currentLocale);
+  
+
   if (!locales || locales.length < 2) {
     return null
   }
@@ -15,7 +18,12 @@ export function LocaleSwitcher({ ...props }) {
     <nav {...props}>
       <ul className="flex space-x-4">
         {locales.map((locale) => (
-          <li key={locale}>
+          <li 
+            key={locale}
+            className={classNames(
+              locale === currentLocale ? "border-b" : ""
+            )}
+          >
             <Link href={asPath} locale={locale} passHref legacyBehavior={true}>
               <a
                 data-cy={`local-switcher-${locale}`}

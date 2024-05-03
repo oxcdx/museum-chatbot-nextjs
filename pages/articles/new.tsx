@@ -6,6 +6,8 @@ import { Layout, LayoutProps } from "components/layout"
 import { PageHeader } from "components/page-header"
 import { FormArticle } from "components/form--article"
 
+import NonSSRWrapper from "components/non-ssr-wrapper"
+
 interface NewArticlesPageProps extends LayoutProps {}
 
 export default function NewArticlesPage({
@@ -15,6 +17,7 @@ export default function NewArticlesPage({
   const { t } = useTranslation()
 
   return (
+    <NonSSRWrapper>
     <Layout meta={{ title: t("new-article") }} menus={menus} blocks={blocks}>
       <PageHeader
         heading={t("new-article")}
@@ -32,6 +35,7 @@ export default function NewArticlesPage({
         <FormArticle className="max-w-2xl mx-auto" />
       </div>
     </Layout>
+    </NonSSRWrapper>
   )
 }
 

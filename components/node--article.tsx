@@ -1,4 +1,4 @@
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Link from "next/link"
 import { DrupalNode } from "next-drupal"
 import { useTranslation } from "next-i18next"
@@ -75,7 +75,7 @@ export function NodeArticle({ node, additionalContent }: NodeArticleProps) {
                 style={{
                   width: "100%",
                   height: "auto",
-                  objectFit: "cover"
+                  objectFit: "cover",
                 }} />
             </figure>
           )}

@@ -106,17 +106,13 @@ export function getParams(
     return params
       .addInclude([
         "field_main_image.field_media_image",
-        "field_object_category",
       ])
-      .addFields("node--recipe", [
+      .addFields("collection_object", [
         "title",
-        "status",
         "path",
-        "field_object_category",
         "field_media_image",
       ])
       .addFields("media--image", ["field_media_image"])
-      .addFields("taxonomy_term--object_category", ["name", "path"])
   }
 
   if (name === "block_content--banner_block") {

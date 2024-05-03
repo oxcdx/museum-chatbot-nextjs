@@ -7,7 +7,7 @@ import styled from "styled-components"
 
 interface MediaImageProps extends MediaProps, Partial<ImageProps> {}
 
-export function MediaImage({
+export function MediaImageSquare({
   media,
   layout = "responsive",
   objectFit,
@@ -48,9 +48,11 @@ export function MediaImage({
 
 // create a styledimage component to replicate old behavior of next/image
 export const StyledImage = styled(Image)<{ objectFitX: string }>`
-  object-fit: ${(props) => props.objectFitX || "cover"};
+  position: absolute;
+  top: 0;
+  object-fit: cover;
   width: 100%;
-  height: ${(props) => props.objectFitX === "cover" ? "100%" : "auto"};
+  height: 100%;
 `
 
 //styled outer div
@@ -58,4 +60,9 @@ export const StyledDiv = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
 `
