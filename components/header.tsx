@@ -1,6 +1,10 @@
 import * as React from "react"
 import Link from "next/link"
-import { DrupalMenuLinkContent } from "next-drupal"
+import {
+  DrupalBlock,
+  DrupalMenuLinkContent,
+  DrupalTaxonomyTerm,
+} from "next-drupal"
 import classNames from "classnames"
 
 import siteConfig from "site.config"
@@ -16,10 +20,18 @@ export interface HeaderProps {
   menus: {
     main: DrupalMenuLinkContent[]
   }
+  blocks: {
+    multiMode: DrupalBlock
+  }
+  mainObject?: string
+  additionalContent?: any
 }
 
-export function Header({ menus }: HeaderProps) {
+export function Header({ menus, blocks, additionalContent, mainObject }: HeaderProps) {
   const [showMenu, setShowMenu] = React.useState<Boolean>(false)
+  const multiMode = blocks?.multiMode?.field_multi_object_mode || false
+  console.log(multiMode);
+  
 
   return (
     <StyledHeader className="">
@@ -66,7 +78,12 @@ export function Header({ menus }: HeaderProps) {
             }
           )}
         >
-          <MenuMain items={menus.main} />
+          <MenuMain 
+            items={menus.main} 
+            blocks={blocks} 
+            mainObject={mainObject}
+            additionalContent={additionalContent}
+          />
         </div>
       </div>
     </StyledHeader>

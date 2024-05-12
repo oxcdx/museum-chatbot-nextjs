@@ -113,6 +113,9 @@ export function getParams(
         "field_media_image",
       ])
       .addFields("media--image", ["field_media_image"])
+      .addFields("block_content--site_settings", [
+        "field_multi_object_mode",
+      ])
   }
 
   if (name === "block_content--banner_block") {
@@ -145,6 +148,13 @@ export function getParams(
     return params.addFields("block_content--disclaimer_block", [
       "field_copyright",
       "field_disclaimer",
+    ])
+  }
+
+  //
+  if (name === "block_content--site_settings") {
+    return params.addFields("block_content--site_settings", [
+      "field_multi_object_mode",
     ])
   }
 

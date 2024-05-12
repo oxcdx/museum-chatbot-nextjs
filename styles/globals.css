@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.root,
+#root,
+#docs-root {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
 @layer base {
   a {
     @apply text-black transition-all hover:text-link-hover;
@@ -18,6 +24,10 @@
   .container {
     @apply px-4 md:px-8 mx-auto max-w-full;
   }
+  .shadow-md {
+    /* box-shadow: 0 2px 3px -1px rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); */
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
   .stretched-link::after {
     content: "";
     @apply z-10 absolute inset-0 bg-transparent pointer-events-auto;
@@ -29,7 +39,7 @@
     @apply flex-auto p-4;
   }
   .card-link {
-    @apply pointer-events-auto cursor-pointer inline-block rounded bg-primary px-6 pb-2 pt-2.5 font-medium uppercase leading-normal text-white shadow-primary hover:shadow-primary-2;
+    @apply pointer-events-auto cursor-pointer inline-block rounded bg-primary px-6 pb-2 pt-2.5 font-medium uppercase leading-normal text-white shadow-primary hover:shadow hover:shadow-white;
   }
   /* card-link not last of type */
   .card-link:not(:last-of-type) {

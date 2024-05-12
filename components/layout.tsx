@@ -10,9 +10,12 @@ export interface LayoutProps extends HeaderProps, FooterProps {
   meta?: MetaProps
   menus: HeaderProps["menus"] & FooterProps["menus"]
   children?: React.ReactNode
+  blocks: FooterProps["blocks"] & HeaderProps["blocks"]
+  mainObject?: string
+  additionalContent?: any
 }
 
-export function Layout({ meta, menus, blocks, children }: LayoutProps) {
+export function Layout({ meta, menus, blocks, mainObject, additionalContent, children }: LayoutProps) {
   return (
     <>
       <Meta {...meta} />
@@ -21,7 +24,10 @@ export function Layout({ meta, menus, blocks, children }: LayoutProps) {
           <div className="gradient"></div>
         </div>
         <PreviewAlert />
-        <Header menus={{ main: menus.main }} />
+        <Header menus={{ main: menus.main }} blocks={blocks} mainObject={mainObject} additionalContent={additionalContent} />
+
+        {/* how do i pass blocks to children */}
+
         <main className="flex-1 pb-10 relative">
           {children}
         </main>

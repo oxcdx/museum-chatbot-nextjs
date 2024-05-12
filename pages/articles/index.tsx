@@ -8,27 +8,24 @@ import { useTranslation } from "next-i18next"
 import { drupal } from "lib/drupal"
 import { getGlobalElements } from "lib/get-global-elements"
 import { getParams } from "lib/get-params"
+import { PageProps } from "types"
 import { Layout, LayoutProps } from "components/layout"
 import { NodeArticleCard } from "components/node--article--card"
 import { PageHeader } from "components/page-header"
 
 import NonSSRWrapper from "components/non-ssr-wrapper"
 
-interface ArticlePageProps extends LayoutProps {
+interface ArticlePageProps extends LayoutProps, PageProps {
   articles: DrupalNode[]
-  context: GetStaticPropsContext
-  path: string
 }
 
 export default function ArticlesPage({
   articles,
   menus,
   blocks,
-  context,
-  path,
+  additionalContent
 }: ArticlePageProps) {
-  console.log("context", context);
-  console.log("path", path);
+  console.log("additionalContent", additionalContent)
   
   const { t } = useTranslation()
 
@@ -67,11 +64,15 @@ export async function getStaticProps(
 
   const path = await drupal.translatePathFromContext(context)
 
+  let additionalContent: PageProps["additionalContent"] = {}
+
   const params = new DrupalJsonApiParams()
     .addFields("node--blog_post", ["title", "path", "body", "uid"])
     .addFilter("status", "1")
     .addInclude(["uid.user_picture"])
     .addSort("created", "DESC")
+
+  additionalContent["article"] = [context, path]
 
   // Fetch all published articles sorted by date.
   const articles = await drupal.getResourceCollectionFromContext<DrupalNode[]>(
@@ -85,9 +86,8 @@ export async function getStaticProps(
   return {
     props: {
       ...(await getGlobalElements(context)),
-      context,
-      path,
       articles,
+      additionalContent,
     },
   }
 }

@@ -1,10 +1,6 @@
-import { useEffect } from "react"
-import { Suspense } from "react"
 import { GetStaticPathsResult, GetStaticPropsResult } from "next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { DrupalNode, DrupalTaxonomyTerm } from "next-drupal"
-import { useTranslation } from "next-i18next"
-import { useRouter } from "next/router"
 
 import { PageProps } from "types"
 import { drupal } from "lib/drupal"
@@ -38,6 +34,11 @@ const RESOURCE_TYPES = [
 
 interface ResourcePageProps extends LayoutProps, PageProps {
   resource: DrupalNode | DrupalTaxonomyTerm
+  additionalContent: {
+    featuredArticles?: DrupalNode[]
+    featuredObjects?: DrupalNode[]
+    termContent?: DrupalNode[]
+  }
 }
 
 export default function ResourcePage({
@@ -46,70 +47,62 @@ export default function ResourcePage({
   menus,
   blocks,
 }: ResourcePageProps) {
-  console.log(additionalContent);
-  
-  const router = useRouter();
-  const { pathname, asPath, query, locale } = router;
-  
-  const { t, i18n } = useTranslation()
+  const multiMode = blocks?.multiMode?.field_multi_object_mode
 
-  // add a useEffect to catch the translation if ssr is false
-  useEffect(() => {
-    // i18n.changeLanguage(locale)
-    
-    console.log(t("start-chat"))
-  }, [router])
+  console.log(multiMode);
+  
   
   if (!resource) return null
 
 
 
   return (
-      <NonSSRWrapper>
-        <Layout
-          menus={menus}
-          blocks={blocks}
-          meta={{
-            title: resource.title || resource.name,
-          }}
-        >
-          {/* add a block banner to individual recipe pages */}
-          {/* <BlockBanner block={banner} /> */}
-          {resource.type === "node--page" && (
-            <NodePage node={resource as DrupalNode} />
-          )}
-          {resource.type === "node--article" && (
-            <NodeArticle
-              node={resource as DrupalNode}
-              additionalContent={
-                additionalContent as NodeArticleProps["additionalContent"]
-              }
-            />
-          )}
-          {resource.type === "node--recipe" && (
-            <NodeRecipe node={resource as DrupalNode} />
-          )}
-          {resource.type === "node--collection_object" && (
-            <NodeObject node={resource as DrupalNode} />
-          )}
-          {resource.type === "taxonomy_term--recipe_category" && (
-            <TaxonomyTermRecipeCategory
-              term={resource as DrupalTaxonomyTerm}
-              additionalContent={
-                additionalContent as TaxonomyTermRecipeCategoryProps["additionalContent"]
-              }
-            />
-          )}
-          {resource.type === "taxonomy_term--tags" && (
-            <TaxonomyTermTags
-              term={resource as DrupalTaxonomyTerm}
-              additionalContent={
-                additionalContent as TaxonomyTermTagsProps["additionalContent"]
-              }
-            />
-          )}
-        </Layout>
-      </NonSSRWrapper>
+    <NonSSRWrapper>
+      <Layout
+        menus={menus}
+        blocks={blocks}
+        meta={{
+          title: resource.title || resource.name,
+        }}
+        additionalContent={additionalContent}
+      >
+        {/* add a block banner to individual recipe pages */}
+        {/* <BlockBanner block={banner} /> */}
+        {resource.type === "node--page" && (
+          <NodePage node={resource as DrupalNode} />
+        )}
+        {resource.type === "node--article" && (
+          <NodeArticle
+            node={resource as DrupalNode}
+            additionalContent={
+              additionalContent as NodeArticleProps["additionalContent"]
+            }
+          />
+        )}
+        {resource.type === "node--recipe" && (
+          <NodeRecipe node={resource as DrupalNode} />
+        )}
+        {resource.type === "node--collection_object" && (
+          <NodeObject node={resource as DrupalNode} blocks={blocks} />
+        )}
+        {resource.type === "taxonomy_term--recipe_category" && (
+          <TaxonomyTermRecipeCategory
+            term={resource as DrupalTaxonomyTerm}
+            additionalContent={
+              additionalContent as TaxonomyTermRecipeCategoryProps["additionalContent"]
+            }
+          />
+        )}
+        {resource.type === "taxonomy_term--tags" && (
+          <TaxonomyTermTags
+            term={resource as DrupalTaxonomyTerm}
+            additionalContent={
+              additionalContent as TaxonomyTermTagsProps["additionalContent"]
+            }
+          />
+        )}
+      </Layout>
+    </NonSSRWrapper>
   )
 }
 
@@ -117,7 +110,6 @@ export async function getStaticPaths(context): Promise<GetStaticPathsResult> {
   return {
     paths: await drupal.getStaticPathsFromContext(RESOURCE_TYPES, context),
     fallback: "blocking",
-    // fallback: true,
   }
 }
 
@@ -175,8 +167,13 @@ export async function getStaticProps(
   }
 
   if (resource.type === "node--collection_object") {
-    // const article = await drupal.getResourceFromContext("node--article", context)
-    additionalContent["article"] = [context, path]
+    additionalContent["featuredObjects"] =
+    await drupal.getResourceCollectionFromContext("node--collection_object", context, {
+      params: getParams("node--collection_object")
+        .addPageLimit(2)
+        .addSort("created", "DESC")
+        .getQueryObject(),
+    })
   }
 
   if (resource.type === "taxonomy_term--recipe_category") {
@@ -219,7 +216,6 @@ export async function getStaticProps(
 
   return {
     props: {
-      // ...(await serverSideTranslations(context.locale ?? "en")),
       ...(await getGlobalElements(context)),
       resource,
       additionalContent,

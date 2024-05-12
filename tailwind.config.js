@@ -39,6 +39,9 @@ module.exports = {
         error: "#ee2000",
         success: "#008068",
       },
+      boxShadow: {
+        DEFAULT: '0 0px 10px 0 rgb(0 0 0 / 0.1), 0 0px 2px 0px rgb(0 0 0 / 0.1) ',
+      }
     },
   },
   darkMode: "class",

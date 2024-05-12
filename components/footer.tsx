@@ -17,9 +17,7 @@ export interface FooterProps {
     footer: DrupalMenuLinkContent[]
   }
   blocks: {
-    recipeCollections: DrupalTaxonomyTerm[]
-    footerPromo: DrupalBlock
-    disclaimer: DrupalBlock
+    multiMode: DrupalBlock
   }
 }
 
