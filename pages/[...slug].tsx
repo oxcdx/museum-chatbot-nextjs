@@ -1,4 +1,6 @@
+import { useState, useEffect } from "react"
 import { GetStaticPathsResult, GetStaticPropsResult } from "next"
+import { useRouter } from "next/router"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { DrupalNode, DrupalTaxonomyTerm } from "next-drupal"
 
@@ -47,14 +49,41 @@ export default function ResourcePage({
   menus,
   blocks,
 }: ResourcePageProps) {
-  const multiMode = blocks?.multiMode?.field_multi_object_mode
-
-  console.log(multiMode);
+  console.log("resource", resource);
   
+  const router = useRouter()
+  // add a useState to store whether chat mode is active
+  const [chatMode, setChatMode] = useState<boolean>(false)
+
+  // useEffect to chack if the route has ?chat=true
+  // if the route has ?chat=true, set chat mode to true
+  // if the route doesnt have ?chat=true, set chat mode to false
+  useEffect(() => {
+    if (router.asPath.includes("?chat=true")) {
+      setChatMode(true)
+    } else {
+      setChatMode(false)
+    }
+  }, [router.asPath])
+  // a function to toggle chat mode
+  const toggleChatMode = (mode: boolean): void => {
+    console.log("toggleChatMode", mode);
+    
+    setChatMode(mode);
+    if (mode === true) {
+      // if the route doesnt already have ?chat=true, add ?chat=true to the router current path and push the route
+      if (!router.asPath.includes("?chat=true"))
+        router.push(`${router.asPath}?chat=true`)
+    } else {
+      // if the route already has ?chat=true, remove ?chat=true from the router current path and push the route
+      if (router.asPath.includes("?chat=true"))
+        router.push(router.asPath.replace("?chat=true", ""))
+    }
+  };
+
+  const multiMode = blocks?.multiMode?.field_multi_object_mode  
   
   if (!resource) return null
-
-
 
   return (
     <NonSSRWrapper>
@@ -65,40 +94,16 @@ export default function ResourcePage({
           title: resource.title || resource.name,
         }}
         additionalContent={additionalContent}
+        //
+        chatMode={chatMode}
+        currentObject={resource?.title || resource?.name || ""}
       >
-        {/* add a block banner to individual recipe pages */}
-        {/* <BlockBanner block={banner} /> */}
-        {resource.type === "node--page" && (
-          <NodePage node={resource as DrupalNode} />
-        )}
-        {resource.type === "node--article" && (
-          <NodeArticle
-            node={resource as DrupalNode}
-            additionalContent={
-              additionalContent as NodeArticleProps["additionalContent"]
-            }
-          />
-        )}
-        {resource.type === "node--recipe" && (
-          <NodeRecipe node={resource as DrupalNode} />
-        )}
         {resource.type === "node--collection_object" && (
-          <NodeObject node={resource as DrupalNode} blocks={blocks} />
-        )}
-        {resource.type === "taxonomy_term--recipe_category" && (
-          <TaxonomyTermRecipeCategory
-            term={resource as DrupalTaxonomyTerm}
-            additionalContent={
-              additionalContent as TaxonomyTermRecipeCategoryProps["additionalContent"]
-            }
-          />
-        )}
-        {resource.type === "taxonomy_term--tags" && (
-          <TaxonomyTermTags
-            term={resource as DrupalTaxonomyTerm}
-            additionalContent={
-              additionalContent as TaxonomyTermTagsProps["additionalContent"]
-            }
+          <NodeObject 
+            node={resource as DrupalNode} 
+            blocks={blocks} 
+            toggleChatMode={toggleChatMode}
+            chatMode={chatMode}
           />
         )}
       </Layout>

@@ -25,7 +25,6 @@ export default function ArticlesPage({
   blocks,
   additionalContent
 }: ArticlePageProps) {
-  console.log("additionalContent", additionalContent)
   
   const { t } = useTranslation()
 

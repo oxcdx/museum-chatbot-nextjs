@@ -1,0 +1,2912 @@
+:: StoryTitle
+Filla Fulla Chat - Ox Isabelaa d'este
+
+
+:: StoryData
+{
+  "ifid": "ea6fe4b5-a516-4d72-8dd3-ed14da86a492",
+  "format": "Trialogue",
+  "format-version": "0.1.1",
+  "zoom": 1
+}
+
+
+:: EF-001 [speaker-filla] {"position":"400,25","size":"100,100"}
+And there is even another anniversary to celebrate: The MK&G bowl from 1524!
+
+<%
+story.showDelayed("EF-IMG-001");
+%>
+
+
+:: EF-002 [speaker-filla] {"position":"775,25","size":"100,100"}
+Happy Birthday Isabella 
+Renaissance banquet table 
+Dessert bar (sugar creations) 
+Press information about the product, coupled with "Happy Birthday Isabella" and the link mentioned in the newspaper, more reach. (Hamburger Abendblatt, supra-regional; DIE ZEIT)
+
+[[Prologue->EF-002B]]
+
+
+:: EF-002B [speaker-filla] {"position":"900,25","size":"100,100"}
+Everything begins when a prestigious artwork appears at an auction in Paris:
+The Majolica bowl from Isabella d'Este's service, the most famous woman of the Renaissance.
+
+<%
+story.showDelayed("LF-003");
+%>
+
+
+:: EF-003 [speaker-filla] {"position":"1150,25","size":"100,100"}
+It's almost a miracle that this unique rarity ultimately ends up in the Museum of Arts and Crafts in Hamburg.
+
+[[Intro->EF-004]]
+
+
+:: EF-004 [speaker-filla] {"position":"150,150","size":"100,100"}
+The bowl visible as a small dot in the distance, growing larger
+The bowl enters the frame, rotates on its axis, and stands in the "spotlight" 
+Music selection (Olaf Kirsch)]
+Bowl animated in 3D to rotate and turn
+The bowl introduces itself and speaks:
+
+[[Continue->EF-IMG-002]]
+
+
+:: EF-005 [speaker-filla] {"position":"400,150","size":"100,100"}
+By two or three millimeters that is...
+
+<%
+story.showDelayed("LF-005");
+%>
+
+
+:: EF-006 [speaker-filla] {"position":"775,150","size":"100,100"}
+'La prima donna del mondo' – 'the most famous woman in the world' as the clever Italian is also called.
+
+<%
+story.showDelayed("LF-006");
+%>
+
+
+:: EF-007 [speaker-filla] {"position":"1025,150","size":"100,100"}
+I am not only the greatest, I am unique and particularly beautiful! Additionally, I weigh a proud 3185 grams.
+
+<%
+story.showDelayed("EF-IMG-003");
+%>
+
+
+:: EF-008 [speaker-filla] {"position":"25,275","size":"100,100"}
+The rigid training of that era was hard for me, I was yearning for modern art and had the feeling that my own investigations would be more satisfying... So I left.
+
+<%
+story.showDelayed("LF-007");
+%>
+
+
+:: EF-009 [speaker-filla] {"position":"275,275","size":"100,100"}
+This was when all of the currents in modern art were coming into force... the old petty-bourgeois art was dying and we just happened to be there. I’d say that this influenced us greatly, and determined where our artistic paths would lead...
+
+[[Was there a particular moment this change manifested itself?->EF-010]]
+
+
+:: EF-010 [speaker-filla] {"position":"400,275","size":"100,100"}
+In the Kinský Gardens in 1905, there was an exhibition by Edvard Munch, which led me get together with my friends and form the “Eight”. Edvard Munch was also the inspiration for my early Expressionist painting “Reader of Dostoyevsky”, which in time became quite the subject of discussion.
+
+<%
+story.showDelayed("EF-IMG-004");
+%>
+
+
+:: EF-011 [speaker-filla] {"position":"775,275","size":"100,100"}
+The “Eight” was a group of artists who organised exhibitions and provided publicity for modern, avant-garde tendencies... 
+
+<%
+story.showDelayed("EF-011A");
+%>
+
+
+:: EF-011A [speaker-filla] {"position":"900,275","size":"100,100"}
+This is what I wrote in Volné směry (the artistic journal of the Mánes Artists’ Alliance): “The work of Munch went off like a firecracker in our hearts... All of our desires, loves and hopes were at once realised, we were in a state of permanent excitement ... because we saw in him a guardian angel of our future path and the one to bless our resolution to become artists of today. We thought and felt that Munch had arrived for us alone”.
+
+<%
+story.showDelayed("EF-011B");
+%>
+
+
+:: EF-011B [speaker-filla] {"position":"1025,275","size":"100,100"}
+I left the “Eight” when they started arguing about the future of cubism. And then, with other ex-members, we founded the Alliance of Fine Artists... 
+
+[[What artistic movement influenced you the most?->LF-013B]]
+[[How were your first encounters with Galanda?->LF-010]]
+
+
+:: EF-012 [speaker-filla] {"position":"1150,400","size":"100,100"}
+I can see here a strong Cubist influence. Also, I painted a lot of still-lifes. 
+
+<%
+story.showDelayed("EF-IMG-005");
+%>
+
+
+:: EF-013 [speaker-filla] {"position":"150,525","size":"100,100"}
+When I was in Paris in 1910 and saw the paintings of Picasso and Braque... this is when I encountered Cubism. I really wanted to move there to study the work of French Cubism in greater depth...
+
+<%
+story.showDelayed("EF-IMG-006");
+%>
+
+
+:: EF-014 [speaker-filla] {"position":"400,525","size":"100,100"}
+My plans were changed by the assassination of Franz Ferdinand, successor to the Austro-Hungarian throne, and the consqeuence – the start of World War I. My wife and I had to flee France for the Netherlands.
+
+[[How did you escape to the Netherlands?->EF-015]]
+[[Did your stay in the Netherlands influence your work?->EF-IMG-007B]]
+
+
+:: EF-015 [speaker-filla] {"position":"525,525","size":"100,100"}
+I had decided to go to Paris along with my wife... I came there to seek and find answers to the questions of art, and, all of a sudden, we were regarded as members of a hostile power. The French officials had no concept of the idea of a “Czech”. For them, we were “sujet autrichien” – subjects of Austria.
+
+<%
+story.showDelayed("EF-016");
+%>
+
+
+:: EF-016 [speaker-filla] {"position":"650,525","size":"100,100"}
+We fled through Belgium by train; we were arrested and taken to the military fortification in Antwerp, where they threatened to shoot us – we only narrowly escaped death.
+
+[[How did it work out?->EF-017]]
+
+
+:: EF-017 [speaker-filla] {"position":"775,525","size":"100,100"}
+In the end, we were able to save ourselves. The general in command understood our argument that we weren’t Germans but members of a nation that hoped, after centuries beneath the Austro-Hungarian yoke, to finally find its freedom. He took pity on us, found a loophole in the regulations, and instead of having us shot simply had us deported. 
+
+<%
+story.showDelayed("EF-017B");
+%>
+
+
+:: EF-017B [speaker-filla] {"position":"900,525","size":"100,100"}
+We settled in Rotterdam. We were poor but happy...
+
+<%
+story.showDelayed("EF-IMG-007");
+%>
+
+
+:: EF-017C [speaker-filla] {"position":"1150,525","size":"100,100"}
+I worked hard and studied Dutch art.
+
+[[How did it influence your work?->EF-IMG-007B]]
+[[Did you keep up your contacts with the homeland?->EF-018B]]
+
+
+:: EF-018 [speaker-filla] {"position":"150,650","size":"100,100"}
+This was created under the influence of Dutch painting. I studied the old masters – Rembrandt, Breughel, etc. I've filled several notebooks with my observations and theories.
+
+<%
+story.showDelayed("EF-IMG-008");
+%>
+
+
+:: EF-018B [speaker-filla] {"position":"400,650","size":"100,100"}
+One day, I saw in the newspaper an article about a Czech resistance organisation headed by Tomáš Garrigue Masaryk – the “Maffia”.
+
+[[What was the “Maffia”?->EF-THREAD-001]]
+[[What were your views on the creation of Czechoslovakia?->EF-020B]]
+
+
+:: EF-019 [speaker-filla] {"position":"775,650","size":"100,100"}
+It had over two hundred members, among them politicians and artists.
+
+[[What did you do in this group?->EF-020A]]
+[[Were you in favour of creating Czechoslovakia?->EF-020B]]
+
+
+:: EF-020A [speaker-filla] {"position":"900,650","size":"100,100"}
+My wife and I transmitted secret information...
+
+[[How did things work out in the Netherlands?->EF-021]]
+[[Did you return to Prague?->EF-020D]]
+
+
+:: EF-020B [speaker-filla] {"position":"1025,650","size":"100,100"}
+Even before the war broke out, when it could already be felt in the air, my friends and I discussed how the conflict could be a unique chance to free our nation from the chains of the monarchy. I, though, unlike several of them felt that we, as a nation, were not yet ready for war. But any efforts for autonomy I’d try to support however I could. An independent Czechoslovakia, it was believed, could also form a counterweight to Germany and Hungary, which then occupied much of the territory where our fellow citizens lived.
+
+<%
+story.showDelayed("EF-020C");
+%>
+
+
+:: EF-020C [speaker-filla] {"position":"1150,650","size":"100,100"}
+Slovakia, I thought, was part of our shared country, and Slovaks were an important part of the Czechoslovak nation. Even as a student, I hiked through almost the whole Moravian-Slovakian borderlands, and also traversed much of Slovakia then under Hungarian rule. I was impressed by Slovakia’s landscapes and traditions, and thought and wrote much about them. 
+
+<%
+story.showDelayed("LF-02XC");
+%>
+
+
+:: EF-020D [speaker-filla] {"position":"275,775","size":"100,100"}
+Shortly after the war, we returned to Czechoslovakia and I served for a brief time at the Foreign Ministry. Government work, though, soon gave way to full-time painting, and once again I returned into the labyrinth of my Cubist still-lifes.
+
+[[What other works did you create under the influence of Cubism?->EF-IMG-010]]
+[[What is your relationship to Cubism?->EF-022]]
+
+
+:: EF-021 [speaker-filla] {"position":"150,775","size":"100,100"}
+We moved to Amsterdam, and I painted a lot, mostly Cubist still-lifes. After the declaration of an independent Czechoslovakia, I also helped to organise the Czechoslovak embassy in The Hague. Shortly after the war, we returned to Czechoslovakia, and I served for a brief time at the Foreign Ministry, but very soon I gave it up and turned primarily to painting. 
+
+[[What other works did you create under the influence of Cubism?->EF-IMG-010]]
+[[What is your relationship to Cubism?->EF-022]]
+
+
+:: EF-022 [speaker-filla] {"position":"525,775","size":"100,100"}
+I view Cubism as a universal style, the paradigm of a new era and the most appropriate spatiality for investigating the boundaries of surfaces and colours – something like a laboratory for modern art. 
+
+<%
+story.showDelayed("EF-IMG-011");
+%>
+
+
+:: EF-023 [speaker-filla] {"position":"275,900","size":"100,100"}
+I wouldn’t call these paintings Cubist, maybe “Cubicised” instead. 
+
+[[Do you have any other works from this period?->LF-IMG-007]]
+[[What are your memories of the 1920s?->LF-018]]
+
+
+:: EF-024 [speaker-filla] {"position":"650,900","size":"100,100"}
+I painted still lifes, which became a kind of artistic laboratory for me... Some of the critics of the time even dubbed me “the prisoner of Cubism”. 
+
+<%
+story.showDelayed("EF-IMG-012");
+%>
+
+
+:: EF-025 [speaker-filla] {"position":"1025,900","size":"100,100"}
+Specifically for me, the year 1927.
+
+[[What happened in 1927?->EF-026]]
+
+
+:: EF-026 [speaker-filla] {"position":"1150,900","size":"100,100"}
+1927 was when I had my first big successes. In Germany, at the exhibition “Wege und Richtungen der Abstrakten Malerei in Europa” (Paths and Directions of Abstract Painting in Europe), I was exhibited alongside my artistic heroes - Braque, Picasso, Gris, Klee, Kandinsky... all the great names who served as my inspiration.
+
+<%
+story.showDelayed("EF-026B");
+%>
+
+
+:: EF-026B [speaker-filla] {"position":"25,1025","size":"100,100"}
+I was given the status of a legionnaire for my work in the Czech resistance abroad, and I had already had my first independent exhibition in Brno – an overview of my work from 1907 to 1924. And in addition, I’d also been elected deputy chair of the Mánes Artists’ Association.
+
+<%
+story.showDelayed("LF-019");
+%>
+
+
+:: EF-027 [speaker-filla] {"position":"275,1025","size":"100,100"}
+At one of the exhibitions in France, the national government even purchased our paintings for the gallery and included them in the collection of Czechoslovak national art.
+
+[[Which paintings?->EF-027A]]
+[[That sounds like a time of success.->LF-020B]]
+
+
+:: EF-027A [speaker-filla] {"position":"400,1025","size":"100,100"}
+My painting was called “Guitar on the Wall”, but unfortunately I don’t have a picture of it. Here, however, is a different guitar, or really a mandolin, just for you.
+
+<%
+story.showDelayed("EF-IMG-013");
+%>
+
+
+:: EF-028 [speaker-filla] {"position":"25,1150","size":"100,100"}
+But still: good times never last long. 
+
+<%
+story.showDelayed("LF-021");
+%>
+
+
+:: EF-029 [speaker-filla] {"position":"400,1150","size":"100,100"}
+I could already see the danger on the horizon.
+
+<%
+story.showDelayed("EF-IMG-014");
+%>
+
+
+:: EF-030 [speaker-filla] {"position":"650,1150","size":"100,100"}
+As a member of the resistance against the German-Austrian alliance during World War II, I had more than enough experience: democracy and freedom were under a serious threat once Adolf Hitler came to power in 1933...
+
+<%
+story.showDelayed("EF-IMG-014B");
+%>
+
+
+:: EF-030B [speaker-filla] {"position":"775,1150","size":"100,100"}
+At that time, I already sensed a threat to democracy and freedom once Adolf Hitler came to power. I knew that we had to do something, that we needed to fight for our freedom, which is why I started the cycle “Fights and Struggles”!
+
+[[What was the series “Fights and Struggles” about?->EF-IMG-015]]
+[[What were the reactions to these works?->EF-035]]
+
+
+:: EF-031 [speaker-filla] {"position":"1025,1150","size":"100,100"}
+By then, I was hardly young, but I knew that we had to do something, that we had to fight for our freedom. And so I created the series “Fights and Struggles”!
+
+[[What was the series “Fights and Struggles” about?->EF-IMG-015]]
+[[What were the reactions to these works?->EF-035]]
+
+
+:: EF-031B [speaker-filla] {"position":"25,1775","size":"100,100"}
+I wholeheartedly support these kinds of enlightening activities, even if they bear fruit only some time later.
+
+[[Did you manage to convince your target audience?->LF-031C]]
+[[What sort of works were created in this way?->LF-IMG-014]]
+
+
+:: EF-031C [speaker-filla] {"position":"275,1775","size":"100,100"}
+This valuable activity of yours is something I agree with, there can never be enough public enlightenment.
+
+[[Did it work?->LF-031C]]
+[[In which artworks are these principles applied?->LF-IMG-014]]
+
+
+:: EF-032 [speaker-filla] {"position":"25,1275","size":"100,100"}
+As my model, I took the heroes of Greek mythology. Also, during this same time, I was collecting and studying the art and culture of the Scythians, a subject for artwork far from the situation in our country but also a space for a universal message: a helpless animal attacked by a bloodthirsty predator.
+
+<%
+story.showDelayed("EF-IMG-016");
+%>
+
+
+:: EF-033 [speaker-filla] {"position":"275,1275","size":"100,100"}
+Not terrified concessions, but only the will to fight showed us a way out of the terrifying situation. It was an appeal to society – to fight, even if only with a paintbrush....
+
+<%
+story.showDelayed("EF-034");
+%>
+
+
+:: EF-034 [speaker-filla] {"position":"400,1275","size":"100,100"}
+What forms the identity of a person? Individual freedom? From the pressures of imagination, I turned into the human interior, to folk creativity, reaching deep into my own roots, and so I came up with the series “Ballads, National Songs and Nursery Rhymes”.
+
+<%
+story.showDelayed("EF-IMG-017");
+%>
+
+
+:: EF-035 [speaker-filla] {"position":"650,1275","size":"100,100"}
+I was well aware that with my paintbrush, I was “stabbing” the most sensitive spots... Right on the first day of the war, September 1st, 1939, the Gestapo came to arrest me.
+
+[[What did the Nazis do to you?->EF-IMG-018]]
+[[What about Mr Fulla in the 1930s?->LF-023]]
+
+
+:: EF-035B [speaker-filla] {"position":"775,1275","size":"100,100"}
+Against Hitler’s attacks on democracy in Europe, I protested through my art. The “Fights and Struggles” series and other works of mine from the 1930s were critiques of Nazi brutality. Right on the first day of the war, in September of 1939, I (and many others) were arrested by the Gestapo.
+
+[[What did the Nazis do to you?->EF-IMG-018]]
+[[What was the series “Fights and Struggles” about?->EF-IMG-015]]
+
+
+:: EF-035C [speaker-filla] {"position":"900,1275","size":"100,100"}
+My works in the years before the war took account of my encounter with Surrealism, as well as criticised the Nazi brutality and attacks on democracy. Right on the first day of the war, in September of 1939, the Gestapo came to arrest me. They took me to Dachau and then to Buchenwald, where I was imprisoned until the end of the war.
+
+[[What were things like for you in Buchenwald?->EF-IMG-018C]]
+[[What happened at the end of the war?->EF-IMG-019]]
+
+
+:: EF-036 [speaker-filla] {"position":"275,2025","size":"100,100"}
+The Nazis took me to Dachau and then to Buchenwald, where they kept me until the end of the war. I didn’t paint anything. All I did was write... just to survive. 
+
+[[What did you write about?->EF-037]]
+[[How were you treated?->EF-040]]
+
+
+:: EF-037 [speaker-filla] {"position":"400,2025","size":"100,100"}
+I wrote about art, about freedom, about the beauty of the Czech language – secretly, at the table where we all sat crammed together, but this wasn’t the worst. Sometimes, outside you could hear the most terrible screams... 
+
+<%
+story.showDelayed("EF-038");
+%>
+
+
+:: EF-038 [speaker-filla] {"position":"525,2025","size":"100,100"}
+Right outside the window, a person was being killed. Notice that terrible “was being”. He shouted, he twitched, and then was completely silent. And I was just writing down the second part of my idea...
+
+<%
+story.showDelayed("LF-040");
+%>
+
+
+:: EF-039 [speaker-filla] {"position":"775,2025","size":"100,100"}
+The more that you have a sense of freedom from the work, the more valuable it is; the more freely it was created means that there is more art in it. 
+
+[[Tell me more about life in Buchenwald.->EF-040]]
+[[What was it like at the end of the war?->EF-IMG-019]]
+
+
+:: EF-040 [speaker-filla] {"position":"900,2025","size":"100,100"}
+They called us “Ehrenhäftlinge” = honorary prisoners. In the autumn of 1941, we were placed along with the other prisoners, for example with Josef Čapek, into the category of ordinary “Häftlinge” and sent to do hard physical work.
+
+<%
+story.showDelayed("EF-IMG-018B");
+%>
+
+
+:: EF-041 [speaker-filla] {"position":"1150,2025","size":"100,100"}
+We were given picks to dig shafts for the huge concrete pipes that were intended to bring water into the arms factory. At the time, I was 58... and, for instance, Josef Čapek was 57. It was all too clear that we couldn’t survive the coming winter... but then along came Hugo Rokyta, one of the Czech prisoners, with an idea that saved us.
+
+[[Akou?->EF-042]]
+
+
+:: EF-042 [speaker-filla] {"position":"25,2150","size":"100,100"}
+He worked in the camp as an interpreter between the German officers and the Czech prisoners. He proposed to General Koch of the SS that we could, as artists, illustrate Aryan ancestry certificates for the SS officers... and he readily agreed. 
+
+<%
+story.showDelayed("EF-043");
+%>
+
+
+:: EF-043 [speaker-filla] {"position":"150,2150","size":"100,100"}
+Our lives were no different from the other prisoners: the same military drill, the same terrible conditions, but with one difference: as we searched for the ancestors of our SS tyrants, right under their murderous gaze, we were freed from the pains of slave labour... and this saved our lives. It was then that I secretly started to write. 
+
+[[What did you write about?->EF-044]]
+[[Did it help you to survive?->EF-044B]]
+
+
+:: EF-044 [speaker-filla] {"position":"275,2150","size":"100,100"}
+Essays about art, and also philosophical texts about freedom... these are the fruit of 2000 long, cruel nights, when instead of sleep and dreams I remained half-poised between waking and dreaming, and the most convoluted ideas arose in me... I wrote them down so I simply wouldn’t die. Perhaps even today, to read from these chapters could have the same purpose and the same effect.
+
+[[Did your writing help you to survive?->EF-044B]]
+[[How did it all turn out?->EF-IMG-019]]
+
+
+:: EF-044B [speaker-filla] {"position":"400,2150","size":"100,100"}
+I survived only barely, with scars on my body and on my soul. Of course, there had to be a huge measure of luck in this. Josef Čapek didn’t have the same luck, he died of typhus only shortly before liberation.
+
+<%
+story.showDelayed("EF-044C");
+%>
+
+
+:: EF-044C [speaker-filla] {"position":"525,2150","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/autori//41/1765/1765.jpeg">
+        <img src="https://www.webumenia.sk/images/autori//41/1765/1765.jpeg" alt="Josef Čapek" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/autor/1765" target="_blank">Josef Čapek</a>
+    </figcaption>
+</figure>
+
+[[How do you remember your return home?->EF-IMG-019]]
+
+
+:: EF-045 [speaker-filla] {"position":"1150,2150","size":"100,100"}
+This, though, shows the difference between us. I even, on the advice of my father-in-law František Krejčí, requested the Catholic Church to excommunicate me.
+
+<%
+story.showDelayed("LF-043");
+%>
+
+
+:: EF-046 [speaker-filla] {"position":"525,2275","size":"100,100"}
+I’m sorry for interrupting. But I can see here that you took inspiration from the art of ancient Byzantium. I too, when I was in the concentration camp, wrote about Byzantium and its influence on European art, something that was seriously overlooked for many generations. 
+
+<%
+story.showDelayed("LF-045");
+%>
+
+
+:: EF-047 [speaker-filla] {"position":"900,2275","size":"100,100"}
+I had six heart attacks, and never even knew about them... but somehow I survived in the end, and returned home. For an entire year, I remained in bed recovering; the only thing I could do, lying down, was drypoint sketching. At that time I illustrated the new volume of poetry by my friend František Halas.
+
+<%
+story.showDelayed("EF-IMG-020");
+%>
+
+
+:: EF-048 [speaker-filla] {"position":"1150,2275","size":"100,100"}
+Let’s talk about something nice in our lives. About love.
+
+<%
+story.showDelayed("LF-046");
+%>
+
+
+:: EF-049 [speaker-filla] {"position":"150,2400","size":"100,100"}
+Whoever’s expecting a long, complicated tale of romantic conquests will be disappointed. 
+
+<%
+story.showDelayed("EF-IMG-021");
+%>
+
+
+:: EF-050 [speaker-filla] {"position":"650,2400","size":"100,100"}
+I met Hana in Prague, at the Academy of Fine Arts. We were married in March 1913. 
+
+<%
+story.showDelayed("LF-IMG-022");
+%>
+
+
+:: EF-051 [speaker-filla] {"position":"25,2525","size":"100,100"}
+When they took me to Buchenwald... I drew nothing for the next six years. Only once, for Hana: on my first Christmas in Buchenwald, I drew with a pen on a concentration-camp correspondence card a flying dove, with a linden branch in its beak.
+
+[[Did you have any children?->EF-052]]
+[[And what about women in art?->EF-053]]
+
+
+:: EF-052 [speaker-filla] {"position":"150,2525","size":"100,100"}
+No. The Fates willed otherwise. But we had our boxer, Evička.
+
+[[And you, Mr Fulla?->LF-050]]
+
+
+:: EF-053 [speaker-filla] {"position":"525,2650","size":"100,100"}
+This happened at the time when the influence of Surrealism came into my life. Up until then, I had only painted the female form as a part of a still life. 
+
+<%
+story.showDelayed("EF-IMG-022");
+%>
+
+
+:: EF-054 [speaker-filla] {"position":"900,2650","size":"100,100"}
+Gigantic figures with powerful desires. Not only young ones, but also old and ugly ones... These “modern Venuses” also inspired me to create several sculptures.
+
+<%
+story.showDelayed("EF-IMG-024");
+%>
+
+
+:: EF-055 [speaker-filla] {"position":"775,2775","size":"100,100"}
+Why, you know, we could have actually met there. I was appointed professor of monumental painting, and taught at the same school as early as 1946. 
+
+<%
+story.showDelayed("LF-061");
+%>
+
+
+:: EF-055B [speaker-filla] {"position":"1025,2775","size":"100,100"}
+Compared to the terrible events of the war, everything was better – simply because the world still existed. But not even this period of calm lasted for long.  
+
+<%
+story.showDelayed("LF-061B");
+%>
+
+
+:: EF-056 [speaker-filla] {"position":"25,2900","size":"100,100"}
+At that time, I returned to my series “Songs”, which was itself influenced by Slovak folklore... and also the legend of the heroic bandit Jánošík.
+
+<%
+story.showDelayed("EF-IMG-025");
+%>
+
+
+:: EF-057 [speaker-filla] {"position":"650,2900","size":"100,100"}
+I was most strongly affected by your “Slovak Bandits’ Songs and Love Songs”.
+
+<%
+story.showDelayed("EF-IMG-026");
+%>
+
+
+:: EF-058 [speaker-filla] {"position":"1150,2900","size":"100,100"}
+An admiration for Slovakia’s folk culture was present for all my life. I grew up in the Moravian borderlands, and while still a student, walked all the way to Detva... I could see the pride of the people in the Orava mountains.
+
+<%
+story.showDelayed("LF-065");
+%>
+
+
+:: EF-059 [speaker-filla] {"position":"275,3025","size":"100,100"}
+My personal landscape of home was the Central Bohemian Mountains. In Buchenwald, and then until the end of my life, I kept returning to it. In my writings and in my paintings. 
+
+<%
+story.showDelayed("EF-IMG-027");
+%>
+
+
+:: EF-059B [speaker-filla] {"position":"525,3025","size":"100,100"}
+For the landscape paintings, my model was usually the Central Bohemian Mountains. In Buchenwald, and then until the end of my life, I kept returning to it. In my writings and in my paintings.
+
+<%
+story.showDelayed("EF-IMG-027");
+%>
+
+
+:: EF-060 [speaker-filla] {"position":"25,3150","size":"100,100"}
+In 1947, the Ministry of Agriculture allowed me to rent the left wing of the chateau in Peruc. (<a href="https://bit.ly/2KXGrVu" target="_blank">see Map</a>)
+
+<%
+story.showDelayed("EF-IMG-029");
+%>
+
+
+:: EF-061 [speaker-filla] {"position":"275,3150","size":"100,100"}
+From the chateau, I made expeditions out into the countryside.... Inspired by Chinese ink-painting and my own return to the great Dutch landscape artists.
+
+[[The doctrine of Socialist Realism didn’t affect you?->EF-062]]
+
+
+:: EF-062 [speaker-filla] {"position":"525,3150","size":"100,100"}
+Socialist Realism was entirely an ideological construct. Whoever didn’t adapt to its demands wasn’t allowed to do creative work... and I wasn’t really one to adapt myself. So I received an invitation to a “comradely discussion”. 
+
+<%
+story.showDelayed("LF-068B");
+%>
+
+
+:: EF-063 [speaker-filla] {"position":"775,3150","size":"100,100"}
+For my seventieth birthday, I prepared for the Mánes Gallery in Prague an exhibition from my series “Songs”, but on June 21st 1951 I was invited for this “discussion”. In fact, it was more like a court hearing. I had to meet with a committee set up from members of the Third Regional Centre of the Union of Czech Artists, who provided their views on the exhibit.
+
+[[What was the problem?->EF-063B]]
+[[How did it turn out?->EF-THREAD-004]]
+
+
+:: EF-063B [speaker-filla] {"position":"900,3150","size":"100,100"}
+At the start, they pretended to be highly respectful, but soon it became clear that “Songs” was not of their liking. It was, they said, ugly, gloomy, not in a technique “from our traditions”, and also the paintings were not realistic enough, not heroic, and other similar complaints. This was the classic line of the Communists: dogmatism masked by polite phrases, and arguments that on closer examination turned out to be utter nonsense. In the end, they prohibited the exhibition of any work of mine except for the landscapes of the Central Bohemian Mountains.    
+
+[[Were you somehow able to escape from the regime’s doctrines?->EF-065]]
+[[Were you, Mr Fulla, able to make a name for yourself across the Iron Curtain?->LF-IMG-035]]
+
+
+:: EF-064 [speaker-filla] {"position":"1150,3275","size":"100,100"}
+For my close friend František Halas, I illustrated his volume of poems “Torso of Hope” (Torso naděje). The prints are completely independent from the poems. They are only a kind of accompaniment, autonomous artistic works. 
+
+<%
+story.showDelayed("EF-IMG-030");
+%>
+
+
+:: EF-065 [speaker-filla] {"position":"275,3400","size":"100,100"}
+“Hayay, belay, o son of mine, be nothing like your father...” Do you recognise this song?
+
+[[A little. What is it?->EF-066]]
+
+
+:: EF-066 [speaker-filla] {"position":"400,3400","size":"100,100"}
+After the war, I painted the cycle “Bandits’ Ballads” 
+
+<%
+story.showDelayed("EF-067");
+%>
+
+
+:: EF-067 [speaker-filla] {"position":"525,3400","size":"100,100"}
+For me, the traditional Slovak highwayman was the model of a free man, who’d rather give up his life than live in servitude.
+
+<%
+story.showDelayed("EF-IMG-032");
+%>
+
+
+:: EF-068 [speaker-filla] {"position":"775,3400","size":"100,100"}
+Of course it was... because the time had come that the monsters I’d known in Buchenwald began to come back to the forefront... Once more, I was calling for a struggle for freedom. 
+
+<%
+story.showDelayed("EF-068B");
+%>
+
+
+:: EF-068B [speaker-filla] {"position":"900,3400","size":"100,100"}
+Of course, I was writing a lot. I tried to observe the intersection of art and life in a variety of different cultures and historical epochs. Also, I remembered the war years. I was able to publish several books and essay collections (Questions and Tasks, The Problem of the Renaissance, Small Sculptures, Rembrandt, On Freedom, Dog Songs in Buchenwald, On Fine Art, The Work of the Eye...)
+<%
+story.showDelayed("EF-069");
+%>
+
+
+:: EF-069 [speaker-filla] {"position":"1025,3400","size":"100,100"}
+You can never know how much time you have left in this world – we’re now nearing the end!
+<%
+story.showDelayed("EF-IMG-033");
+%>
+
+
+:: EF-070 [speaker-filla] {"position":"150,3525","size":"100,100"}
+My seventh myocardial infarction spelled the end. Up to my last breath, I struggled for what had been the goal of my entire life. Freedom!
+
+<%
+story.showDelayed("LF-075");
+%>
+
+
+:: EF-071 [speaker-filla] {"position":"400,3525","size":"100,100"}
+Hana donated part of my oeuvre to the state... my later body of work is owned now by the Benedikt Rejt Gallery in Louny. In the Peruc chateau, there is now a memorial room.
+
+[[How did you live after this point, Mr Fulla?->LF-076]]
+[[To wrap this up, do you have some final message?->EF-073]]
+
+
+:: EF-072 [speaker-filla] {"position":"25,3650","size":"100,100"}
+I’d say that you were on exhibit while you were still alive – even though it was in your own gallery.
+
+[[Are you pleased with how the building turned out?->LF-078B]]
+[[To wrap this up, do you have some final message?->EF-073]]
+
+
+:: EF-073 [speaker-filla] {"position":"275,3650","size":"100,100"}
+It’s possible to kill art, but it’s not possible to live without art. Through art, freedom comes into being, and there is no freedom outside of a free person.
+
+<%
+story.showDelayed("LF-079");
+%>
+
+
+:: EF-074 [speaker-filla] {"position":"525,3650","size":"100,100"}
+Thank you as well, it was a pleasure to speak with you. 
+
+<%
+story.showDelayed("LF-080");
+%>
+
+
+:: EF-075 [speaker-filla] {"position":"775,3650","size":"100,100"}
+The exhibition is up until October 21st, 2018.
+
+<%
+story.showDelayed("LF-081");
+%>
+
+
+:: EF-076 [speaker-filla] {"position":"400,1650","size":"100,100"}
+In 1952, I designed the stage curtain for director Vlasta Burian in his newly opened theatre D46. The performance was Nazim Hikmet’s “Song of the Turkish Land”.
+
+<%
+story.showDelayed("EF-IMG-035");
+%>
+
+
+:: EF-END [speaker-filla] {"position":"1150,3650","size":"100,100"}
+Goodbye.
+
+<%
+story.showDelayed("FF-END-IMG");
+%>
+
+
+:: EF-IMG-001 [speaker-filla] {"position":"525,25","size":"100,100"}
+<figure>
+    <a href="https://museum-chat-bot.ddev.site/sites/default/files/2024-05/Picture1.jpg">
+        <img src="https://museum-chat-bot.ddev.site/sites/default/files/2024-05/Picture1.jpg" alt="" />
+    </a>
+    <figcaption>
+        Bowl from the Service of Isabella D’Este (1474-1532), Mantua
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-002");
+%>
+
+
+:: EF-IMG-002 [speaker-filla] {"position":"25,150","size":"100,100"}
+<figure>
+    <a href="https://museum-chat-bot.ddev.site/sites/default/files/2024-05/Picture1.jpg">
+        <img src="https://museum-chat-bot.ddev.site/sites/default/files/2024-05/Picture1.jpg" alt="" />
+    </a>
+    <figcaption>
+        Bowl from the Service of Isabella D’Este (1474-1532), Mantua
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-004");
+%>
+
+
+:: EF-IMG-003 [speaker-filla] {"position":"1150,150","size":"100,100"}
+<figure>
+    <a href="https://museum-chat-bot.ddev.site/sites/default/files/styles/large_3_2_2x/public/2024-05/Picture5.jpg">
+        <img src="https://museum-chat-bot.ddev.site/sites/default/files/styles/large_3_2_2x/public/2024-05/Picture5.jpg" alt="bowls" />
+    </a>
+    <figcaption>
+         THE PRESENTATION OF THE BOWL IN THE PERMANENT EXHIBITION OF THE MK&G (SINCE 2012)
+    </figcaption>
+</figure>
+
+
+
+:: EF-IMG-004 [speaker-filla] {"position":"525,275","size":"100,100"}
+<figure>
+    <a href="http://sbirky.ngprague.cz/images/diela/NG./62/CZE_NG.O_3190/CZE_NG.O_3190.jpeg">
+        <img src="http://sbirky.ngprague.cz/images/diela/NG./62/CZE_NG.O_3190/CZE_NG.O_3190.jpeg" alt="Emil Filla - Reader of Dostoyevsky, 1907" />
+    </a>
+    <figcaption>
+        <a href="http://sbirky.ngprague.cz/dielo/CZE:NG.O_3190" target="_blank">Emil Filla – Reader of Dostoyevsky, 1907, National Gallery, Prague</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-008");
+%>
+
+
+:: EF-IMG-005 [speaker-filla] {"position":"25,525","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/MG./68/CZE_MG.A_619/CZE_MG.A_619.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/MG./68/CZE_MG.A_619/CZE_MG.A_619.jpeg" alt="Emil Filla - Still Life with Salted Herring 1915" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/CZE:MG.A_619" target="_blank">Emil Filla – Still Life with Salted Herring, 1915, Moravian Gallery in Brno</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-013");
+%>
+
+
+:: EF-IMG-006 [speaker-filla] {"position":"275,525","size":"100,100"}
+<figure>
+    <a href="https://media.mutualart.com/Images/2015_02/16/05/054857365/c7f91697-c474-4a73-9825-2414962dcd60_570.Jpeg">
+        <img src="https://media.mutualart.com/Images/2015_02/16/05/054857365/c7f91697-c474-4a73-9825-2414962dcd60_570.Jpeg" alt="Lee Miller - Pablo Picasso and Georges Braque, 1954" />
+    </a>
+    <figcaption>
+        <a href="https://www.mutualart.com/Artwork/Pablo-Picasso-and-Georges-Braque/E3EF9462E647237E" target="_blank">Lee Miller - Pablo Picasso and Georges Braque, 1954</a>
+    </figcaption>
+</figure>
+
+[[So did you then move to Paris?->EF-014]]
+[[What is your relationship to Cubism?->EF-022]]
+
+
+:: EF-IMG-007 [speaker-filla] {"position":"1025,525","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD22.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD22.jpg" alt="Emil Filla with his wife Hana and friends in the Netherlands, 1918" />
+    </a>
+    <figcaption>
+        Emil Filla with his wife Hana and friends in the Netherlands, 1918, Benedikt Rejt Gallery, Louny
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-017C");
+%>
+
+
+:: EF-IMG-007B [speaker-filla] {"position":"25,650","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/MG./86/CZE_MG.A_1081/CZE_MG.A_1081.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/MG./86/CZE_MG.A_1081/CZE_MG.A_1081.jpeg" alt="Emil Filla - Still Life with Tray, 1914" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/CZE:MG.A_1081" target="_blank">Emil Filla – Still Life with Tray, 1914, Moravian Gallery in Brno</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-018");
+%>
+
+
+:: EF-IMG-008 [speaker-filla] {"position":"275,650","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Holandsky_zapisnik_detail.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Holandsky_zapisnik_detail.jpg" alt="Detail from one of Emil Filla’s Dutch notebooks, 1917" />
+    </a>
+    <figcaption>
+        Detail from one of Emil Filla’s Dutch notebooks, 1917
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-018B");
+%>
+
+
+:: EF-IMG-009 [speaker-filla] {"position":"650,650","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Maffie_hrad_wiki.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Maffie_hrad_wiki.jpg" alt="Members of the “Maffia” receiving revolutionary medals at Prague Castle in 1918" />
+    </a>
+    <figcaption>
+        <a href="https://cs.wikipedia.org/wiki/Maffie" target="_blank">Members of the “Maffia” receiving revolutionary medals at Prague Castle in 1918, source: Wikipedia</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-019");
+%>
+
+
+:: EF-IMG-010 [speaker-filla] {"position":"400,775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/MG./33/CZE_MG.C_1370/CZE_MG.C_1370.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/MG./33/CZE_MG.C_1370/CZE_MG.C_1370.jpeg" alt="Emil Filla - Head, 1913" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/CZE:MG.C_1370" target="_blank">Emil Filla - Head, 1913, Moravian Gallery in Brno</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-022");
+%>
+
+
+:: EF-IMG-011 [speaker-filla] {"position":"650,775","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Namornik_K-2769.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Namornik_K-2769.jpg" alt="Emil Filla - Zátiší (Námořník, Rotterdam), 1916" />
+    </a>
+    <figcaption>
+        Emil Filla – Still Life (Sailor, Rotterdam), 1916, Gallery of the City of Prague
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-014");
+%>
+
+
+:: EF-IMG-012 [speaker-filla] {"position":"775,900","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/MG./39/CZE_MG.B_7649/CZE_MG.B_7649.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/MG./39/CZE_MG.B_7649/CZE_MG.B_7649.jpeg" alt="Still Life with Pipe and Fruit, 1925" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/CZE:MG.B_7649" target="_blank">Emil Filla – Still Life with Pipe and Fruit, 1925, Moravian Gallery in Brno</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-018");
+%>
+
+
+:: EF-IMG-013 [speaker-filla] {"position":"525,1025","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/TMP/25/SVK_TMP.534/SVK_TMP.534.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/TMP/25/SVK_TMP.534/SVK_TMP.534.jpeg" alt="Emil Filla - Still Life with Mandolin, Score and Tray, 1926" />
+    </a>
+    <figcaption>
+        Emil Filla – Still Life with Mandolin, Score and Tray, 1926, private collection
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-008A");
+%>
+
+
+:: EF-IMG-014 [speaker-filla] {"position":"525,1150","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Nacismus_2.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Nacismus_2.jpg" alt="Emil Filla - Hand with Dagger (Nacismus II.), 1937" />
+    </a>
+    <figcaption>
+        Emil Filla – Hand with Dagger (Nazism II.), 1937, Moravian Gallery in Brno
+    </figcaption>
+</figure>
+
+[[What danger?->EF-030]]
+[[How did you face it?->EF-031]]
+
+
+:: EF-IMG-014B [speaker-filla] {"position":"900,1150","size":"100,100"}
+<figure>
+    <a href="https://museums.nuernberg.de/uploads/tx_templavoila/hitler-reichskanzler_01.jpg">
+        <img src="https://museums.nuernberg.de/uploads/tx_templavoila/hitler-reichskanzler_01.jpg" alt="Residents of Berlin celebrate the new chancellor, Adolf Hitler, 1933" />
+    </a>
+    <figcaption>
+        <a href="https://museums.nuernberg.de/documentation-center/national-socialism/the-beginnings-of-the-nazi-dictatorship/the-nazis-seize-power/" target="_blank">Residents of Berlin celebrate the new chancellor, Adolf Hitler, 1933, source: Museum of Nuremberg</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-031");
+%>
+
+
+:: EF-IMG-015 [speaker-filla] {"position":"1150,1150","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Theseus_byk.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Theseus_byk.jpg" alt="Emil Filla - Theseus Carrying a Bull, 1938" />
+    </a>
+    <figcaption>
+        Emil Filla - Theseus Carrying a Bull, 1938, West Bohemian Gallery, Plzeň
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-032");
+%>
+
+
+:: EF-IMG-016 [speaker-filla] {"position":"150,1275","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/MG./28/CZE_MG.A_970/CZE_MG.A_970.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/MG./28/CZE_MG.A_970/CZE_MG.A_970.jpeg" alt="Emil Filla - Fight of a Lion and a Bull, 1939" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/CZE:MG.A_970" target="_blank">Emil Filla – Fight of a Lion and a Bull, 1939, Moravian Gallery in Brno</a>
+    </figcaption>
+</figure>
+
+[[What do these works tell us?->EF-033]]
+[[What were the reactions?->EF-035]]
+
+
+:: EF-IMG-017 [speaker-filla] {"position":"525,1275","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Svatebni_kosile.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Svatebni_kosile.jpg" alt="Emil Filla - The Wedding Shirt, 1939" />
+    </a>
+    <figcaption>
+        Emil Filla – The Wedding Shirt, 1939, Gallery of the City of Prague
+    </figcaption>
+</figure>
+
+[[Were you at all afraid?->EF-035]]
+
+
+:: EF-IMG-018 [speaker-filla] {"position":"25,2025","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Buchenwald.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Buchenwald.jpg" alt="Emil Filla - Buchenwald, 1947" />
+    </a>
+        <figcaption>
+            Emil Filla - Buchenwald, 1947, West Bohemian Gallery, Plzeň
+        </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-036");
+%>
+
+
+:: EF-IMG-018B [speaker-filla] {"position":"1025,2025","size":"100,100"}
+<figure>
+    <a href="https://www.ushmm.org/lcmedia/photo/lc/image/10/10105.jpg">
+        <img src="https://www.ushmm.org/lcmedia/photo/lc/image/10/10105.jpg" alt="Prisoners on a roll call in Buchenwald concentration camp, 1938 - 1941" />
+    </a>
+        <figcaption>
+            <a href="https://www.ushmm.org/wlc/en/media_ph.php?ModuleId=0&MediaId=599" target="_blank">Prisoners on a roll call in Buchenwald concentration camp, 1938 - 1941, source: Holocaust Encyclopedia</a>
+        </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-041");
+%>
+
+
+:: EF-IMG-018C [speaker-filla] {"position":"150,2025","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Buchenwald.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Buchenwald.jpg" alt="Emil Filla - Buchenwald, 1947" />
+    </a>
+        <figcaption>
+            Emil Filla - Buchenwald, 1947, West Bohemian Gallery, Plzeň
+        </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-040");
+%>
+
+
+:: EF-IMG-019 [speaker-filla] {"position":"775,2275","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD17.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD17.jpg" alt="Emil Filla being repatriated back from Buchenwald, 1945" />
+    </a>
+        <figcaption>
+            Emil Filla being repatriated back from Buchenwald, 1945, Benedikt Rejg Gallery, Louny
+        </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-047");
+%>
+
+
+:: EF-IMG-020 [speaker-filla] {"position":"1025,2275","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Torzo_nadeje.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Torzo_nadeje.jpg" alt="Emil Filla – Torso of Hope, illustrations for the poetry of František Halas, 1945" />
+    </a>
+    <figcaption>
+        Emil Filla – Torso of Hope, illustrations for the poetry of František Halas, 1945, Gallery of the City of Prague
+    </figcaption>
+</figure>
+
+[[What sort of things happened to you during the war, Mr Fulla?->LF-041]]
+[[What kept you going during this difficult time?->EF-048]]
+
+
+:: EF-IMG-021 [speaker-filla] {"position":"275,2400","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD12.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD12.jpg" alt="Emil Filla with his wife Hana, 1951" />
+    </a>
+    <figcaption>
+        Emil Filla with his wife Hana, 1951, Benedikt Rejt Gallery, Louny
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-047");
+%>
+
+
+:: EF-IMG-022 [speaker-filla] {"position":"650,2650","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/MG./43/CZE_MG.A_2290/CZE_MG.A_2290.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/MG./43/CZE_MG.A_2290/CZE_MG.A_2290.jpeg" alt="Emil Filla - Toilette, 1929" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/CZE:MG.A_2290" target="_blank">Emil Filla - Toilette, 1929, Moravian Gallery in Brno</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-IMG-023");
+%>
+
+
+:: EF-IMG-023 [speaker-filla] {"position":"775,2650","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Divka_s_kytici.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Divka_s_kytici.jpg" alt="Emil Filla - Girl with Flowers, 1934" />
+    </a>
+    <figcaption>
+        Emil Filla – Girl with Flowers, 1934, private collection
+    </figcaption>
+</figure>
+
+[[How did Surrealism affect your choice of depicting female figures?->EF-054]]
+[[And you, Mr Fulla? Did you ever draw nudes?->LF-058]]
+
+
+:: EF-IMG-024 [speaker-filla] {"position":"1025,2650","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/MG./74/CZE_MG.E_206/CZE_MG.E_206.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/MG./74/CZE_MG.E_206/CZE_MG.E_206.jpeg" alt="Emil Filla - Standing Woman, 1937" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/CZE:MG.E_206" target="_blank">Emil Filla – Standing Woman, 1937, Moravian Gallery in Brno</a>
+    </figcaption>
+</figure>
+
+[[And you, Mr Fulla? Did you ever draw nudes?->LF-058]] 
+[[Tell me something more about the women in your life.->EF-049]]
+
+
+:: EF-IMG-025 [speaker-filla] {"position":"150,2900","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Hej_Chlap.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Hej_Chlap.jpg" alt="Emil Filla - What a Man He Must Have Been..., 1948" />
+    </a>
+    <figcaption>
+        Emil Filla – What a Man He Must Have Been..., 1948, Zoya Gallery, Bratislava
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-062");
+%>
+
+
+:: EF-IMG-026 [speaker-filla] {"position":"775,2900","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Baca_Stary.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Baca_Stary.jpg" alt="Emil Filla - I’m an Old Shepherd, Very Old, 1947" />
+    </a>
+    <figcaption>
+        Emil Filla – I’m an Old Shepherd, Very Old, 1947, private collection
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-064");
+%>
+
+
+:: EF-IMG-027 [speaker-filla] {"position":"400,3025","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_M-2246_001_p1.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_M-2246_001_p1.jpg" alt="Emil Filla - Landscape near Libčeves, 1952" />
+    </a>
+    <figcaption>
+        Emil Filla – Landscape near Libčeves, 1952, Gallery of the City of Prague
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-066");
+%>
+
+
+:: EF-IMG-028 [speaker-filla] {"position":"1150,3025","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_Slavetin.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_Slavetin.jpg" alt="Emil Filla - From Slavětín, 1951" />
+    </a>
+    <figcaption>
+        Emil Filla - From Slavětín, 1951, Benedikt Rejt Gallery, Louny
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-060");
+%>
+
+
+:: EF-IMG-029 [speaker-filla] {"position":"150,3150","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD25.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD25.jpg" alt="Emil Filla painting Ranská Hora in the Central Bohemian Mountains, with his wife Hana and boxer Evička, 1951" />
+    </a>
+    <figcaption>
+        Emil Filla painting Ranská Hora in the Central Bohemian Mountains, with his wife Hana and boxer Evička, 1951, Benedikt Rejt Gallery, Louny
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-061");
+%>
+
+
+:: EF-IMG-030 [speaker-filla] {"position":"25,3400","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_G-767_001_p1_30404.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_G-767_001_p1_30404.jpg" alt="Emil Filla - Snake-Bonds (Hands Bound by Snakes), 1945" />
+    </a>
+    <figcaption>
+        Emil Filla – Snake-Bonds (Hands Bound by Snakes), 1945, Gallery of the City of Prague
+    </figcaption>
+</figure>
+
+[[And how did you escape from the doctrines of the regime?->EF-IMG-031]]
+
+
+:: EF-IMG-031 [speaker-filla] {"position":"150,3400","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_hajaj.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_hajaj.jpg" alt="Emil Filla - Folk Song (Hayay, belay...), 1948" />
+    </a>
+    <figcaption>
+        Emil Filla – Folk Song (Hayay, belay...), 1948, West Bohemian Gallery, Plzeň 
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-065");
+%>
+
+
+:: EF-IMG-032 [speaker-filla] {"position":"650,3400","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/91/SVK_SNG.K_7165/SVK_SNG.K_7165.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/91/SVK_SNG.K_7165/SVK_SNG.K_7165.jpeg" alt="Emil Filla - When I Passed through the Forest..., 1951" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.K_7165" target="_blank">Emil Filla – When I Passed through the Forest..., 1951, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[At that time, didn’t this seem far too provocative? ->EF-068]]
+[[Did you have any other creative activities?->EF-068B]]
+
+
+:: EF-IMG-033 [speaker-filla] {"position":"1150,3400","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD24.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD24.jpg" alt="Emil Filla with his wife Hana, Peruc, Josef Sudek, 1952" />
+    </a>
+    <figcaption>
+        Emil Filla with his wife Hana, Peruc, Josef Sudek, 1952, Benedikt Rejt Gallery, Louny
+    </figcaption>
+</figure>
+
+[[How do you mean?->EF-IMG-034]]
+
+
+:: EF-IMG-034 [speaker-filla] {"position":"25,3525","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Filla_193b.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Filla_193b.jpg" alt="Announcement by the Mánes Artists’ Association of the death of Emil Filla, 1953" />
+    </a>
+    <figcaption>
+        Announcement by the Mánes Artists’ Association of the death of Emil Filla, 1953
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-070");
+%>
+
+
+:: EF-IMG-035 [speaker-filla] {"position":"525,1650","size":"100,100"}
+<figure>
+    <a href="http://www.amaterskedivadlo.cz/files/foto/2ff01ba9d18104e0bc8ca709260db510ad2a6559.jpg">
+        <img src="http://www.amaterskedivadlo.cz/files/foto/2ff01ba9d18104e0bc8ca709260db510ad2a6559.jpg" alt="Emil Filla - Design of the stage curtain for the performance “Song of the Turkish Land”, 1952" />
+    </a>
+    <figcaption>
+        <a href="http://www.amaterskedivadlo.cz/main.php?data=opona&id=438" target="_blank"> Emil Filla – design of the stage curtain for the performance “Song of the Turkish Land”, 1952, Archive of Set Design, Czech Theatre Institute </a>
+    </figcaption>
+</figure>
+
+[[Let’s go back again to your manifesto, Mr Fulla.->LF-031]]
+[[Let’s look again at the work of Mr Filla in the 1930s.->EF-035B]]
+
+
+:: EF-IMG-ATL-001 [speaker-filla] {"position":"775,1400","size":"100,100"}
+At the end of the 1920s, I worked in my own studio in the Prague suburb of Ořechovka, which I really liked.
+
+<%
+story.showDelayed("EF-IMG-ATL-002");
+%>
+
+
+:: EF-IMG-ATL-002 [speaker-filla] {"position":"900,1400","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD15.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Galerie_Louny_DD15.jpg" alt="Emil Filla with his wife Hana in his atelier in Ořechovka, 1927" />
+    </a>
+        <figcaption>
+            Emil Filla with his wife Hana in his atelier in Ořechovka, 1927, Benedikt Rejt Gallery, Louny
+        </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-PASSAGE-001B");
+%>
+
+
+:: EF-THREAD-001 [speaker-filla] {"position":"525,650","size":"100,100"}
+It was a secret organisation for Czechoslovak independence during World War I. Its main objectives were espionage and conspiratorial activities.
+
+<%
+story.showDelayed("EF-IMG-009");
+%>
+
+
+:: EF-THREAD-004 [speaker-filla] {"position":"1025,3150","size":"100,100"}
+The result? I was banned from exhibiting any of this work, except for my landscape paintings. 
+
+[[Were you somehow able to escape from the regime’s doctrines?->EF-065]]
+[[Were you, Mr Fulla, able to make a name for yourself across the Iron Curtain?->LF-IMG-035]]
+
+
+:: FF-END-IMG [speaker-filla] {"position":"25,3775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/MG./0/CZE_MG.B_1833/CZE_MG.B_1833.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/MG./0/CZE_MG.B_1833/CZE_MG.B_1833.jpeg" alt="Emil Filla - Window" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/CZE:MG.B_1833" target="_blank">Emil Filla - Window</a>
+    </figcaption>
+</figure>
+
+
+:: LF-002 [speaker-fulla] {"position":"650,25","size":"100,100"}
+Majolica service created for Isabella D’ Este celebrates its 500th birthday in 2024.
+
+[[Trailer/ Teaser for the campaign->EF-002]]
+
+
+:: LF-003 [speaker-fulla] {"position":"1025,25","size":"100,100"}
+The news travels around the world and sparks an international competition for its possession.
+
+<%
+story.showDelayed("EF-003");
+%>
+
+
+:: LF-004 [speaker-fulla] {"position":"275,150","size":"100,100"}
+I am the greatest!
+
+<%
+story.showDelayed("EF-005");
+%>
+
+
+:: LF-005 [speaker-fulla] {"position":"525,150","size":"100,100"}
+I am the largest bowl from the majolica service of Isabella D' Este, the most famous patron of the arts and regent of the Renaissance.
+
+<%
+story.showDelayed("EF-006");
+%>
+
+
+:: LF-006 [speaker-fulla] {"position":"900,150","size":"100,100"}
+link - More about Isabella at hyperlink: SchauplatzIsabella D’ Este
+
+[[More->EF-007]]
+[[What else->EF-007]]
+
+
+:: LF-007 [speaker-fulla] {"position":"150,275","size":"100,100"}
+I failed my entrance exams at the Academy in 1921. One year later, I was accepted at the School of Applied Arts. Over the years this turned out to be a great benefit in my future life. 
+
+<%
+story.showDelayed("EF-009");
+%>
+
+
+:: LF-008 [speaker-fulla] {"position":"650,275","size":"100,100"}
+And when I was at the School of Applied Arts, that's where I met Mikuláš Galanda.
+
+[[What's the “Eight”?->EF-011]]
+[[Who is Mikuláš Galanda?->LF-009]]
+
+
+:: LF-008A [speaker-fulla] {"position":"650,1025","size":"100,100"}
+My artwork was called “Madonna”, so imagine something in this vein:
+
+<%
+story.showDelayed("LF-IMG-008B");
+%>
+
+
+:: LF-009 [speaker-fulla] {"position":"1150,275","size":"100,100"}
+He was a pioneer of modern art. A painter, printmaker, illustrator... and my closest friend.
+
+<%
+story.showDelayed("LF-IMG-002");
+%>
+
+
+:: LF-010 [speaker-fulla] {"position":"150,400","size":"100,100"}
+Meeting Mikuláš was a day full of joy.
+
+<%
+story.showDelayed("LF-IMG-003");
+%>
+
+
+:: LF-011 [speaker-fulla] {"position":"400,400","size":"100,100"}
+We were sitting in café Belvedere, drinking aromatic black coffee or cappuccino... Our greatest joy was to visit the library of the Museum of Decorative Arts, where we'd hunch over stacks of international art journals...
+
+<%
+story.showDelayed("LF-012");
+%>
+
+
+:: LF-012 [speaker-fulla] {"position":"525,400","size":"100,100"}
+We never spoke unnecessarily, that's perhaps why we understood each other so well. Even then, we were comparing ourselves against all the art styles that were springing up at the time. 
+
+[[Who were your artistic inspirations?->LF-013]]
+
+
+:: LF-013 [speaker-fulla] {"position":"650,400","size":"100,100"}
+My inspiration? A hard question to answer. There was the entire spectrum of modern French art, names like Braque, Matisse, Picasso, Rouault... all the names that stood for absolute creative freedom. At times I also drew inspiration from Kandinsky, Klee and Chagall, yet as for the strongest influence on my artistic development, the specific artist was not that important. I’m thinking, for instance, about medieval art or children’s drawings.
+
+[[How did it take place?->LF-IMG-004]]
+[[And what about you, Mr Filla?->EF-013]]
+
+
+:: LF-013B [speaker-fulla] {"position":"775,400","size":"100,100"}
+Hard to say. I always tried to combine diverging influences as freely as I could. In earlier years, I was most impressed by the personalities of modern French artists who stood for absolute creative freedom – names like Braque, Matisse, Picasso, Rouault...
+
+<%
+story.showDelayed("LF-013C");
+%>
+
+
+:: LF-013C [speaker-fulla] {"position":"900,400","size":"100,100"}
+I was also inspired by Kandinsky, Klee and Chagall, and gradually enriched my palette with knowledge of icon painting, medieval art, and no less importantly, the folk culture here in Slovakia and its artistic manifestations.
+
+[[How did it take place?->LF-IMG-004]]
+[[And what about you, Mr Filla?->EF-013]]
+
+
+:: LF-014 [speaker-fulla] {"position":"775,775","size":"100,100"}
+For comparison, let me show you:
+
+<%
+story.showDelayed("LF-IMG-005");
+%>
+
+
+:: LF-015 [speaker-fulla] {"position":"1150,775","size":"100,100"}
+I had my first confrontation with Cubism only in 1930, when I was finishing my studies in Prague at the “Applied Arts”. I painted several canvases where I investigated new possibilities of composition. 
+
+<%
+story.showDelayed("LF-016");
+%>
+
+
+:: LF-016 [speaker-fulla] {"position":"25,900","size":"100,100"}
+For an unaccustomed eye, these works could appear complicated, but my aim was to bring into them a sense of warmth, joy, optimism. You don’t necessarily have to understand Cubism to take pleasure in the beauty of colours and shapes.
+
+[[Do you think of these paintings as Cubist?->LF-017]]
+[[What are your memories of the 1920s?->LF-018]]
+
+
+:: LF-017 [speaker-fulla] {"position":"150,900","size":"100,100"}
+True, in the wider world Cubism was, by this time, already “past its zenith”. But I never paid attention to instructions or theories. 
+
+<%
+story.showDelayed("EF-023");
+%>
+
+
+:: LF-018 [speaker-fulla] {"position":"900,900","size":"100,100"}
+Those golden Twenties... the end of that decade was interesting.
+
+<%
+story.showDelayed("EF-025");
+%>
+
+
+:: LF-019 [speaker-fulla] {"position":"150,1025","size":"100,100"}
+At the invitation of Professor Vydra, I’d moved to Bratislava, to teach at the newly created School of Arts and Crafts.
+
+<%
+story.showDelayed("EF-027");
+%>
+
+
+:: LF-020 [speaker-fulla] {"position":"900,1025","size":"100,100"}
+Imagine our artworks hanging in a gallery in Paris... and they’re still there today. 
+
+[[Do you look back fondly at these times?->LF-020B]]
+[[Did you have similar success in your home country as well?->LF-020C]]
+
+
+:: LF-020B [speaker-fulla] {"position":"1025,1025","size":"100,100"}
+Monographs were published about us, and mine appeared when I was only 33. We certainly received recognition.
+
+<%
+story.showDelayed("EF-028");
+%>
+
+
+:: LF-020C [speaker-fulla] {"position":"1150,1025","size":"100,100"}
+In Slovakia, this fame was somewhat less evident. The public was conservative, and recognition for my work arrived only with some caution. But even so, these were good times. 
+
+<%
+story.showDelayed("EF-028");
+%>
+
+
+:: LF-021 [speaker-fulla] {"position":"150,1150","size":"100,100"}
+Hey, don’t spoil things... it’s nice to enjoy a pleasurable reminiscence... Then there was the World Exposition in Paris in 1937, where I won the highest award, the Grand Prix for my canvas, titled “Song and Labour”. But more about that later...
+
+<%
+story.showDelayed("LF-022");
+%>
+
+
+:: LF-022 [speaker-fulla] {"position":"275,1150","size":"100,100"}
+...and you, Emil, didn’t come back from Paris empty-handed either. You won the gold medal!
+
+[[What's your take on this, Mr Filla?->EF-029]]
+[[What were the 1930s like in Bratislava?->LF-023]]
+
+
+:: LF-023 [speaker-fulla] {"position":"1025,1275","size":"100,100"}
+I came to Bratislava at the invitation of Josef Vydra. 
+
+<%
+story.showDelayed("LF-IMG-009");
+%>
+
+
+:: LF-024 [speaker-fulla] {"position":"25,1400","size":"100,100"}
+He was a Czech historian, artistic theorist and professor, whom I had already met during my studies in Prague.
+
+<%
+story.showDelayed("LF-025");
+%>
+
+
+:: LF-025 [speaker-fulla] {"position":"150,1400","size":"100,100"}
+I joined the effort to build the first school of art in Slovakia. Josef's trust in me, and his enthusiasm for the future goal as well as his great benevolence, helped the process greatly. 
+
+[[What school was this?->LF-026]]
+[[What was life like for you in Bratislava then?->LF-027]]
+
+
+:: LF-026 [speaker-fulla] {"position":"275,1400","size":"100,100"}
+In 1928, the School of Arts and Crafts was founded in Bratislava, and I had the great honour of being there, as a teacher and an artist, for its inception.
+
+<%
+story.showDelayed("LF-IMG-010");
+%>
+
+
+:: LF-027 [speaker-fulla] {"position":"525,1400","size":"100,100"}
+At the start, I was as poor as the proverbial church mouse. I rented an atelier in Trnavská ulica: I only had one sofa, a white cabinet of soft wood, a small table and a washbasin... and of course, my easel. 
+
+[[Did you live there alone?->LF-PASSAGE-001]]
+[[Where did you have your studio, Mr Filla?->EF-IMG-ATL-001]]
+
+
+:: LF-028 [speaker-fulla] {"position":"25,1525","size":"100,100"}
+Mikuláš was quiet, melancholic, undemanding, modest, but always dressed elegantly. Whenever he smoked a cigarette, he’d gaze dreamily into the curls of smoke, to find inspiration for his amazing sketches.
+
+[[What were the reactions to your work?->LF-029]]
+[[Was this also the time when you created your manifesto?->LF-031]]
+
+
+:: LF-029 [speaker-fulla] {"position":"150,1525","size":"100,100"}
+If an ordinary Slovak walked into our studio and saw our works, he’d usually clutch his head in his hands in horror, run out onto the staircase without a word, and usually not even stop until the end of the street. The Slovak spirit then still remained in its sweet rest, in the outlived folklore.
+
+<%
+story.showDelayed("LF-IMG-012");
+%>
+
+
+:: LF-02XC [speaker-fulla] {"position":"25,775","size":"100,100"}
+Slovakia’s landscapes and their traditions really are an inexhaustible source of artistic inspiration. It’s enough to walk through just one region of many and you’ll have enough to paint for several weeks to come. 
+
+[[How did things work out in the Netherlands?->EF-021]]
+[[Did you return to Prague?->EF-020D]]
+
+
+:: LF-030 [speaker-fulla] {"position":"525,1525","size":"100,100"}
+We proclaimed a new, modern art. And we did so in images and in words: “Art is play and joy!”
+
+[[Do you mean by this your manifesto?->LF-031]]
+[[Did you also work in different genres or artistic media?->LF-082]]
+
+
+:: LF-031 [speaker-fulla] {"position":"650,1650","size":"100,100"}
+Yes, we published the first manifesto of Slovak avant-garde art. It was called <a href="https://www.webumenia.sk/clanok/sukromne-listy-fullu-a-galandu" target="_blank"> Private Letters of Fulla and Galanda</a>. But at the time, we didn’t think of it as a manifesto, it was basically a journal. We took care with the typography and design, tried to keep to the language of the ordinary reader. 
+
+[[I’d like to see a sample.->LF-SLFG-IMG-01]]
+[[What was the intention of the publication?->LF-031B]]
+
+
+:: LF-031A [speaker-fulla] {"position":"1025,1650","size":"100,100"}
+We fought against the stereotypes used then to judge painting and artwork. An artistic image lives its own autonomous life, it has no decorative purpose. If people use artworks to decorate their interiors, it is simply a habit and we didn’t object to that.
+
+<%
+story.showDelayed("LF-031A2");
+%>
+
+
+:: LF-031A2 [speaker-fulla] {"position":"1150,1650","size":"100,100"}
+A picture is a picture, not a section of the landscape. Painting is the play of lines and colour-forms; and from these elements, based on standards of taste, we create the work of art.
+
+<%
+story.showDelayed("EF-031B");
+%>
+
+
+:: LF-031B [speaker-fulla] {"position":"150,1775","size":"100,100"}
+We fought against the idea of art that slavishly imitates reality. The function of painting is to create a new emotive reality: using colour, light, surfaces... A picture is a picture, not a section of the landscape. Painting is the play of lines and colour-forms; and from these elements, based on standards of taste, we create the work of art.
+
+<%
+story.showDelayed("EF-031C");
+%>
+
+
+:: LF-031C [speaker-fulla] {"position":"400,1775","size":"100,100"}
+Unfortunately, our efforts came up against the barriers of contemporary taste. The daily press took no interest in our publication, at the most we were accused of snobbery. We were at least backed up by Josef Vydra. He even wrote a piece for the third issue where he appealed to the young generation of artists not to remain caught in mediocrity. It could be said that in these years, our work was valued more abroad than at home. 
+
+[[Did you find this discouraging?->LF-031D]]
+
+
+:: LF-031D [speaker-fulla] {"position":"525,1775","size":"100,100"}
+I remained firm in my artistic convictions, but the Private Letters only came out in four issues. Over time, I worked less and less with Mikuláš. My greater success came later, with the painting “Song and Labour”.
+
+[[Tell me more about the painting “Song and Labour”.->LF-IMG-016]]
+[[Let’s return to you, Mr Filla.->EF-035B]]
+
+
+:: LF-032 [speaker-fulla] {"position":"900,1775","size":"100,100"}
+And later I completed the painting “Song and Labour”.
+
+[[Tell me more about the painting “Song and Labour”.->LF-IMG-016]]
+[[Let’s return to you, Mr Filla.->EF-035B]]
+
+
+:: LF-033 [speaker-fulla] {"position":"1150,1775","size":"100,100"}
+It’s a kind of a mythical portrait of the Slovak nation, bringing together all of the various inspirations that I’d been collecting till then. As you can see, the composition is divided into three horizontal sections, just as in the medieval frescoes. The individual figures and scenes are sized to serve the picture's inner order, not to refer to any real subjects.
+
+[[Was this work successful?->LF-033A]]
+[[How did you come up with this composition?->LF-033B]]
+
+
+:: LF-033A [speaker-fulla] {"position":"25,1900","size":"100,100"}
+This is probably my most successful work. It even won the Grand Prix award at the World Exposition in Paris in 1937.
+
+<%
+story.showDelayed("LF-IMG-017");
+%>
+
+
+:: LF-033B [speaker-fulla] {"position":"275,1900","size":"100,100"}
+For this painting, I had a kind of prototype in my designs for the ornamentation of the restored church in Klížske Hradište. 
+
+[[Can they be seen somewhere?->LF-034]]
+
+
+:: LF-034 [speaker-fulla] {"position":"400,1900","size":"100,100"}
+Unfortunately not: they were never realised – and I never got paid!
+
+[[What did you do with these designs?->LF-035]]
+
+
+:: LF-035 [speaker-fulla] {"position":"525,1900","size":"100,100"}
+I had a lot of work with teaching in the art school, where they also added classes for children; there were entire months when I didn’t once pick up my paintbrush... but still the time came, and I painted it... 
+
+<%
+story.showDelayed("LF-035B");
+%>
+
+
+:: LF-035B [speaker-fulla] {"position":"650,1900","size":"100,100"}
+In the painting “Song and Labour”, I wanted to celebrate Slovak national traditions and folklore, but without the nationalist pathos that was back then somewhat of a fashion. They even wrote about us that we were not national enough, in the same way that Manet and Cézanne were not French enough. But we had the same idea expressed in our Private Letters – a painting can be “Slovak” even if it doesn’t moralise, or openly lament, the unfulfilled yearnings of the Slovak nation.
+
+<%
+story.showDelayed("LF-036");
+%>
+
+
+:: LF-036 [speaker-fulla] {"position":"775,1900","size":"100,100"}
+I also have an interesting story about this picture.
+
+[[What is it?->LF-037]]
+[[Let’s go back to you, Mr Filla.->EF-030B]]
+
+
+:: LF-037 [speaker-fulla] {"position":"900,1900","size":"100,100"}
+During the retreat of the German forces, I was forced to evacuate with Klárika (she was my wife, but I’ll say more about her later). 
+
+<%
+story.showDelayed("LF-038");
+%>
+
+
+:: LF-038 [speaker-fulla] {"position":"1025,1900","size":"100,100"}
+One friend of mine, a doctor, and his mother hid with us in the mountains past the village of Necpaly. When the Soviet army and the Slovak partisans pushed the Germans back and we could return home, we found the door into our house broken open and our flat partially looted. 
+
+[[What about the paintings? Did they steal them?->LF-039]]
+
+
+:: LF-039 [speaker-fulla] {"position":"1150,1900","size":"100,100"}
+Fortunately, nothing happened to my artwork. “Song and Labour” was still hanging, undamaged, in its place. But we were lucky that Hermann Göring’s “rescue vehicles” for artworks didn’t manage to pass through the town of Martin!
+
+[[And what did the Nazis do with Mr Filla?->EF-035C]]
+
+
+:: LF-040 [speaker-fulla] {"position":"650,2025","size":"100,100"}
+These are terrible, tormenting memories. My paintings are joyful, happy – created for life, for the joy of the present and future generations, and for this very reason I simply hate war. 
+
+<%
+story.showDelayed("EF-039");
+%>
+
+
+:: LF-041 [speaker-fulla] {"position":"650,2150","size":"100,100"}
+These were bitter years. First, the sudden and premature death of my longstanding friend Mikuláš. After the forced departure of Professor Vydra and other Czech colleagues, I briefly held the directorship of the “Arts and Crafts”, and began to speculate on the possibility of starting our first University of Fine Arts... But this endeavor wasn't successful. 
+
+<%
+story.showDelayed("LF-IMG-018");
+%>
+
+
+:: LF-042 [speaker-fulla] {"position":"900,2150","size":"100,100"}
+After a while, I retreated into private life, and left Bratislava for Martin. I did more illustrations and a number of paintings and prints on religious themes. 
+
+[[Can you show us an example? ->LF-IMG-019]]
+[[Did your work change in any way?->LF-044B]]
+
+
+:: LF-043 [speaker-fulla] {"position":"25,2275","size":"100,100"}
+On the other hand, you see, I was never very active politically. I always wanted only to be a painter...  and in spite of this, there were people who, even after the war, saw something political in my artwork. 
+
+<%
+story.showDelayed("LF-IMG-020");
+%>
+
+
+:: LF-044 [speaker-fulla] {"position":"275,2275","size":"100,100"}
+There was no place for my work under Slovakia’s pro-Nazi regime. My years with Mikuláš were over, and I gave up on colour surfaces and line forms: it was a creative crisis... and perhaps for this very reason, I came up with these works, influenced by medieval art... 
+
+<%
+story.showDelayed("EF-046");
+%>
+
+
+:: LF-044B [speaker-fulla] {"position":"400,2275","size":"100,100"}
+There was no place for my work under Slovakia’s pro-Nazi regime. My years with Mikuláš were over, and I gave up on colour surfaces and line forms: it was a creative crisis... These works influenced by medieval and Byzantine art were probably crucial in helping me to get through this dark time.
+
+[[And what about love? Did it help?->EF-048]]
+[[How did you live and work after the war?->LF-060]]
+
+
+:: LF-045 [speaker-fulla] {"position":"650,2275","size":"100,100"}
+I think these works helped me to get through this dark time.
+
+[[And what about love? Did it help?->EF-048]]
+[[How did you live and work after the war?->LF-060]]
+
+
+:: LF-046 [speaker-fulla] {"position":"25,2400","size":"100,100"}
+I agree. About women... in life and in art. 
+
+[[About women in life?->EF-049]]
+[[About women in art?->EF-053]]
+
+
+:: LF-047 [speaker-fulla] {"position":"400,2400","size":"100,100"}
+Much the same... When I painted my canvases “Expulsion from Paradise”, “Blessing the Cattle” and “Song and Labour”, I was already a married man: balanced, content, happy.
+
+<%
+story.showDelayed("LF-IMG-021");
+%>
+
+
+:: LF-048 [speaker-fulla] {"position":"900,2400","size":"100,100"}
+My beloved Klárika -  I fell head-over-heels in love with her at the first sight. She also came with me to Paris when I won the Grand Prix. 
+
+<%
+story.showDelayed("LF-IMG-023");
+%>
+
+
+:: LF-049 [speaker-fulla] {"position":"1150,2400","size":"100,100"}
+We married after a somewhat long period in 1938. With our little dog Punťa, we liked to spend time on the terrace of our house in Martin. 
+
+<%
+story.showDelayed("EF-051");
+%>
+
+
+:: LF-050 [speaker-fulla] {"position":"275,2525","size":"100,100"}
+I had a lot of children, even if none of them were my own.
+
+[[How do you mean?->LF-051]]
+[[Could you say something more about the time after the war? ->LF-060]]
+
+
+:: LF-051 [speaker-fulla] {"position":"400,2525","size":"100,100"}
+I worked for children and the youth intensely, and with great enjoyment, for my entire life. I drew, painted, wrote, illustrated children’s books, and even assisted in creating the children’s magazines Sunshine and Smile...
+
+<%
+story.showDelayed("LF-IMG-024");
+%>
+
+
+:: LF-052 [speaker-fulla] {"position":"650,2525","size":"100,100"}
+And at the end of the 1950s, there were the “Paper Cut-Outs from Uncle Fulla” for the very smallest kids. 
+
+<%
+story.showDelayed("LF-IMG-025");
+%>
+
+
+:: LF-053 [speaker-fulla] {"position":"900,2525","size":"100,100"}
+I taught children in after-school classes, with the aim of finding out new talents... and we even had children come to the re-created Arts and Crafts school. 
+
+[[What did you teach them?->LF-054]]
+[[Which books did you illustrate?->LF-056]]
+
+
+:: LF-054 [speaker-fulla] {"position":"1025,2525","size":"100,100"}
+Two-dimensional coloured drawing, gluing and collage... both me and the children learned something. The naïve lines of a child's drawing became a part of my own style too. 
+
+<%
+story.showDelayed("LF-IMG-026");
+%>
+
+
+:: LF-055 [speaker-fulla] {"position":"25,2650","size":"100,100"}
+Books of fairy-tales followed me through my entire life... as a boy when I stood in front of the window of the bookstore in my home town of Ružomberok... and then later when I illustrated children’s books myself. 
+
+[[Which books did you illustrate?->LF-056]]
+[[Could you say more about the inspiration of women in art? ->EF-053]]
+
+
+:: LF-056 [speaker-fulla] {"position":"150,2650","size":"100,100"}
+First, the Illustrated Slovak Tales, published in 1925, then later, for example, Rhymes for the Young by Ľudmila Podjavorinská, Salt above Gold, The Twelve Months... the list is really long. But the most important of all of them was the book Slovak Folk Tales.
+
+[[Why is this so important?->LF-057]]
+[[Could you say something more about the time after the war?->LF-060]]
+
+
+:: LF-057 [speaker-fulla] {"position":"275,2650","size":"100,100"}
+It was only when I started to illustrate Slovak Folk Tales that I had the insight that illustration is just as valuable, just as artistic as any other work I was doing, and could be the equal of an oil painting... And these were the illustrations that later also influenced other artists.
+
+<%
+story.showDelayed("LF-VID-053");
+%>
+
+
+:: LF-058 [speaker-fulla] {"position":"1150,2650","size":"100,100"}
+Of course, throughout my life I worked with this subject.
+
+<%
+story.showDelayed("LF-IMG-027");
+%>
+
+
+:: LF-059 [speaker-fulla] {"position":"275,2775","size":"100,100"}
+...but not only women unclothed. Another favourite subject of mine was Slovak girls or brides in folk costumes. Also, the figures of the Madonna. 
+
+<%
+story.showDelayed("LF-IMG-029A");
+%>
+
+
+:: LF-060 [speaker-fulla] {"position":"650,2775","size":"100,100"}
+Right after the war, it was a time full of hope. I was even given an offer to teach at the School of Applied Arts and move to Prague.
+
+<%
+story.showDelayed("EF-055");
+%>
+
+
+:: LF-061 [speaker-fulla] {"position":"900,2775","size":"100,100"}
+But you see... I instead took a post at the newly created University of Fine Arts in Bratislava, where somehow they also assigned me to the department of monumental painting.
+
+[[What was it like?->EF-055B]]
+[[What did you paint during this period?->EF-056]]
+
+
+:: LF-061B [speaker-fulla] {"position":"1150,2775","size":"100,100"}
+As the first university-level art school in Slovakia, this institution was something I looked forward to. Starting something completely new is always full of hope. But just as Emil said, problems weren’t long in coming. 
+
+[[Do you mean the Communist seizing of power?->LF-068A]]
+[[What did you paint during this period?->EF-056]]
+
+
+:: LF-062 [speaker-fulla] {"position":"275,2900","size":"100,100"}
+In that same year, I also painted Jánošík myself. 
+
+<%
+story.showDelayed("LF-IMG-030");
+%>
+
+
+:: LF-063 [speaker-fulla] {"position":"525,2900","size":"100,100"}
+I went back to the theme of folk art, and to the Slovak landscape.
+
+<%
+story.showDelayed("EF-057");
+%>
+
+
+:: LF-064 [speaker-fulla] {"position":"900,2900","size":"100,100"}
+Yes, I also drew more than a few bandits in my lifetime.
+
+<%
+story.showDelayed("LF-IMG-031");
+%>
+
+
+:: LF-065 [speaker-fulla] {"position":"25,3025","size":"100,100"}
+Again, you see we have something in common. My mother was from Orava, and my father from Liptov. The legacy of these two regions is something I carried in my heart throughout my life. Wherever I went, the landscape of my homeland was always with me.
+
+[[The landscape of my homeland? What do you mean by this?->LF-IMG-032]]
+
+
+:: LF-066 [speaker-fulla] {"position":"650,3025","size":"100,100"}
+For that matter, I walked through all of the Turiec region with my sketchbook. 
+
+<%
+story.showDelayed("LF-IMG-033");
+%>
+
+
+:: LF-067 [speaker-fulla] {"position":"900,3025","size":"100,100"}
+Keeping all to myself, I had a great opportunity to encounter nature and discover its secrets.
+
+<%
+story.showDelayed("LF-IMG-034");
+%>
+
+
+:: LF-068A [speaker-fulla] {"position":"400,3150","size":"100,100"}
+Ugh, that was a time... How to create art when they’re dictating it from above? And especially when these comrades had no understanding of good taste or the importance of art?
+
+<%
+story.showDelayed("EF-062");
+%>
+
+
+:: LF-068B [speaker-fulla] {"position":"650,3150","size":"100,100"}
+No one could avoid these unwanted “attentions”. In the form of Communist Party directives, I was given a “recommendation” to only produce work of a decorative character. But then there appeared an offer that brought me to the eyes of the world, even across the sealed border and the Iron Curtain.
+
+[[What happened at the “comradely discussion”?->EF-063]]
+[[What was your offer, Mr Fulla?->LF-IMG-035]]
+
+
+:: LF-069 [speaker-fulla] {"position":"25,3275","size":"100,100"}
+I was given a commission to illustrate “Slovak Folk Tales”, from the legends collected by Pavol Dobšinský. It became a major hit, with translations published far beyond the borders of Czechoslovakia.
+
+<%
+story.showDelayed("LF-IMG-036");
+%>
+
+
+:: LF-070 [speaker-fulla] {"position":"275,3275","size":"100,100"}
+I found my escape in the world of fairy-tales, folk art, peasant creativity.... A world full of terrors, where injustice is rife, yet in the end good does win out over evil. 
+
+<%
+story.showDelayed("LF-071");
+%>
+
+
+:: LF-071 [speaker-fulla] {"position":"400,3275","size":"100,100"}
+And Janko Hraško – he had a special place in my life.
+
+[[What is the importance of Janko Hraško?->LF-072]]
+[[How did you, Mr Filla, escape from the doctrines of the regime?->EF-IMG-031]]
+
+
+:: LF-072 [speaker-fulla] {"position":"525,3275","size":"100,100"}
+For the first time, I encountered him as a small boy, someone who still believed the truth of his tales of witches and hags. For the second time, I was hired to create illustrations for his work for the publishing house “Years of Youth” (Mladé letá).
+
+<%
+story.showDelayed("LF-IMG-037");
+%>
+
+
+:: LF-073 [speaker-fulla] {"position":"775,3275","size":"100,100"}
+Here’s the text, they told me... and all at once you wonder how a boy the size of a pea can eat noodles with sheep-cheese. I grew up in sheep-country, and so I recalled what my father said when telling the story: “Listen, my boy! They were noodles, but they could fit only three into the pot!”
+
+<%
+story.showDelayed("LF-IMG-038");
+%>
+
+
+:: LF-074 [speaker-fulla] {"position":"1025,3275","size":"100,100"}
+When I make illustrations, I don’t always stay that close to the text. I shape it the way my feelings imagine it. And so I drew him as a smiling hero.
+
+[[Did you also work in the area of book illustration, Mr Filla?->EF-064]]
+
+
+:: LF-075 [speaker-fulla] {"position":"275,3525","size":"100,100"}
+Emil’s death brought to an end the period of parallels in our lives. Because of this, it’s time for us to end as well.
+
+[[What happened with your artworks, Mr Filla?->EF-071]]
+[[How did you live after this point, Mr Fulla?->LF-076]]
+
+
+:: LF-076 [speaker-fulla] {"position":"525,3525","size":"100,100"}
+After my wife Klárika died, I gave all of my artworks to the state as well, and returned to Ružomberok. In 1963, I was awarded the title of “national artist”, and on my old father’s land a gallery was built. There was an appartment for me in the building.
+
+<%
+story.showDelayed("LF-IMG-039");
+%>
+
+
+:: LF-077 [speaker-fulla] {"position":"900,3525","size":"100,100"}
+You can even watch a video.
+
+<%
+story.showDelayed("LF-VID-002");
+%>
+
+
+:: LF-078 [speaker-fulla] {"position":"1150,3525","size":"100,100"}
+Here’s where it started, and here’s where it ended. During my last years, I worked in my “personal museum”. 
+
+<%
+story.showDelayed("EF-072");
+%>
+
+
+:: LF-078B [speaker-fulla] {"position":"150,3650","size":"100,100"}
+The construction of the gallery took seven long, exhausting years. In spite of the small defects in its aesthetics, I would consider it more or less, if you overlook some details, a relatively successful work of architecture.
+
+[[Do you have anything to say in conclusion?->EF-073]]
+
+
+:: LF-079 [speaker-fulla] {"position":"400,3650","size":"100,100"}
+Pictures should exist to please the viewer. Optimism in art supports the building of a new, more joyful life. The joy of colour is the artistic manifestation of this aim – and my work always focused on it as a goal. 
+
+[[Thank you for such a pleasant discussion.->EF-074]]
+
+
+:: LF-080 [speaker-fulla] {"position":"650,3650","size":"100,100"}
+If you haven’t yet seen the exhibition of our artwork, hurry up to the Slovak National Gallery.
+
+<%
+story.showDelayed("EF-075");
+%>
+
+
+:: LF-081 [speaker-fulla] {"position":"900,3650","size":"100,100"}
+Hope to see you there!
+
+<%
+story.showDelayed("LF-END");
+%>
+
+
+:: LF-082 [speaker-fulla] {"position":"650,1525","size":"100,100"}
+Yes, stage design for example. Theatre was a passion of mine even when I was at the School of Commerce – I drew backdrops and various stage-scenery.
+
+[[I’d like to know more about your stage-design work.->LF-083]]
+[[Let’s go back to the work you did with Mikuláš Galanda.->LF-031]]
+
+
+:: LF-083 [speaker-fulla] {"position":"775,1525","size":"100,100"}
+At this time, when I was living with my older sister in Bratislava, I met Janko Borodáč. He later contacted me at the Arts and Crafts school to design a set for his performance “Factory of Youth”.
+
+[[How did it work out?->LF-084]]
+[[Did you also make use of the principles of your manifesto here?->LF-085]]
+
+
+:: LF-084 [speaker-fulla] {"position":"900,1525","size":"100,100"}
+I took him up on the offer, and began to think about how I could bring contemporary art and aesthetics into a theatre through my stage décor. 
+
+[[And did it work?->LF-IMG-040]]
+
+
+:: LF-085 [speaker-fulla] {"position":"1150,1525","size":"100,100"}
+I was the first artist around who dared to bring abstraction onto the stage. You looked at the set as if it were a picture.
+
+<%
+story.showDelayed("LF-IMG-041");
+%>
+
+
+:: LF-086 [speaker-fulla] {"position":"150,1650","size":"100,100"}
+I worked with another director, Viktor Šulc, and created this design for him:
+
+<%
+story.showDelayed("LF-IMG-042");
+%>
+
+
+:: LF-END [speaker-fulla] {"position":"1025,3650","size":"100,100"}
+For more information on the exhibition, look here:
+<a href="https://www.sng.sk/sk/vystavy/1502_filla-fulla-osud-umelce-osud-umelca" target="_blank">FILLA – FULLA: The Fate of the Artist</a>
+<br><br>
+A collection of our artworks on Web umenia:
+<a href="https://www.webumenia.sk/kolekcia/155" target="_blank">Filla / Fulla Collection</a>
+<br><br>
+All the best to you!
+
+[[Thank you, and goodbye.->EF-END]]
+
+
+:: LF-IMG-000 [speaker-fulla] {"position":"275,25","size":"100,100"}
+<figure>
+    <a href="https://museum-chat-bot.ddev.site/sites/default/files/2024-05/Picture1.jpg">
+        <img src="https://museum-chat-bot.ddev.site/sites/default/files/2024-05/Picture1.jpg" alt="" />
+    </a>
+    <figcaption>
+        Bowl from the Service of Isabella D’Este (1474-1532), Mantua
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-001");
+%>
+
+
+:: LF-IMG-001 [speaker-fulla] {"position":"650,150","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--22A3--0_1--2018_03_13--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--22A3--0_1--2018_03_13--LP_WEB.jpg" alt="Grade report for Ľudovít Fulla from the School of Applied Arts in Prague" />
+    </a>
+    <figcaption>
+        Grade report for Ľudovít Fulla from the School of Applied Arts in Prague, Archive of Fine Art, SNG
+    </figcaption>
+</figure>
+
+[[Did you ever meet in Prague?->EF-006]]
+[[What were your student years like?->EF-007]]
+
+
+:: LF-IMG-002 [speaker-fulla] {"position":"25,400","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/96/SVK_SNG.O_532/SVK_SNG.O_532.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/96/SVK_SNG.O_532/SVK_SNG.O_532.jpeg" alt="Mikuláš Galanda - Self-Portrait, 1932" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.O_532" target="_blank">Mikuláš Galanda – Self-Portrait, 1932, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[How did you meet?->LF-010]]
+[[Did you find him a kindred spirit?->LF-012]]
+
+
+:: LF-IMG-003 [speaker-fulla] {"position":"275,400","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/82/SVK_SNG.K_2844/SVK_SNG.K_2844.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/82/SVK_SNG.K_2844/SVK_SNG.K_2844.jpeg" alt="Mikuláš Galanda - Street with the Sweetshop, 1926 - 1928" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.K_2844" target="_blank">Mikuláš Galanda – Street with the Sweetshop, 1926 - 1928, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-011");
+%>
+
+
+:: LF-IMG-004 [speaker-fulla] {"position":"1025,400","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/97/SVK_SNG.O_6544/SVK_SNG.O_6544.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/97/SVK_SNG.O_6544/SVK_SNG.O_6544.jpeg" alt="Ľudovít Fulla - Fish on a Table, 1928" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.O_6544" target="_blank">Ľudovít Fulla – Fish on a Table, 1928, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-012");
+%>
+
+
+:: LF-IMG-005 [speaker-fulla] {"position":"900,775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/92/SVK_SNG.OP_6/SVK_SNG.OP_6.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/92/SVK_SNG.OP_6/SVK_SNG.OP_6.jpeg" alt="Ľudovít Fulla - Summer Morning (Flowers), 1930" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_6" target="_blank">Ľudovít Fulla – Summer Morning (Flowers), 1930, SNG - Ľudovít Fulla Gallery, Ružomberok</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-006");
+%>
+
+
+:: LF-IMG-006 [speaker-fulla] {"position":"1025,775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/97/SVK_SNG.O_1305/SVK_SNG.O_1305.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/97/SVK_SNG.O_1305/SVK_SNG.O_1305.jpeg" alt="Ľudovít Fulla - Balloons, 1930" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.O_1305" target="_blank">Ľudovít Fulla - Balloons, 1930, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-015");
+%>
+
+
+:: LF-IMG-007 [speaker-fulla] {"position":"400,900","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.OP_3/SVK_SNG.OP_3.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.OP_3/SVK_SNG.OP_3.jpeg" alt="Ľudovít Fulla - Children at the Seaside (Two Children), 1929" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_3" target="_blank">Ľudovít Fulla – Children at the Seaside (Two Children), 1929, SNG – Ľudovít Fulla Gallery, Ružomberok</a> 
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-008");
+%>
+
+
+:: LF-IMG-008 [speaker-fulla] {"position":"525,900","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/35/SVK_SNG.O_137/SVK_SNG.O_137.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/35/SVK_SNG.O_137/SVK_SNG.O_137.jpeg" alt="Ľudovít Fulla - Fishermen, 1930" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.O_137" target="_blank">Ľudovít Fulla - Fishermen, 1930, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[And what about you, Mr Filla?->EF-024]]
+[[Did anyone appreciate your artistic ambitions?->EF-026]]
+
+
+:: LF-IMG-008B [speaker-fulla] {"position":"775,1025","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/Fulla_Madona_Linea.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/Fulla_Madona_Linea.jpg" alt="Ľudovít Fulla - Madonna, 1931" />
+    </a>
+    <figcaption>
+        Ľudovít Fulla - Madonna, 1931, Linea Collection, Bratislava
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-020");
+%>
+
+
+:: LF-IMG-009 [speaker-fulla] {"position":"1150,1275","size":"100,100"}
+<figure>
+    <a href="https://monoskop.org/images/1/1d/Josef_Vydra.jpg">
+        <img src="https://monoskop.org/images/1/1d/Josef_Vydra.jpg" alt="Josef Vydra" />
+    </a>
+    <figcaption>
+        <a href="https://monoskop.org/Josef_Vydra" target="_blank">Josef Vydra, source: Monoskop.org</a>
+    </figcaption>
+</figure>
+
+[[Who was he?->LF-024]]
+[[Why did he invite you?->LF-026]]
+
+
+:: LF-IMG-010 [speaker-fulla] {"position":"400,1400","size":"100,100"}
+<figure>
+    <a href="http://www.register.ustarch.sav.sk/images/reg_oa/stavby/ba-sur-pu-sr.jpg">
+        <img src="http://www.register.ustarch.sav.sk/images/reg_oa/stavby/ba-sur-pu-sr.jpg" alt="The School of Arts and Crafts, Bratislava, po 1928" />
+    </a>
+    <figcaption>
+        <a href="http://www.register.ustarch.sav.sk/index.php/sk/objekty/77-%C5%A1kola-umeleck%C3%BDch-remesiel.html" target="_blank">The School of Arts and Crafts, Bratislava, after 1928, source: Register of Modern Architecture in Slovakia</a>
+    </figcaption>
+</figure>
+
+[[What was life like for a teacher starting out?->LF-027]]
+
+
+:: LF-IMG-011 [speaker-fulla] {"position":"1150,1400","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--26D13--0_1--2018_03_13--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--26D13--0_1--2018_03_13--LP_WEB.jpg" alt="Ľudovít Fulla and Mikuláš Galanda in their shared studio in Trnavská ulica in Bratislava, early 1930s" />
+    </a>
+        <figcaption>
+            Ľudovít Fulla and Mikuláš Galanda in their shared studio in Trnavská ulica in Bratislava, early 1930s, Archive of Fine Arts, SNG
+        </figcaption>    
+</figure>
+
+[[What was your cooperation like?->LF-028]]
+[[Did you also work in some other areas of art?->LF-082]]
+
+
+:: LF-IMG-012 [speaker-fulla] {"position":"275,1525","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/90/SVK_SNG.OP_8/SVK_SNG.OP_8.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/90/SVK_SNG.OP_8/SVK_SNG.OP_8.jpeg" alt="Ľudovít Fulla - Blessing the Cattle, 1932" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_8" target="_blank">Ľudovít Fulla – Blessing the Cattle, 1932, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+
+<%
+story.showDelayed("LF-IMG-013");
+%>
+
+
+:: LF-IMG-013 [speaker-fulla] {"position":"400,1525","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/10/SVK_SNG.G_3119/SVK_SNG.G_3119.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/10/SVK_SNG.G_3119/SVK_SNG.G_3119.jpeg" alt="Mikuláš Galanda - Lovers, 1937" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.G_3119" target="_blank">Mikuláš Galanda - Lovers, 1937, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+
+<%
+story.showDelayed("LF-030");
+%>
+
+
+:: LF-IMG-014 [speaker-fulla] {"position":"650,1775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/28/SVK_SNG.G_4147/SVK_SNG.G_4147.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/28/SVK_SNG.G_4147/SVK_SNG.G_4147.jpeg" alt="Ľudovít Fulla - Dragon, 1930" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.G_4147" target="_blank">Ľudovít Fulla - Dragon, 1930, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-015");
+%>
+
+
+:: LF-IMG-015 [speaker-fulla] {"position":"775,1775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.O_2612/SVK_SNG.O_2612.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.O_2612/SVK_SNG.O_2612.jpeg" alt="Mikuláš Galanda - Two Women, 1931" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.O_2612" target="_blank">Mikuláš Galanda – Two Women, 1931, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-032");
+%>
+
+
+:: LF-IMG-016 [speaker-fulla] {"position":"1025,1775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/63/SVK_SNG.OP_10/SVK_SNG.OP_10.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/63/SVK_SNG.OP_10/SVK_SNG.OP_10.jpeg" alt="Ľudovít Fulla - Song and Labour, 1934" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_10" target="_blank">Ľudovít Fulla – Song and Labour, 1934, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-033");
+%>
+
+
+:: LF-IMG-017 [speaker-fulla] {"position":"150,1900","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--diplom--04_1--2018_03_16--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--diplom--04_1--2018_03_16--LP_WEB.jpg" alt="Award certificate from the World Exposition in Paris, 1937" />
+    </a>
+    <figcaption>
+        Award certificate from the World Exposition in Paris, 1937. Archive of Fine Arts, SNG
+    </figcaption>
+</figure>
+
+[[What led you to take up this subject?->LF-033B]]
+[[Let’s go back to you, Mr Filla.->EF-035B]]
+
+
+:: LF-IMG-018 [speaker-fulla] {"position":"775,2150","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/61/SVK_SNG.OP_12/SVK_SNG.OP_12.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/61/SVK_SNG.OP_12/SVK_SNG.OP_12.jpeg" alt="Ľudovít Fulla - Winter Bratislava, 1941" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_12" target="_blank">Ľudovít Fulla - Winter Bratislava, 1941, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-042");
+%>
+
+
+:: LF-IMG-019 [speaker-fulla] {"position":"1025,2150","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/57/SVK_SNG.G_7596/SVK_SNG.G_7596.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/57/SVK_SNG.G_7596/SVK_SNG.G_7596.jpeg" alt="Ľudovít Fulla - Annunciation, c. 1945" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.G_7596" target="_blank">Ľudovít Fulla – Annunciation, c. 1945, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-045");
+%>
+
+
+:: LF-IMG-020 [speaker-fulla] {"position":"150,2275","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/77/SVK_SNG.G_3545/SVK_SNG.G_3545.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/77/SVK_SNG.G_3545/SVK_SNG.G_3545.jpeg" alt="Ľudovít Fulla - Nativity, 1940" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.G_3545" target="_blank">Ľudovít Fulla - Nativity, 1940, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[These works are completely different. Why is this so?->LF-044]]
+[[What kept you going during this difficult time?->EF-048]]
+
+
+:: LF-IMG-021 [speaker-fulla] {"position":"525,2400","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/45/SVK_SNG.UP-DK_4171/SVK_SNG.UP-DK_4171.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/45/SVK_SNG.UP-DK_4171/SVK_SNG.UP-DK_4171.jpeg" alt="Karol Kállay - Ľudovít Fulla with his wife, 1952" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.UP-DK_4171" target="_blank">Karol Kállay - Ľudovít Fulla with his wife, 1952, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[How did the two of you meet your wives?->EF-050]]
+[[Did you also have any children?->EF-052]]
+
+
+:: LF-IMG-022 [speaker-fulla] {"position":"775,2400","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/89/SVK_SNG.OP_9/SVK_SNG.OP_9.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/89/SVK_SNG.OP_9/SVK_SNG.OP_9.jpeg" alt="Ľudovít Fulla - Portrait of the Artist’s Wife, 1934" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_9" target="_blank">Ľudovít Fulla – Portrait of the Artist’s Wife, 1934, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-048");
+%>
+
+
+:: LF-IMG-023 [speaker-fulla] {"position":"1025,2400","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--22D52-2--0_1--2018_03_15--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--22D52-2--0_1--2018_03_15--LP_WEB.jpg" alt="Klára Juliana at the World Exposition in Paris, 1937" />
+    </a>
+    <figcaption>
+        Klára Juliana at the World Exposition in Paris, 1937, Archive of Fine Arts, SNG
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-049");
+%>
+
+
+:: LF-IMG-024 [speaker-fulla] {"position":"525,2525","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/47/SVK_SNG.KD_120/SVK_SNG.KD_120.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/47/SVK_SNG.KD_120/SVK_SNG.KD_120.jpeg" alt="Ľudovít Fulla - Ship, 1942 - 1943" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.KD_120" target="_blank">Ľudovít Fulla - Ship (illustration for the magazine Sunshine), 1942 - 1943, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-052");
+%>
+
+
+:: LF-IMG-025 [speaker-fulla] {"position":"775,2525","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/16/SVK_SNG.UP-P_3274-4/SVK_SNG.UP-P_3274-4.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/16/SVK_SNG.UP-P_3274-4/SVK_SNG.UP-P_3274-4.jpeg" alt="Paper Cut-Out: Circus (from the series Paper Cut-Outs from Uncle Fulla), 1956 - 1959" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.UP-P_3274-4" target="_blank">Ľudovít Fulla – Paper Cut-Out: Circus (from the series Paper Cut-Outs from Uncle Fulla), 1956 - 1959, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-053");
+%>
+
+
+:: LF-IMG-026 [speaker-fulla] {"position":"1150,2525","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/21/SVK_SNG.GR_54/SVK_SNG.GR_54.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/21/SVK_SNG.GR_54/SVK_SNG.GR_54.jpeg" alt="Ľudovít Fulla - Flying Sorcerer, 1930" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.GR_54" target="_blank">Ľudovít Fulla – Flying Sorcerer, 1930, Slovak National Gallery </a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-055");
+%>
+
+
+:: LF-IMG-027 [speaker-fulla] {"position":"25,2775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/31/SVK_SNG.OP_58/SVK_SNG.OP_58.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/31/SVK_SNG.OP_58/SVK_SNG.OP_58.jpeg" alt="Ľudovít Fulla - Standing Nude, 1971" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_58" target="_blank">Ľudovít Fulla – Standing Nude, 1971, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-028");
+%>
+
+
+:: LF-IMG-028 [speaker-fulla] {"position":"150,2775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/OGD/43/SVK_OGD.G_1330/SVK_OGD.G_1330.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/OGD/43/SVK_OGD.G_1330/SVK_OGD.G_1330.jpeg" alt="Ľudovít Fulla - Nude on a Platform, 1974" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:OGD.G_1330" target="_blank">Ľudovít Fulla – Nude on a Platform, 1974, Orava Gallery, Dolný Kubín</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-059");
+%>
+
+
+:: LF-IMG-029A [speaker-fulla] {"position":"400,2775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/68/SVK_SNG.O_1926/SVK_SNG.O_1926.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/68/SVK_SNG.O_1926/SVK_SNG.O_1926.jpeg" alt="Ľudovít Fulla - Slovak Girl, 1949" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.O_1926" target="_blank">Ľudovít Fulla – Slovak Girl, 1949, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-029B");
+%>
+
+
+:: LF-IMG-029B [speaker-fulla] {"position":"525,2775","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/59/SVK_SNG.OP_14/SVK_SNG.OP_14.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/59/SVK_SNG.OP_14/SVK_SNG.OP_14.jpeg" alt="Ľudovít Fulla - Madonna with Angels, 1946" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_14" target="_blank">Ľudovít Fulla – Madonna with Angels, 1946, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[How did you live and work after World War II?->LF-060]] 
+[[Tell me something more about the women in your life.->EF-049]]
+
+
+:: LF-IMG-030 [speaker-fulla] {"position":"400,2900","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/30/SVK_SNG.OP_22/SVK_SNG.OP_22.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/30/SVK_SNG.OP_22/SVK_SNG.OP_22.jpeg" alt="Ľudovít Fulla - Jánošík on a White Horse, 1948" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_22" target="_blank">Ľudovít Fulla - Jánošík on a White Horse, 1948, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[An interesting coincidence.->LF-063]]
+
+
+:: LF-IMG-031 [speaker-fulla] {"position":"1025,2900","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/49/SVK_SNG.KD_155/SVK_SNG.KD_155.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/49/SVK_SNG.KD_155/SVK_SNG.KD_155.jpeg" alt="Ľudovít Fulla - Dancing Bandits, 1964" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.KD_155" target="_blank">Ľudovít Fulla – Dancing Bandits, 1964, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[Why did you choose Slovakia’s bandits’ ballads?->EF-058]]
+[[Did you also paint Slovak landscapes?->EF-059B]]
+
+
+:: LF-IMG-032 [speaker-fulla] {"position":"150,3025","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/74/SVK_SNG.O_24/SVK_SNG.O_24.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/74/SVK_SNG.O_24/SVK_SNG.O_24.jpeg" alt="Ľudovít Fulla - Village, okolo 1948" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.O_24" target="_blank">Ľudovít Fulla –  Village, c. 1948, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-059");
+%>
+
+
+:: LF-IMG-033 [speaker-fulla] {"position":"775,3025","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNG--KD_412--0_1--_2018_04_18_--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNG--KD_412--0_1--_2018_04_18_--LP_WEB.jpg" alt="Ľudovít Fulla - Turiec in May, 1949" />
+    </a>
+    <figcaption>
+        Ľudovít Fulla - Turiec in May, 1949, SNG - Ľudovít Fulla Gallery, Ružomberok
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-067");
+%>
+
+
+:: LF-IMG-034 [speaker-fulla] {"position":"1025,3025","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/12/SVK_SNG.KD_53/SVK_SNG.KD_53.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/12/SVK_SNG.KD_53/SVK_SNG.KD_53.jpeg" alt="Ľudovít Fulla - Sunset in Turiec II., 1952" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.KD_53" target="_blank">Ľudovít Fulla – Sunset in Turiec II., 1952, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[And for you, Mr Filla, where did you paint your landscapes?->EF-IMG-028]]
+[[Was this also something of an escape from the doctrine of the Communist regime?->LF-068A]]
+
+
+:: LF-IMG-035 [speaker-fulla] {"position":"1150,3150","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/52/SVK_SNG.K_2934/SVK_SNG.K_2934.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/52/SVK_SNG.K_2934/SVK_SNG.K_2934.jpeg" alt="Ľudovít Fulla - Slovak Folk Tales (title page), 1952" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.K_2934" target="_blank">Ľudovít Fulla – Slovak Folk Tales (title page), 1952, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-069");
+%>
+
+
+:: LF-IMG-036 [speaker-fulla] {"position":"150,3275","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/55/SVK_SNG.K_2931/SVK_SNG.K_2931.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/55/SVK_SNG.K_2931/SVK_SNG.K_2931.jpeg" alt="Ľudovít Fulla - Marienka and Janko, 1952" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.K_2931" target="_blank">Ľudovít Fulla - Marienka and Janko (Hansel and Gretel), 1952, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-070");
+%>
+
+
+:: LF-IMG-037 [speaker-fulla] {"position":"650,3275","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.KD_285/SVK_SNG.KD_285.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.KD_285/SVK_SNG.KD_285.jpeg" alt="Ľudovít Fulla - Janko Hraško, 1957" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.KD_285" target="_blank">Ľudovít Fulla - Janko Hraško, 1957, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[How did this happen?->LF-073]]
+
+
+:: LF-IMG-038 [speaker-fulla] {"position":"900,3275","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--22D12-1--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--22D12-1--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg" alt="Ľudovít Fulla illustrating “Slovak Folk Tales”, after 1960" />
+    </a>
+    <figcaption>
+        Ľudovít Fulla illustrating “Slovak Folk Tales”, after 1960, Archive of Fine Arts, SNG
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-074");
+%>
+
+
+:: LF-IMG-039 [speaker-fulla] {"position":"650,3525","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--22F3-3--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--22F3-3--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg" alt="The Ľudovít Fulla Gallery in Ružomberok, after 1970" />
+    </a>
+    <figcaption>
+        The Ľudovít Fulla Gallery in Ružomberok, after 1970, Archive of Fine Arts, SNG
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-039B");
+%>
+
+
+:: LF-IMG-039B [speaker-fulla] {"position":"775,3525","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--22F3-10--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--22F3-10--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg" alt="The residential area inside the Ľudovít Fulla Gallery in Ružomberok, 1970s" />
+    </a>
+    <figcaption>
+        The residential area inside the Ľudovít Fulla Gallery in Ružomberok, 1970s, Archive of Fine Arts, SNG
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-077");
+%>
+
+
+:: LF-IMG-040 [speaker-fulla] {"position":"1025,1525","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/92/SVK_SNG.K_17318/SVK_SNG.K_17318.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/92/SVK_SNG.K_17318/SVK_SNG.K_17318.jpeg" alt="Ľudovít Fulla - Set design for a performance of Alexander Ostrovsky: “The Storm”, 1932" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.K_17318" target="_blank">Ľudovít Fulla – Set design for a performance of Alexander Ostrovsky: “The Storm”, 1932, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-085");
+%>
+
+
+:: LF-IMG-041 [speaker-fulla] {"position":"25,1650","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/16/SVK_SNG.K_17321/SVK_SNG.K_17321.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/16/SVK_SNG.K_17321/SVK_SNG.K_17321.jpeg" alt="Ľudovít Fulla - Set design for a performance of Alexander Afinogenev: “Fear” II., 1933" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.K_17321" target="_blank">Ľudovít Fulla - Set design for a performance of Alexander Afinogenev: “Fear” II., 1933, Slovak National Gallery </a>
+    </figcaption>
+</figure>
+
+[[Did you work with anyone else in the theatre?->LF-086]]
+[[And what about you, Mr Filla?->EF-076]]
+
+
+:: LF-IMG-042 [speaker-fulla] {"position":"275,1650","size":"100,100"}
+<figure>
+    <a href="https://www.webumenia.sk/images/diela/SNG/91/SVK_SNG.K_17317/SVK_SNG.K_17317.jpeg">
+        <img src="https://www.webumenia.sk/images/diela/SNG/91/SVK_SNG.K_17317/SVK_SNG.K_17317.jpeg" alt="Ľudovít Fulla - Set design for a performance of Carlo Goldoni and Adolf Hoffmeister: “Singing Venice”, 1933" />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/dielo/SVK:SNG.K_17317" target="_blank">Ľudovít Fulla - Set design for a performance of Carlo Goldoni and Adolf Hoffmeister: “Singing Venice”, 1933, Slovak National Gallery</a>
+    </figcaption>
+</figure>
+
+[[And what about you, Mr Filla?->EF-076]]
+[[Let’s go back to the work you did with Mikuláš Galanda.->LF-031]]
+
+
+:: LF-PASSAGE-001 [speaker-fulla] {"position":"650,1400","size":"100,100"}
+A short time. Then, Professor Vydra also invited to Bratislava Mikuláš Galanda – my friend from back in the student years. At that time, there was very little space available for artists’ studios, so I offered Mikuláš the chance to share mine. 
+
+<%
+story.showDelayed("LF-IMG-011");
+%>
+
+
+:: LF-PASSAGE-001B [speaker-fulla] {"position":"1025,1400","size":"100,100"}
+Not long after, I was sharing this studio with Mikuláš Galanda, whom Josef Vydra also invited to Bratislava. At that time, there was very little space available for artists’ studios, so I offered Mikuláš the chance to share mine.
+
+<%
+story.showDelayed("LF-IMG-011");
+%>
+
+
+:: LF-SLFG-IMG-01 [speaker-fulla] {"position":"775,1650","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--22B530-1--1_2--2018_03_14--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--22B530-1--1_2--2018_03_14--LP_WEB.jpg" alt="Private Letters of Fulla and Galanda, issue no. 1." />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/clanok/sukromne-listy-fullu-a-galandu" target="_blank">Private Letters of Fulla and Galanda, issue no. 1., Archive of Fine Arts, SNG</a>
+    </figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-SLFG-IMG-02");
+%>
+
+
+:: LF-SLFG-IMG-02 [speaker-fulla] {"position":"900,1650","size":"100,100"}
+<figure>
+    <a href="https://fillafulla.sng.sk/img/twine/SNGAVU--22B530-1--2_2--2018_03_14--LP_WEB.jpg">
+        <img src="https://fillafulla.sng.sk/img/twine/SNGAVU--22B530-1--2_2--2018_03_14--LP_WEB.jpg" alt="Private Letters of Fulla and Galanda, issue no. 1." />
+    </a>
+    <figcaption>
+        <a href="https://www.webumenia.sk/clanok/sukromne-listy-fullu-a-galandu" target="_blank"> Private Letters of Fulla and Galanda, issue no. 1., Archive of Fine Arts, SNG</a>
+    </figcaption>
+</figure>
+
+
+[[Was your aim to promote greater creative freedom?->LF-031A]]
+[[What response was there to your publication?->LF-031C]]
+
+
+:: LF-VID-002 [speaker-fulla] {"position":"1025,3525","size":"100,100"}
+<iframe width="560" height="315" src="https://player.vimeo.com/video/279224954?portrait=0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0"></iframe>
+
+<%
+story.showDelayed("LF-078");
+%>
+
+
+:: LF-VID-053 [speaker-fulla] {"position":"400,2650","size":"100,100"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/om72YAXU-TM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+[[Could you say more about the inspiration of women in art?.->EF-053]]
+[[How did you live and work after World War II?->LF-060]]
+
+
+:: Start [speaker-fulla] {"position":"150,25","size":"100,100"}
+Congratulations, Isabella! We are celebrating your 550th birthday.
+
+<%
+story.showDelayed("LF-IMG-000");
+%>
+
+
+:: StorySettings {"position":"25,25","size":"100,100"}
+zoom:1
+ifid:bc005b30-7d1f-486f-98c8-eca7babc216d

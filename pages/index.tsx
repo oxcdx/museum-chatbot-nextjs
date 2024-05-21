@@ -39,8 +39,6 @@ export default function IndexPage({
   const { t } = useTranslation('common')
   const multiMode = blocks?.multiMode?.field_multi_object_mode
   const mainObject = promotedObjects[0].path.alias || null
-
-  console.log(welcomeText);
   
 
   // in a useEffect, check if blocks.multiMode is true

@@ -17,10 +17,7 @@ interface MenuMainProps {
 export function MenuMain({ items, blocks, mainObject, additionalContent, ...props }: MenuMainProps) {
   const router = useRouter()
   const multiMode = blocks?.multiMode?.field_multi_object_mode || false
-  const isActive = router.asPath === mainObject
-
-  console.log(additionalContent);
-  
+  const isActive = router.asPath === mainObject  
 
   return (
     <nav {...props}>

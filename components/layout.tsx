@@ -12,10 +12,12 @@ export interface LayoutProps extends HeaderProps, FooterProps {
   children?: React.ReactNode
   blocks: FooterProps["blocks"] & HeaderProps["blocks"]
   mainObject?: string
+  currentObject?: string
   additionalContent?: any
+  chatMode?: boolean
 }
 
-export function Layout({ meta, menus, blocks, mainObject, additionalContent, children }: LayoutProps) {
+export function Layout({ meta, menus, blocks, mainObject, currentObject, additionalContent, children, chatMode }: LayoutProps) {
   return (
     <>
       <Meta {...meta} />
@@ -24,11 +26,18 @@ export function Layout({ meta, menus, blocks, mainObject, additionalContent, chi
           <div className="gradient"></div>
         </div>
         <PreviewAlert />
-        <Header menus={{ main: menus.main }} blocks={blocks} mainObject={mainObject} additionalContent={additionalContent} />
+        <Header 
+          menus={{ main: menus.main }} 
+          blocks={blocks} 
+          mainObject={mainObject} 
+          currentObject={currentObject}
+          additionalContent={additionalContent} 
+          chatMode={chatMode}
+        />
 
         {/* how do i pass blocks to children */}
 
-        <main className="flex-1 pb-10 relative">
+        <main className="flex-1 pt-56 pb-10 relative">
           {children}
         </main>
         {/* No footer for now */}

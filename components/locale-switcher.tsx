@@ -5,10 +5,7 @@ import classNames from "classnames"
 import config from "site.config"
 
 export function LocaleSwitcher({ ...props }) {
-  const { locales, asPath, locale: currentLocale } = useRouter()
-
-  console.log("locale", currentLocale);
-  
+  const { locales, asPath, locale: currentLocale } = useRouter()  
 
   if (!locales || locales.length < 2) {
     return null

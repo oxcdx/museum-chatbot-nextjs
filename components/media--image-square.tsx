@@ -15,9 +15,7 @@ export function MediaImageSquare({
   height,
   priority,
   ...props
-}: MediaImageProps) {
-  console.log(objectFit);
-  
+}: MediaImageProps) {  
   const image = media?.field_media_image
 
   if (!image?.uri) {

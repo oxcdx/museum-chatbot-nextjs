@@ -8,6 +8,7 @@ import NProgress from "nprogress"
 import "nprogress/nprogress.css"
 
 import "styles/globals.css"
+import "styles/chat.css"
 
 NProgress.configure({ showSpinner: false })
 

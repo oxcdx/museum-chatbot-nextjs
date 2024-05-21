@@ -36,7 +36,7 @@ export function MediaImage({
     <StyledDiv className="media__content image__wrapper relative" {...props}>
       <StyledImage
         src={absoluteURL(image.uri.url)}
-        objectFitX={objectFit}
+        objectFitX={objectFit.toString()}
         alt={image.resourceIdObjMeta.alt || "Image"}
         title={image.resourceIdObjMeta.title}
         priority={priority}

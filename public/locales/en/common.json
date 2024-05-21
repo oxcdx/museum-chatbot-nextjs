@@ -53,5 +53,6 @@
 
   "start-chat": "Start the Chat",
   "learn-more-online-collection": "Learn more in our online collection",
-  "back-to-collection": "Back to Collection"
+  "back-to-collection": "Back to Collection",
+  "choose-object": "Choose one of the following objects to start a conversation with."
 }
