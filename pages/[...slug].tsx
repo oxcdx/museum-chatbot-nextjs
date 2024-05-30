@@ -49,7 +49,7 @@ export default function ResourcePage({
   menus,
   blocks,
 }: ResourcePageProps) {
-  console.log("resource", resource);
+  // console.log("resource", resource);
   
   const router = useRouter()
   // add a useState to store whether chat mode is active
@@ -67,7 +67,7 @@ export default function ResourcePage({
   }, [router.asPath])
   // a function to toggle chat mode
   const toggleChatMode = (mode: boolean): void => {
-    console.log("toggleChatMode", mode);
+    // console.log("toggleChatMode", mode);
     
     setChatMode(mode);
     if (mode === true) {

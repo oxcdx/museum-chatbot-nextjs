@@ -35,7 +35,7 @@ export function NodeArticleRow({ node, ...props }: NodeArticleRowProps) {
       <MediaImage media={node.field_media_image} width={115} height={75} />
       <div className="flex items-start justify-between text-text">
         <div>
-          <h2 className="flex-1 font-serif text-xl">{node.title}</h2>
+          <h2 className="flex-1 font-sans text-xl">{node.title}</h2>
           <p className="text-sm text-gray">
             {formatDate(node.created)} -{" "}
             {node.status ? t("published") : t("draft")}

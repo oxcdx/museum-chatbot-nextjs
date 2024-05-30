@@ -8,7 +8,7 @@ import { LinkExternal } from "@styled-icons/boxicons-regular"
 interface MenuMainProps {
   items: DrupalMenuLinkContent[]
   blocks: {
-    multiMode: DrupalBlock
+    mainSiteSettings: DrupalBlock
   }
   mainObject?: string
   additionalContent?: any
@@ -16,7 +16,7 @@ interface MenuMainProps {
 
 export function MenuMain({ items, blocks, mainObject, additionalContent, ...props }: MenuMainProps) {
   const router = useRouter()
-  const multiMode = blocks?.multiMode?.field_multi_object_mode || false
+  const multiMode = blocks?.mainSiteSettings?.field_multi_object_mode || false
   const isActive = router.asPath === mainObject  
 
   return (
@@ -51,7 +51,7 @@ export function MenuMain({ items, blocks, mainObject, additionalContent, ...prop
                   }
                 )}
               >
-                All Objects
+                Home
               </a>
             </Link>
           </li>
@@ -65,11 +65,12 @@ export function MenuMain({ items, blocks, mainObject, additionalContent, ...prop
               }
             )}
           >
-            Project Info
+            About
           </a>
         </li>
         <li>
-          <a href="#"
+          <a href="https://www.mkg-hamburg.de/"
+            target="_blank"
             className={classNames(
               "text-xl border-b-[3px] flex border-b-transparent transition-colors",
               {
@@ -77,7 +78,7 @@ export function MenuMain({ items, blocks, mainObject, additionalContent, ...prop
               }
             )}
           >
-            MK&amp;G Online Collection <LinkExternal className="ms-2 w-6 h-6" />
+            MK&amp;G <LinkExternal className="ms-2 w-6 h-6" />
           </a>
         </li>
       </ul>

@@ -33,7 +33,7 @@ export function NodeArticle({ node, additionalContent }: NodeArticleProps) {
       />
       <article className="grid gap-8 pb-12 lg:grid-cols-10">
         <div className="p-6 bg-white border md:p-10 border-border lg:col-span-7 text-text">
-          <h1 className="font-serif text-4xl">{node.title}</h1>
+          <h1 className="font-sans text-4xl">{node.title}</h1>
           <div className="flex items-center my-4 space-x-2 text-sm">
             {node.uid?.display_name ? (
               <span>
@@ -80,14 +80,14 @@ export function NodeArticle({ node, additionalContent }: NodeArticleProps) {
             </figure>
           )}
           {node.body && (
-            <div className="prose prose-p:text-text max-w-none prose-headings:font-serif prose-headings:text-text">
+            <div className="prose prose-p:text-text max-w-none prose-headings:font-sans prose-headings:text-text">
               <FormattedText text={node.body.processed} />
             </div>
           )}
         </div>
         {additionalContent?.featuredArticles && (
           <div className="flex flex-col space-y-6 lg:col-span-3">
-            <h2 className="font-serif text-3xl text-text">
+            <h2 className="font-sans text-3xl text-text">
               {t("more-featured-articles")}
             </h2>
             {additionalContent.featuredArticles.map((node) => (

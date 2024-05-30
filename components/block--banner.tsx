@@ -12,7 +12,7 @@ export function BlockBanner({ block }: BlockBannerProps) {
       <MediaImage media={block.field_media_image} priority />
       <div className="container inset-0 z-10 flex items-center lg:absolute">
         <div className="top-0 flex flex-col items-start space-y-4 lg:max-w-[40%] text-text px-0 py-6 lg:px-6 lg:text-white lg:border border-text lg:bg-black/40">
-          <p className="font-serif text-[28px] leading-tight">
+          <p className="font-sans text-[28px] leading-tight">
             {block.field_title}
           </p>
           {block.field_summary && (
@@ -24,7 +24,7 @@ export function BlockBanner({ block }: BlockBannerProps) {
               passHref
               legacyBehavior={true}
             >
-              <a className="px-6 py-3 font-serif text-xl text-white transition-colors border-2 rounded-md bg-secondary hover:bg-white hover:text-black border-secondary">
+              <a className="px-6 py-3 font-sans text-xl text-white transition-colors border-2 rounded-md bg-secondary hover:bg-white hover:text-black border-secondary">
                 {block.field_content_link.title}
               </a>
             </Link>

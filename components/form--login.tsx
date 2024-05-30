@@ -92,7 +92,7 @@ export function FormLogin({ className, ...props }: FormLoginProps) {
       <div>
         <input
           type="submit"
-          className="px-6 py-3 font-serif text-xl text-white transition-colors border-2 rounded-sm cursor-pointer bg-link hover:bg-white hover:text-black border-link"
+          className="px-6 py-3 font-sans text-xl text-white transition-colors border-2 rounded-sm cursor-pointer bg-link hover:bg-white hover:text-black border-link"
           disabled={formStatus?.status === "fetching"}
           value={
             formStatus?.status === "fetching" ? t("please-wait") : t("login")

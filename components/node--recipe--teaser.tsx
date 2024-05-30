@@ -16,7 +16,7 @@ export function NodeRecipeTeaser({ node, ...props }: NodeRecipeTeaserProps) {
       className="relative flex flex-col p-4 space-y-4 overflow-hidden bg-white border border-border group"
       {...props}
     >
-      <h2 className="flex-1 font-serif text-2xl">{node.title}</h2>
+      <h2 className="flex-1 font-sans text-2xl">{node.title}</h2>
       {node.field_difficulty && (
         <p className="text-sm capitalize text-gray-darker">
           <span className="font-semibold">{t("difficulty")}:</span>{" "}

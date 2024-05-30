@@ -10,6 +10,20 @@ import "nprogress/nprogress.css"
 import "styles/globals.css"
 import "styles/chat.css"
 
+import localFont from 'next/font/local'
+
+// const scto = localFont({
+//   src: [
+//     {
+//       path: '../public/fonts/SctoGroteskARegular.otf',
+//       weight: '400'
+//     }
+//   ],
+//   variable: '--font-scto'
+// })
+
+const scto = localFont({ src: '../public/fonts/SctoGroteskARegular.otf', variable: '--font-scto'})
+
 NProgress.configure({ showSpinner: false })
 
 Router.events.on("routeChangeStart", function (path) {
@@ -28,7 +42,9 @@ function App({ Component, pageProps: { session, ...pageProps } }) {
     <QueryClientProvider client={queryClientRef.current}>
       <Hydrate state={pageProps.dehydratedState}>
         <SessionProvider session={session}>
-          <Component {...pageProps} />
+          <div className={` ${scto.variable} font-sans`}>
+            <Component {...pageProps} />
+          </div>
         </SessionProvider>
       </Hydrate>
     </QueryClientProvider>

@@ -16,7 +16,7 @@ export function NodeRecipeCard({ node, ...props }: NodeRecipeCardProps) {
       className="relative flex flex-col p-4 space-y-4 overflow-hidden bg-white border border-border group"
       {...props}
     >
-      <h2 className="flex-1 font-serif text-[22px]">{node.title}</h2>
+      <h2 className="flex-1 font-sans text-[22px]">{node.title}</h2>
       <Link href={node.path.alias} passHref legacyBehavior={true}>
         <a className="inline-flex items-center uppercase hover:underline text-link">
           {t("view-recipe")}

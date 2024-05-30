@@ -155,6 +155,7 @@ export function getParams(
   if (name === "block_content--site_settings") {
     return params.addFields("block_content--site_settings", [
       "field_multi_object_mode",
+      "field_site_title_override",
     ])
   }
 

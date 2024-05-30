@@ -21,7 +21,7 @@ export function NodePage({ node }: NodePageProps) {
         ]}
       />
       <article className="bg-white border text-text p-9 border-border">
-        <h1 className="font-serif text-2xl leading-tight lg:text-4xl">
+        <h1 className="font-sans text-2xl leading-tight lg:text-4xl">
           {node.title}
         </h1>
         <div className="mt-4 prose prose-a:text-link max-w-none text-text">

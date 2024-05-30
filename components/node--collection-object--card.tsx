@@ -22,9 +22,9 @@ export function NodeObjectCard({ node, ...props }: NodeObjectCardProps) {
       </div>
       <div className="p-6">
         <div className="mb-2 flex items-center justify-between">
-          <h2 className="flex-1 font-serif text-[22px] text-white">
+          <h2 className="flex-1 font-sans text-[22px] text-white">
             <Link href={node.path.alias} passHref legacyBehavior={true}>
-              <a className="stretched-link text-white">
+              <a className="stretched-link ">
                 {node.title}
               </a>
             </Link>

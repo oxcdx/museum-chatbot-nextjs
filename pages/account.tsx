@@ -39,7 +39,7 @@ export default function AccountsPage({
         ]}
       >
         <Link href="/articles/new" passHref legacyBehavior={true}>
-          <a className="px-3 py-1 font-serif text-lg text-white transition-colors border-2 rounded-md lg:text-xl lg:px-4 lg:py-2 bg-secondary hover:bg-white hover:text-black border-secondary">
+          <a className="px-3 py-1 font-sans text-lg text-white transition-colors border-2 rounded-md lg:text-xl lg:px-4 lg:py-2 bg-secondary hover:bg-white hover:text-black border-secondary">
             New Article
           </a>
         </Link>
@@ -52,7 +52,7 @@ export default function AccountsPage({
             ))}
           </div>
         ) : (
-          <p className="font-serif text-2xl text-center text-text">
+          <p className="font-sans text-2xl text-center text-text">
             {t("you-have-no-articles")}
           </p>
         )}

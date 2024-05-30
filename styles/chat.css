@@ -85,9 +85,10 @@ html[lang='sk'] .chat-passage[data-speaker='you']:before {
   border-top: 2px solid rgba(65,117,5, 0.3);
 }
 .user-response-panel .user-response:hover {
-  border: none;
+  /* border: none;
   border-top: 2px solid rgba(65,117,5, 1.0);
-  margin: .25rem;
+  margin: .25rem; */
+  border: 2px solid #666;
 }
 
 /*
@@ -212,7 +213,13 @@ div.right-sidebar .share-container .social-links i {
 
 .chat-passage-wrapper[data-speaker=you],
 .chat-passage-wrapper[data-speaker=you] .chat-passage:before {
-  text-align: right
+  text-align: right;
+}
+
+.chat-passage[data-speaker=you] {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000
 }
 
 .chat-passage {
@@ -333,7 +340,7 @@ div.right-sidebar .share-container .social-links i {
   display: inline-block;
   padding: .5rem;
   margin: .25rem;
-  background-color: #FFF;
+  background-color: #F000;
   color: #000
 }
 
@@ -445,7 +452,8 @@ body.modal-open nav.navbar {
 .chat-passage {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #FFF;
+  background-color: #000;
+  color:#fff;
   max-width: calc(100% - 80px);
   text-align: left;
   border-radius: 12px;
@@ -525,7 +533,8 @@ body.modal-open nav.navbar {
 .user-response-panel .user-response {
   display: inline-block;
   padding: .5rem 1rem;
-  border-radius: 6px;
+  border-radius: 30px 30px 30px 30px;
   margin: .25rem;
   background-color: #FFF;
+  border: 2px solid #000;
 }

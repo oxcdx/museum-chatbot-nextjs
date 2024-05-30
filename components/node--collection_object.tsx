@@ -104,9 +104,10 @@ export function NodeObject({ node, blocks, chatMode, toggleChatMode, ...props }:
         )}>
         <a
           type="button"
-          className="card-link"
+          className="card-link text-white bg-black"
           onClick={() => toggleChatMode(!chatMode)}>
-          {t("start-chat")}
+          {/* {t("start-chat")} */}
+          Exit the Chat
         </a>
       </div>
       <div className={classNames(

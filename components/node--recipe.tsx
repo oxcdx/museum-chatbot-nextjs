@@ -28,7 +28,7 @@ export function NodeRecipe({ node, ...props }: NodeRecipeProps) {
       />
       <article className="p-6 bg-white border border-border sm:p-9 text-text">
         <div className="flex flex-col space-y-4">
-          <h1 className="font-serif text-4xl">{node.title}</h1>
+          <h1 className="font-sans text-4xl">{node.title}</h1>
           {node.field_recipe_category?.length ? (
             <div className="flex space-x-2">
               <span className="font-semibold">{t("recipe-category")}: </span>
@@ -143,7 +143,7 @@ export function NodeRecipe({ node, ...props }: NodeRecipeProps) {
         </div>
         <div className="grid gap-8 md:grid-cols-3">
           <div className="flex flex-col p-8 space-y-6 bg-body">
-            <h2 className="pb-3 font-serif text-2xl border-b lg:text-3xl border-pink">
+            <h2 className="pb-3 font-sans text-2xl border-b lg:text-3xl border-pink">
               {t("ingredients")}
             </h2>
             <ul className="divide-y divide-pink">
@@ -155,7 +155,7 @@ export function NodeRecipe({ node, ...props }: NodeRecipeProps) {
             </ul>
           </div>
           <div className="flex flex-col space-y-6 md:col-span-2">
-            <h3 className="pb-3 font-serif text-2xl border-b lg:text-3xl border-pink">
+            <h3 className="pb-3 font-sans text-2xl border-b lg:text-3xl border-pink">
               {t("recipe-instruction")}
             </h3>
             {node.field_recipe_instruction && (

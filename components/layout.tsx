@@ -22,8 +22,8 @@ export function Layout({ meta, menus, blocks, mainObject, currentObject, additio
     <>
       <Meta {...meta} />
       <FullHeightContainer className="flex flex-col min-h-screen">
-        <div className="gradient-container">
-          <div className="gradient"></div>
+        <div className="">
+          <div className=""></div>
         </div>
         <PreviewAlert />
         <Header 

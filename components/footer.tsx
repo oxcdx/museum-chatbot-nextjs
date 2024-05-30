@@ -17,7 +17,8 @@ export interface FooterProps {
     footer: DrupalMenuLinkContent[]
   }
   blocks: {
-    multiMode: DrupalBlock
+    mainSiteSettings: DrupalBlock
+    disclaimer: DrupalBlock
   }
 }
 

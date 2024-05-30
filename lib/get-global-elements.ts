@@ -59,7 +59,7 @@ export async function getGlobalElements(
   })
 
   // Fetch the site_settings block.
-  const [multiMode] = await drupal.getResourceCollectionFromContext<
+  const [mainSiteSettings] = await drupal.getResourceCollectionFromContext<
     DrupalBlock[]
   >("block_content--site_settings", context, {
     params: getParams("block_content--site_settings")
@@ -68,6 +68,16 @@ export async function getGlobalElements(
       .getQueryObject(),
   })
 
+  // Fetch the title from site_settings block.
+  // const [titleOverride] = await drupal.getResourceCollectionFromContext<
+  //   DrupalBlock[]
+  // >("block_content--site_settings", context, {
+  //   params: getParams("block_content--site_settings")
+  //     .addFilter("info", "Main Site Settings")
+  //     .addPageLimit(1)
+  //     .getQueryObject(),
+  // })
+
   return {
     ...(await serverSideTranslations(context.locale, ["common"])),
     menus: {
@@ -75,7 +85,8 @@ export async function getGlobalElements(
       footer: footerMenu.items,
     },
     blocks: {
-      multiMode,
+      mainSiteSettings,
+      disclaimer
     },
   }
 }

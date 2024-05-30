@@ -37,7 +37,7 @@ export default function IndexPage({
 }: IndexPageProps) {
   const router = useRouter()
   const { t } = useTranslation('common')
-  const multiMode = blocks?.multiMode?.field_multi_object_mode
+  const multiMode = blocks?.mainSiteSettings?.field_multi_object_mode
   const mainObject = promotedObjects[0].path.alias || null
   
 
@@ -76,10 +76,10 @@ export default function IndexPage({
         </div> */}
         {multiMode && promotedObjects?.length ? (
           <div className="container py-8 ox-max-width">
-            <div className="py-10 font-serif text-3xl text-white">
+            <div className="py-10 font-sans text-3xl ">
               <FormattedText text={welcomeText.body.processed} />
             </div>
-            <div className="p-6 font-serif text-2xl text-black rounded-2xl bg-white/75 inline-block mb-12">
+            <div className="p-6 font-sans text-2xl text-black rounded-2xl bg-white/75 inline-block mb-12 shadow-lg">
               <FormattedText text={welcomeText.field_choose_an_object_text} />
             </div>
             <div className="grid gap-8 sm:grid-cols-2">
@@ -91,7 +91,7 @@ export default function IndexPage({
         ) : null}
         {/* {promotedRecipes?.length ? (
           <div className="container py-8">
-            <p className="py-10 font-serif text-3xl text-center text-text">
+            <p className="py-10 font-sans text-3xl text-center text-text">
               {t(
                 "explore-recipes-across-every-type-of-occasion-ingredient-and-skill-level"
               )}

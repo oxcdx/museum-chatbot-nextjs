@@ -16,7 +16,7 @@ export function MediaImage({
   priority,
   ...props
 }: MediaImageProps) {
-  console.log(objectFit);
+  // console.log(objectFit);
   
   const image = media?.field_media_image
 
