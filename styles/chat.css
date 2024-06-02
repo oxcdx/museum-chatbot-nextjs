@@ -523,7 +523,7 @@ body.modal-open nav.navbar {
   }
 }
 
-.user-reponse-wrapper {
+.user-response-wrapper {
   height: var(--user-response-panel-height);
   display: flex;
   align-items: center;
