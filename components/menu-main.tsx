@@ -9,6 +9,8 @@ interface MenuMainProps {
   items: DrupalMenuLinkContent[]
   blocks: {
     mainSiteSettings: DrupalBlock
+    disclaimer: DrupalBlock
+    multiMode: boolean
   }
   mainObject?: string
   additionalContent?: any

@@ -19,6 +19,7 @@ export interface FooterProps {
   blocks: {
     mainSiteSettings: DrupalBlock
     disclaimer: DrupalBlock
+    multiMode: boolean
   }
 }
 
