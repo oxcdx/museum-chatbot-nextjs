@@ -76,7 +76,10 @@ const FullHeightContainer = styled.div`
       inset: 0%;
       backdrop-filter: blur(40px);
       overflow: hidden;
-      -webkit-mask: linear-gradient(90deg, black 50%, #ffffff11);
+      
+      mask: linear-gradient(90deg, black 50%, #ffffff11);
     }
   }
 `
+
+//-webkit-mask: linear-gradient(90deg, black 50%, #ffffff11);

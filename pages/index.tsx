@@ -58,6 +58,7 @@ export default function IndexPage({
         menus={menus} 
         blocks={blocks} 
         mainObject={mainObject}
+        // additionalContent={additionalContent}
       >
         {/* <BlockBanner block={banner} /> */}
         {/* <div className="container grid gap-8 py-8 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr]">
