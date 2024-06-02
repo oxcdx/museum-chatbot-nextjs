@@ -33,6 +33,7 @@ export default function ArticlesPage({
       <Layout
         menus={menus}
         blocks={blocks}
+        additionalContent={additionalContent}
         meta={{
           title: t("articles"),
         }}

@@ -6,13 +6,13 @@ import { useRouter } from "next/router"
 interface MenuMainProps {
   items: DrupalMenuLinkContent[]
   blocks: {
-    multiMode: DrupalBlock
+    mainSiteSettings: DrupalBlock
   }
 }
 
 export function MenuMain({ items, blocks, ...props }: MenuMainProps) {
   const router = useRouter()
-  const multiMode = blocks?.multiMode?.field_multi_object_mode || false
+  const multiMode = blocks?.mainSiteSettings?.field_multi_object_mode || false
 
   return (
     <nav {...props}>

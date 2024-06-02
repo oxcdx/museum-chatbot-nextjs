@@ -13,7 +13,7 @@ export interface LayoutProps extends HeaderProps, FooterProps {
   blocks: FooterProps["blocks"] & HeaderProps["blocks"]
   mainObject?: string
   currentObject?: string
-  additionalContent?: any
+  additionalContent?: Record<string, unknown>
   chatMode?: boolean
 }
 

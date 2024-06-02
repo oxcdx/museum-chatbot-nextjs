@@ -23,7 +23,6 @@ export interface HeaderProps {
   blocks: {
     mainSiteSettings: DrupalBlock
     disclaimer: DrupalBlock
-    multiMode: boolean
   }
   mainObject?: string
   currentObject?: string

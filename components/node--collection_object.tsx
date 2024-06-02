@@ -21,7 +21,8 @@ import { log } from "console"
 export interface NodeObjectProps { 
   node: DrupalNode
   blocks: {
-    multiMode: DrupalBlock
+    mainSiteSettings: DrupalBlock
+    disclaimer: DrupalBlock
   }
   chatMode: boolean
   toggleChatMode: (mode: boolean) => void
@@ -46,7 +47,7 @@ export function NodeObject({ node, blocks, chatMode, toggleChatMode, ...props }:
             "visible": !chatMode,
           } 
         )}>
-        {blocks?.multiMode?.field_multi_object_mode ? ( 
+        {blocks?.mainSiteSettings?.field_multi_object_mode ? ( 
           <BackButton
             items={[
               {

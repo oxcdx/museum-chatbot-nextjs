@@ -81,7 +81,7 @@ export default function ResourcePage({
     }
   };
 
-  const multiMode = blocks?.multiMode?.field_multi_object_mode  
+  const multiMode = blocks?.mainSiteSettings?.field_multi_object_mode  
   
   if (!resource) return null
 

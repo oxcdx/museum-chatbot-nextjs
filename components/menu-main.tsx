@@ -10,7 +10,6 @@ interface MenuMainProps {
   blocks: {
     mainSiteSettings: DrupalBlock
     disclaimer: DrupalBlock
-    multiMode: boolean
   }
   mainObject?: string
   additionalContent?: any
