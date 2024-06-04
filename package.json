@@ -12,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/model-viewer": "^2.0.2",
     "@headlessui/react": "^1.6.4",
     "@styled-icons/boxicons-logos": "^10.47.0",
     "@styled-icons/boxicons-regular": "^10.47.0",

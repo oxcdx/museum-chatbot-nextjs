@@ -38,14 +38,14 @@
   background-image: url('/img/avatar-user.png');
   background-size: 30px 30px;
 }
-.chat-passage-wrapper[data-speaker='bot']:before {
+.chat-passage-wrapper[data-speaker='bowl-bot']:before {
   content: "";
   width: 30px;
   height: 30px;
   background-image: url('/img/avatar-filla.png');
   background-size: 30px 30px;
 }
-.chat-passage-wrapper[data-speaker='bot']:before {
+.chat-passage-wrapper[data-speaker='bowl-bot']:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -58,12 +58,15 @@
 .chat-passage-wrapper[data-speaker='you'] .chat-passage:before {
   color: var(--color-you);
 }
-.chat-passage-wrapper[data-speaker='bot'] .chat-passage:before {
+.chat-passage-wrapper[data-speaker='bowl-bot'] .chat-passage:before {
   color: var(--color-filla);
 }
-.chat-passage-wrapper[data-speaker='bot'] .chat-passage:before {
+.chat-passage-wrapper[data-speaker='bowl-bot'] .chat-passage:before {
   color: var(--color-fulla);
 }
+
+
+
 
 /* Speaker Name Content */
 
@@ -211,15 +214,31 @@ div.right-sidebar .share-container .social-links i {
   margin: .5rem 0
 }
 
-.chat-passage-wrapper[data-speaker=you],
-.chat-passage-wrapper[data-speaker=you] .chat-passage:before {
+.chat-passage-wrapper[data-speaker='you'],
+.chat-passage-wrapper[data-speaker='you'] .chat-passage:before {
   text-align: right;
 }
 
-.chat-passage[data-speaker=you] {
+.chat-passage[data-speaker='you'] {
   background-color: #fff;
   color: #000;
   border: 2px solid #000
+}
+
+
+.chat-passage[data-speaker='PR-bot'] {
+  background-color: #333;
+  color: #fff;
+  border: 3px solid #333
+}
+
+.chat-passage[data-speaker='bowl-bot'] {
+  border: 3px solid #000
+}
+
+.chat-passage[data-speaker='speaker'] {
+  background-color: #333;
+  border: 3px solid #333
 }
 
 .chat-passage {
@@ -333,7 +352,8 @@ div.right-sidebar .share-container .social-links i {
   height: var(--user-response-panel-height);
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .user-response-panel .user-response {
@@ -354,24 +374,30 @@ div.right-sidebar .share-container .social-links i {
   margin-right: 5px
 }
 
-.chat-passage-wrapper[data-speaker=you]:before {
+.chat-passage-wrapper[data-speaker='you']:before {
   margin-left: 0
 }
 
-.chat-passage-wrapper[data-speaker=you]:after {
+.chat-passage-wrapper[data-speaker='you']:after {
   position: absolute;
   vertical-align: top;
   margin-left: -30px
 }
 
-.chat-passage[data-speaker=you] {
+.chat-passage[data-speaker='you'] {
   margin-left: 0;
   margin-right: 35px
 }
 
+.chat-passage model-viewer {
+  width: 600px;
+  max-width: 80vw;
+  height: 50vh;
+}
+
 div.wave {
   position: relative;
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto
 }
@@ -382,7 +408,7 @@ div.wave .dot {
   height: 6px;
   border-radius: 50%;
   margin-right: 2px;
-  background: #000;
+  background: #fff;
   animation: wave 1.2s ease-in-out infinite
 }
 
@@ -496,7 +522,7 @@ body.modal-open nav.navbar {
 }
 @media (min-width: 768px) {
   .user-response-panel {
-    max-width: calc(100% / (12/6)); /* 100% / (12/[col width of chat-panel]) */
+    max-width: 100%; /* 100% / (12/[col width of chat-panel]) */
     margin: 0 auto;
   }
 }
@@ -537,4 +563,5 @@ body.modal-open nav.navbar {
   margin: .25rem;
   background-color: #FFF;
   border: 2px solid #000;
+  text-wrap: nowrap;
 }

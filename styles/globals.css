@@ -72,11 +72,11 @@
 }
 
 #nprogress .bar {
-  background: #da3c13;
+  background: #000;
 }
 
 .bg-body {
-  background-color: rgb(201 0 72);
+  background-color: #000;
 }
 
 .stretched-link::after {
