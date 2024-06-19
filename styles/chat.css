@@ -46,11 +46,10 @@
   background-size: 30px 30px;
 }
 .chat-passage-wrapper[data-speaker='bowl-bot']:before {
-  content: "";
+  /* content: "🔘"!important; */
   width: 30px;
   height: 30px;
-  background-image: url('/img/avatar-fulla.png');
-  background-size: 30px 30px;
+  font-size: 24px;
 }
 
 /* Speaker Name Colors & Alignment */
@@ -61,8 +60,31 @@
 .chat-passage-wrapper[data-speaker='bowl-bot'] .chat-passage:before {
   color: var(--color-filla);
 }
+@keyframes rotate3d {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  92% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
 .chat-passage-wrapper[data-speaker='bowl-bot'] .chat-passage:before {
-  color: var(--color-fulla);
+  /* color: var(--color-fulla); */
+  content: "🔘"!important;
+  width: 30px;
+  height: 38px;
+  /* width: 30px; */
+  /* height: 30px; */
+  margin-left: -10px;
+  margin-top: -2px;
+  font-size: 24px;
+}
+#passage .chat-passage-wrapper[data-speaker='bowl-bot']:last-of-type .chat-passage:before {
+  animation: rotate3d 11s linear infinite;
+  transform-origin: center center;
 }
 
 
