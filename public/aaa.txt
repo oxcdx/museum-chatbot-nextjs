@@ -1,0 +1,37 @@
+// @ts-nocheck
+
+<div id="model-container-1">
+  <model-viewer id="orbit-demo" src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" alt="A 3D model of an astronaut" camera-controls auto-rotate environment-image="neutral" style="width: 100%; height: 100%;"></model-viewer>
+  <model-viewer id="new-model-viewer" alt="" camera-controls="false" disable-zoom="true" min-camera-orbit="auto 0deg 0m" max-camera-orbit="auto 360deg 20000m" camera-orbit="10deg 80deg 900m" interpolation-decay="1" autoplay="true" environment-image="" loading="eager" ar-status="not-presenting" interaction-prompt="none" poster="https://museum-chat-bot.ddev.site/sites/default/files/2024-05/Picture1.jpg" style="pointer-events: none;"></model-viewer>
+</div>
+
+<%
+(() => {
+
+  let checkModelContainerExists = setInterval(() => {
+    const modelViewer = document.querySelector('#orbit-demo');
+    const targetElement = document.querySelector('#model-container-1');
+    console.log(targetElement);
+      if (targetElement) {
+        clearInterval(checkModelContainerExists); // Stop checking once the element is found
+        const existingModelViewer = document.querySelector('#orbit-demo');
+        const newModelViewer = document.querySelector('#new-model-viewer');
+
+        if (existingModelViewer && newModelViewer) {
+          // Copy the 'src' and any other necessary attributes from the existing model-viewer
+          newModelViewer.setAttribute('src', existingModelViewer.getAttribute('src'));
+          newModelViewer.setAttribute('interpolation-decay', '600');
+          newModelViewer.style.display = 'block';
+          newModelViewer.style.opacity = '1';
+
+          // Set additional properties or styles on the new model-viewer as needed
+          setTimeout(() => {
+            newModelViewer.cameraOrbit = "10deg 80deg 900m";
+          }, 2000); // Adjust camera orbit after 2 seconds
+        }
+      }
+  }, 500); // Check every 500ms
+})();
+%>
+  
+[[Hello ->LF-004]]

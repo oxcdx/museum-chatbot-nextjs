@@ -1,0 +1,27 @@
+
+<%
+story.showDelayed("LF-004");
+%>
+
+
+<%
+story.showDelayed("EF-012");
+%>
+
+[[Continue->SP-0012]]
+
+
+EF-012
+
+
+[[1: Prologue->EF-002B]]
+[[2: How does a bowl end up in a museum?->LF-007]]
+[[3: The commission (Nicola da Urbino)->EF-013]]
+[[4: A crash course in majolica->EF-033]]
+[[5: Focus on the bowl->EF-053]]
+[[6: The recipient (a portrait of Isabella d’Este)->EF-073]]
+
+
+[[When did things get interesting?->LF-012]]
+[[How did you get famous?->LF-013C]]
+[[How did the big auction go?->LF-013C]]
