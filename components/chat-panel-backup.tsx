@@ -21,8 +21,6 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
   const [startedOnce, setStartedOnce] = useState<boolean>(false)
   const [windowDefined, setWindowDefined] = useState<boolean>(false)
 
-
-
   useEffect(() => {
     let intervalId;
 
@@ -95,16 +93,18 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
       script.src = '/js/custom-trialogue.js';
       script.async = true;
 
-      script2.textContent = `      
-        let responsePanel = document.querySelector("#user-response-panel");
+      script2.textContent = `
+        let pHistory = document.querySelector("#phistory");
+        let modelViewer = document.querySelector("#orbit-demo");
+        const orbitCycle = ["10deg 80deg 40000000m", "10deg 80deg 500m"];
 
         let hasBeenSet = false;
+        let intervalId;
         let pIntervalId;
+        let eventFunction;
         let shouldClearInterval = false;
         let shouldClearPInterval = false;
         let domListenerAdded = false;
-        let clickedArray = [];
-
 
         pIntervalId = setInterval(() => {
           if (shouldClearPInterval) {
@@ -114,51 +114,55 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
             }
           }
 
-          eventFunction = function (event) {
-            // if the recently added a tag element has a data-passage attribute that is already in the clickedArray, remove it by adding a d-none class
-            const aTags = document.querySelectorAll('#user-response-panel a');
-            aTags.forEach((aTag) => {
-              if (clickedArray.includes(aTag.getAttribute('data-passage'))) {
-                aTag.classList.add('hidden');
+          if (pHistory !== null && !domListenerAdded) {
+            // create an event listener to check when a new child gets appended
+
+            eventFunction = function (event) {
+              domListenerAdded = true;
+              // count the number of children, if is is more than 7 do this
+              console.log("children", pHistory.children.length);
+              if (pHistory.children.length > 4) {
+                intervalId = setInterval(() => {
+                  console.log("modelViewer", modelViewer, hasBeenSet);
+
+                  if (shouldClearInterval) {
+                    clearInterval(intervalId);
+                    shouldClearInterval = false;
+                    return;
+                  }
+
+                  if (modelViewer !== null && !hasBeenSet) {
+                    modelViewer.cameraOrbit = "10deg 80deg 900m";
+                    hasBeenSet = true;
+                    
+                    //remove the event listener
+                    pHistory.removeEventListener("DOMNodeInserted", eventFunction);
+                  } else {
+                    modelViewer = document.querySelector("#orbit-demo");
+                  }
+
+                  // if has been set once, set the flag to clear the interval next time
+                  if (hasBeenSet) {
+                    shouldClearInterval = true;
+                    // should be safe to clear interval now
+                    clearInterval(intervalId);
+                  }
+                }, 1000);
               }
-            });
+            };
 
-            // Check if all <a> tags have the 'hidden' class
-            const allHidden = Array.from(aTags).every(aTag => aTag.classList.contains('hidden'));
+            pHistory.addEventListener("DOMNodeInserted", eventFunction);
 
-            // If all <a> tags have the 'hidden' class, remove the class from each
-            if (allHidden) {
-              aTags.forEach(aTag => aTag.classList.remove('hidden'));
+
+            if (pHistory !== null && domListenerAdded) {
+              clearInterval(intervalId);
             }
 
-
-            // on click of an a tag in the user-response-panel, add the contents of the data-passage attribute to the clickedArray
-            document.getElementById('user-response-panel').addEventListener('click', function(event) {
-              // Check if the clicked element is an <a> tag
-              if (event.target.tagName === 'A') {
-                var dataPassage = event.target.getAttribute('data-passage');
-                if (dataPassage) {
-                  // if the data-passage attribute is not already in the clickedArray, add it
-                  if (!clickedArray.includes(dataPassage)) {
-                    clickedArray.push(dataPassage);
-                  }
-                }
-              }
-            });
-
-          };
-
-          if (responsePanel !== null && !domListenerAdded) {
-            domListenerAdded = true;
-
-            responsePanel.addEventListener("DOMNodeInserted", eventFunction);
-
             shouldClearPInterval = true;
-
           } else {
-            responsePanel = document.querySelector("#user-response-panel");
+            pHistory = document.querySelector("#phistory");
           }
-        }, 1000);   
+        }, 1000);      
       `;
       script2.async = true;
 
@@ -166,10 +170,10 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
         script.id = 'ox-script-1';
         document.body.appendChild(script);
       }
-      if (!document.getElementById('ox-script-2')) {
-        script2.id = 'ox-script-2';
-        document.body.appendChild(script2);
-      }
+      // if (!document.getElementById('ox-script-2')) {
+      //   script2.id = 'ox-script-2';
+      //   document.body.appendChild(script2);
+      // }
     }
 
     return () => {

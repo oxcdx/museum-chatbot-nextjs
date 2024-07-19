@@ -30,7 +30,7 @@ export interface NodeObjectProps {
 
 export function NodeObject({ node, blocks, chatMode, toggleChatMode, ...props }: NodeObjectProps) {
 
-  console.log(node)
+  // console.log(node)
   const { t } = useTranslation()
 
   // add a useEffect to catch the translation if ssr is false

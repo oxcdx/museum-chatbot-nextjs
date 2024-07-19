@@ -1,5 +1,6 @@
 import * as React from "react"
 import Link from "next/link"
+import { useTranslation } from "next-i18next"
 import {
   DrupalBlock,
   DrupalMenuLinkContent,
@@ -37,6 +38,9 @@ export function Header({
   const multiMode = blocks?.mainSiteSettings?.field_multi_object_mode || false
   const titleOverride = blocks?.mainSiteSettings?.field_site_title_override || null  
 
+  
+  const { i18n } = useTranslation();
+
   return (
     <StyledHeader className="fixed top-0 z-10 w-full" chatmode={chatMode ? 1 : 0}>
       <div className="container">
@@ -50,9 +54,9 @@ export function Header({
           <div className="hidden md:block">
           </div>
           <div className="flex justify-start md:justify-center h-8 ">
-            {chatMode ? (
+            {chatMode && i18n.language === "en" ? (
               <div className="px-4 py-3 -mt-1 xl:mt-2 xl2: font-sans text-xl text-black rounded-2xl shadow-lg bg-white/75 inline-flex m-0 absolute md:ms-20 lg:ms-0 max-w-sm sm:max-w-md md:max-w-sm lg:max-w-md xl:max-w-3xl 2xl:max-w-4xl">
-                You are chatting with:&nbsp;<span className="uppercase">{currentObject}</span>
+                You are chatting with:&nbsp;<span className="uppercase">🔘 Bowl Bot</span>
               </div>
             ) : null}
           </div>

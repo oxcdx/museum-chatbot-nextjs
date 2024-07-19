@@ -314,7 +314,8 @@ div.right-sidebar .share-container .social-links i {
 .chat-passage iframe,
 .chat-passage img {
   max-width: 100%;
-  max-height: calc(100vh - 2 * var(--user-response-panel-height))
+  /* max-height: calc(100vh - 2 * var(--user-response-panel-height)) */
+  max-height: 60vh;
 }
 
 .chat-passage:before {
@@ -607,4 +608,8 @@ body.modal-open nav.navbar {
   background-color: #FFF;
   border: 2px solid #000;
   text-wrap: nowrap;
+}
+
+.user-response-panel .user-response.hidden {
+  display: none;
 }
