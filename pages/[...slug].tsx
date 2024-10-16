@@ -54,20 +54,37 @@ export default function ResourcePage({
   const router = useRouter()
   // add a useState to store whether chat mode is active
   const [chatMode, setChatMode] = useState<boolean>(false)
+  const [safeToToggle, setSafeToToggle] = useState<boolean>(true)
+
+  const [exitModalOpen, setExitModalOpen] = useState(false)
+
+  const handleExitModal = (b: boolean) => {
+    setExitModalOpen(b)
+  }
 
   // useEffect to chack if the route has ?chat=true
   // if the route has ?chat=true, set chat mode to true
   // if the route doesnt have ?chat=true, set chat mode to false
   useEffect(() => {
     if (router.asPath.includes("?chat=true")) {
+      // wait for it to be safe to toggle
+      if (!safeToToggle) return
+      //check if the chat mode is already true
+      if (chatMode === true) return
       setChatMode(true)
     } else {
+      // wait for it to be safe to toggle
+      if (!safeToToggle) return
+      //check if the chat mode is already false
+      if (chatMode === false) return
       setChatMode(false)
     }
-  }, [router.asPath])
+  }, [router.asPath, safeToToggle])
   // a function to toggle chat mode
   const toggleChatMode = (mode: boolean): void => {
     // console.log("toggleChatMode", mode);
+
+    setSafeToToggle(false)
     
     setChatMode(mode);
     if (mode === true) {
@@ -79,6 +96,10 @@ export default function ResourcePage({
       if (router.asPath.includes("?chat=true"))
         router.push(router.asPath.replace("?chat=true", ""))
     }
+
+    setTimeout(() => {
+      setSafeToToggle(true)
+    }, 2000)
   };
 
   const multiMode = blocks?.mainSiteSettings?.field_multi_object_mode  
@@ -97,6 +118,8 @@ export default function ResourcePage({
         //
         chatMode={chatMode}
         currentObject={resource?.title || resource?.name || ""}
+        handleExitModal={handleExitModal}
+        exitModalOpen={exitModalOpen}
       >
         {resource.type === "node--collection_object" && (
           <NodeObject 
@@ -104,6 +127,9 @@ export default function ResourcePage({
             blocks={blocks} 
             toggleChatMode={toggleChatMode}
             chatMode={chatMode}
+            handleExitModal={handleExitModal}
+            exitModalOpen={exitModalOpen}
+            safeToToggle={safeToToggle}
           />
         )}
       </Layout>

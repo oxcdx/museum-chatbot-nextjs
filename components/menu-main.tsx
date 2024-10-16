@@ -22,7 +22,7 @@ export function MenuMain({ items, blocks, mainObject, additionalContent, ...prop
 
   return (
     <nav {...props}>
-      <ul className="flex flex-col items-end justify-center w-full py-1 space-y-6">
+      <ul className="flex flex-col items-end justify-center w-full py-1 pb-10 space-y-6">
         {/* {multiMode ? additionalContent?.featuredObjects.map(
           (object) => object.path.alias === router.asPath ? (
             <li key={object.id}>

@@ -20,73 +20,83 @@ export async function getGlobalElements(
     defaultLocale: context.defaultLocale,
   }
 
-  // Fetch menu items.
-  const mainMenu = await drupal.getMenu("main", menuOpts)
-  const footerMenu = await drupal.getMenu("footer", menuOpts)
+  let mainMenu, footerMenu, recipeCollections, footerPromo, disclaimer, mainSiteSettings;
+  let error = null;
+  
+  try {
+    // Fetch menu items.
+    mainMenu = await drupal.getMenu("main", menuOpts)
+    footerMenu = await drupal.getMenu("footer", menuOpts)
+  } catch (error) {
+    // Handle menu fetching errors
+    mainMenu = { items: [] }
+    footerMenu = { items: [] }
+  }
 
-  // Fetch recipes collections view.
-  const { results: recipeCollections } = await drupal.getView<
-    DrupalTaxonomyTerm[]
-  >("recipe_collections--block", {
-    locale: context.locale,
-    defaultLocale: context.defaultLocale,
-    params: getParams("taxonomy_term--tags").addSort("name").getQueryObject(),
-  })
+  try {
+    // Fetch recipes collections view.
+    const { results } = await drupal.getView<DrupalTaxonomyTerm[]>("recipe_collections--block", {
+      locale: context.locale,
+      defaultLocale: context.defaultLocale,
+      params: getParams("taxonomy_term--tags").addSort("name").getQueryObject(),
+    })
+    recipeCollections = results;
+  } catch (error) {
+    // Handle recipe collections fetching errors
+    recipeCollections = []
+  }
 
-  // Fetch the footer promo block.
-  // You would normally use drupal.getResource() here to fetch the block by uuid.
-  // We're using getResourceCollection and a filter here because this demo needs
-  // to work on any Umami demo. UUIDs are different for every Umami install.
-  const [footerPromo] = await drupal.getResourceCollectionFromContext<
-    DrupalBlock[]
-  >("block_content--footer_promo_block", context, {
-    params: getParams("block_content--footer_promo_block")
-      .addFilter("info", "Umami footer promo")
-      .addPageLimit(1)
-      .getQueryObject(),
-  })
+  try {
+    // Fetch the footer promo block.
+    const [promo] = await drupal.getResourceCollectionFromContext<DrupalBlock[]>("block_content--footer_promo_block", context, {
+      params: getParams("block_content--footer_promo_block")
+        .addFilter("info", "Umami footer promo")
+        .addPageLimit(1)
+        .getQueryObject(),
+    })
+    footerPromo = promo !== undefined ? promo : null;
+  } catch (error) {
+    // Handle footer promo block fetching errors
+    footerPromo = null;
+  }
 
-  // Fetch the disclaimer block.
-  // See comment above on why we use drupal.getResourceCollectionFromContext
-  // instead of drupal.getResource.
-  const [disclaimer] = await drupal.getResourceCollectionFromContext<
-    DrupalBlock[]
-  >("block_content--disclaimer_block", context, {
-    params: getParams("block_content--disclaimer_block")
-      .addFilter("info", "Museum Chat Disclaimer")
-      .addPageLimit(1)
-      .getQueryObject(),
-  })
+  try {
+    // Fetch the disclaimer block.
+    const [disc] = await drupal.getResourceCollectionFromContext<DrupalBlock[]>("block_content--disclaimer_block", context, {
+      params: getParams("block_content--disclaimer_block")
+        .addFilter("info", "Museum Chat Disclaimer")
+        .addPageLimit(1)
+        .getQueryObject(),
+    })
+    disclaimer = disc !== undefined ? disc : null;
+  } catch (error) {
+    // Handle disclaimer block fetching errors
+    disclaimer = null;
+  }
 
-  // Fetch the site_settings block.
-  const [mainSiteSettings] = await drupal.getResourceCollectionFromContext<
-    DrupalBlock[]
-  >("block_content--site_settings", context, {
-    params: getParams("block_content--site_settings")
-      .addFilter("info", "Main Site Settings")
-      .addPageLimit(1)
-      .getQueryObject(),
-  })
-
-  // Fetch the title from site_settings block.
-  // const [titleOverride] = await drupal.getResourceCollectionFromContext<
-  //   DrupalBlock[]
-  // >("block_content--site_settings", context, {
-  //   params: getParams("block_content--site_settings")
-  //     .addFilter("info", "Main Site Settings")
-  //     .addPageLimit(1)
-  //     .getQueryObject(),
-  // })
+  try {
+    // Fetch the site_settings block.
+    const [settings] = await drupal.getResourceCollectionFromContext<DrupalBlock[]>("block_content--site_settings", context, {
+      params: getParams("block_content--site_settings")
+        .addFilter("info", "Main Site Settings")
+        .addPageLimit(1)
+        .getQueryObject(),
+    })
+    mainSiteSettings = settings !== undefined ? settings : null;
+  } catch (error) {
+    // Handle site settings block fetching errors
+    mainSiteSettings = null;
+  }
 
   return {
     ...(await serverSideTranslations(context.locale, ["common"])),
     menus: {
-      main: mainMenu.items,
-      footer: footerMenu.items,
+      main: mainMenu ? mainMenu.items : [],
+      footer: footerMenu ? footerMenu.items : [],
     },
     blocks: {
       mainSiteSettings,
       disclaimer
-    },
+    }
   }
 }

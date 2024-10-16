@@ -1,4 +1,5 @@
 import { DrupalNode } from "next-drupal"
+import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
 import Link from "next/link"
 
@@ -11,6 +12,15 @@ interface NodeObjectCardProps {
 
 export function NodeObjectCard({ node, ...props }: NodeObjectCardProps) { 
   const { t } = useTranslation()
+  const router = useRouter();
+  const { locale } = router;
+
+  const getLocalizedPath = (path) => {
+    if (locale === 'de') {
+      return `/de${path}`;
+    }
+    return path;
+  };
 
   return (
     <article
@@ -23,7 +33,7 @@ export function NodeObjectCard({ node, ...props }: NodeObjectCardProps) {
       <div className="p-6">
         <div className="mb-2 flex items-center justify-between">
           <h2 className="flex-1 font-sans text-[22px] text-white">
-            <Link href={node.path.alias} passHref legacyBehavior={true}>
+            <Link href={getLocalizedPath(node.path.alias)} passHref legacyBehavior={true}>
               <a className="stretched-link ">
                 {node.title}
               </a>

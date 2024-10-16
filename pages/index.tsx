@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { GetStaticPropsContext, GetStaticPropsResult } from "next"
 import { useRouter } from "next/router"
 import { DrupalBlock, DrupalNode } from "next-drupal"
@@ -159,12 +159,15 @@ export async function getStaticProps(
         .addPageLimit(1)
         .getQueryObject(),
     }
-  )
+  );
 
+  // Ensure banner is not undefined
+  const safeBanner = banner !== undefined ? banner : null;
+  
   return {
     props: {
       ...(await getGlobalElements(context)),
-      banner,
+      banner: safeBanner,
       welcomeText,
       promotedObjects,
       promotedArticles,

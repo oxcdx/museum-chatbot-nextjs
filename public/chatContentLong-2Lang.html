@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-    Chat mit der Schüssel
+    Isabelaa d&#39;este 3 - En + De - Full Draft with Questions - Updated Codes
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,7 +24,7 @@
         <a id="nav-link-undo" class="content-container" href="javascript:void(0)" style="visibility: hidden;">
             Undo
         </a>
-        <h1 id="ptitle" class="nav-title">Chat mit der Schüssel</h1>
+        <h1 id="ptitle" class="nav-title">Isabelaa d&#39;este 3 - En + De - Full Draft with Questions - Updated Codes</h1>
         <div id="psub">
             <span id="psubtitle"></span>
             <span id="pauthor"></span>
@@ -70,195 +70,1608 @@
 
     </main>
 
-    <tw-storydata name="Chat mit der Schüssel" startnode="1" creator="Twine" creator-version="2.9.2" format="Trialogue" format-version="0.1.1" ifid="665F5B09-EAEB-4661-BC23-3DC5D96841B6" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="speaker-you" color="green"></tw-tag><tw-tag name="speaker-bowl-bot" color="purple"></tw-tag><tw-passagedata pid="1" name="DU-001" tags="speaker-you" position="25,25" size="100,100">Hallo Schüssel! 
+    <tw-storydata name="Isabelaa d&#39;este 3 - En + De - Full Draft with Questions - Updated Codes" startnode="137" creator="Twine" creator-version="2.9.0" format="Trialogue" format-version="0.1.1" ifid="f8624156-4c5f-432c-be08-1a5a27ef4397" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="speaker-speaker" color="orange"></tw-tag><tw-tag name="speaker-bowl-bot" color="purple"></tw-tag><tw-passagedata pid="1" name="BBT-008" tags="speaker-bowl-bot" position="275,275" size="100,100">Super! &lt;br /&gt;&lt;br /&gt;
+Great!
 
 &lt;%
-story.showDelayed(&quot;DU-002&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="2" name="BB-001" tags="speaker-bowl-bot" position="275,25" size="100,100">Hallo! 
+story.showDelayed(&quot;BBT-009&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="2" name="BBT-001" tags="speaker-bowl-bot" position="25,150" size="100,100">&lt;div id=&quot;model-container-1&quot;&gt;
+  &lt;model-viewer id=&quot;new-model-viewer&quot; alt=&quot;&quot; camera-controls=&quot;false&quot; disable-zoom=&quot;true&quot; min-camera-orbit=&quot;auto 0deg 0m&quot; max-camera-orbit=&quot;auto 360deg 20000m&quot; camera-orbit=&quot;10deg 80deg 900m&quot; interpolation-decay=&quot;1&quot; autoplay=&quot;true&quot; environment-image=&quot;&quot; loading=&quot;eager&quot; ar-status=&quot;not-presenting&quot; interaction-prompt=&quot;none&quot; poster=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/bowl.png&quot; style=&quot;pointer-events: none;opacity: 0;display: none;&quot;&gt;&lt;/model-viewer&gt;
+&lt;/div&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-IMG-001&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="3" name="BB-A-001" tags="speaker-bowl-bot" position="25,225" size="100,100">Na, dann pass mal gut auf! Majolika ist nicht einfach nur irgendeine Keramik. Weißt du, im 9. Jahrhundert wollte man im Nahen Osten unbedingt das wunderschöne chinesische Porzellan mit dem Kobaltblau nachahmen. Da haben die Töpfer ein Verfahren entwickelt, bei dem heller Ton mit einer milchigen Zinnglasur überzogen wird. &lt;br/&gt;
-Das war der Anfang!
+(() =&gt; {
+
+  let checkModelContainerExists = setInterval(() =&gt; {
+    const modelViewer = document.querySelector(&#39;#orbit-demo&#39;);
+    const targetElement = document.querySelector(&#39;#model-container-1&#39;);
+    console.log(targetElement);
+      if (targetElement) {
+        clearInterval(checkModelContainerExists); // Stop checking once the element is found
+        const existingModelViewer = document.querySelector(&#39;#orbit-demo&#39;);
+        const newModelViewer = document.querySelector(&#39;#new-model-viewer&#39;);
+        newModelViewer.cameraOrbit = &quot;auto 360deg 20000m&quot;;
+
+        if (existingModelViewer &amp;&amp; newModelViewer) {
+          console.log(&quot;set new attrs&quot;);
+          // Copy the &#39;src&#39; and any other necessary attributes from the existing model-viewer
+          newModelViewer.setAttribute(&#39;src&#39;, existingModelViewer.getAttribute(&#39;src&#39;));
+          newModelViewer.setAttribute(&#39;interpolation-decay&#39;, &#39;600&#39;);
+          newModelViewer.style.display = &#39;block&#39;;
+          newModelViewer.style.opacity = &#39;1&#39;;
+
+          // Set additional properties or styles on the new model-viewer as needed
+          setTimeout(() =&gt; {
+            console.log(&quot;set new camera orbit&quot;);
+            newModelViewer.cameraOrbit = &quot;10deg 80deg 900m&quot;;
+          }, 2000); // Adjust camera orbit after 2 seconds
+        }
+      }
+  }, 500); // Check every 500ms
+})();
+%&gt;
+  
+[[Hallo &quot;🔘&quot; -&gt;BBT-002]]  
+[[Hello &quot;🔘&quot; -&gt;BBT-002]]</tw-passagedata><tw-passagedata pid="3" name="BBT-002" tags="speaker-bowl-bot" position="150,150" size="100,100">Ich bin die Größte! &lt;br/&gt;&lt;br/&gt;
+I’m the greatest!
 
 &lt;%
-story.showDelayed(&quot;BB-A-002&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="4" name="BB-B-001" tags="speaker-bowl-bot" position="25,725" size="100,100">Ah, das ist wirklich eine interessante Geschichte! Ich verdanke meine Existenz Eleonora Gonzaga, der Tochter meiner Besitzerin Isabella d’Este. Sie wollte ihrer Mutter 1524 ein ganz besonderes Geschenk zu ihrem 50. Geburtstag machen.
+story.showDelayed(&quot;BBT-003&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="4" name="BBT-003" tags="speaker-bowl-bot" position="275,150" size="100,100">Um zwei, drei Millimeter zwar, aber immerhin. &lt;br/&gt;&lt;br/&gt;
+Well, only by about two or three millimeters, but size matters!
 
 &lt;%
-story.showDelayed(&quot;BB-B-IMG-001&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="5" name="BB-C-001" tags="speaker-bowl-bot" position="25,1225" size="100,100">Oh ja, die Auktion 1893 in Paris! Das war ein echtes Abenteuer! Jahrhundertelang war es ruhig um mich gewesen, aber dann gehörte ich plötzlich zur Sammlung des berühmten Antiquitätenhändlers Friedrich Spitzer.
+story.showDelayed(&quot;BBT-004&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="5" name="BBT-004" tags="speaker-bowl-bot" position="400,150" size="100,100">Mit 52,3 cm bin ich die größte Schüssel aus dem Majolika-Service von Isabella d‘Este. &lt;br/&gt;&lt;br/&gt;
+At 52.3 centimetres, I am the biggest bowl in the majolica service of Isabella d’Este.
 
 &lt;%
-story.showDelayed(&quot;BB-C-IMG-001&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="6" name="DU-002" tags="speaker-you" position="150,25" size="100,100">Es ist faszinierend, mehr über deine Geschichte zu erfahren. Kannst du mir mehr darüber erzählen, wie du zu einem so wertvollen Kunstwerk geworden bist?
+story.showDelayed(&quot;BBT-005&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="6" name="BBT-005" tags="speaker-bowl-bot" position="650,150" size="100,100">Ich in nicht nur die Größte, ich bin einzigartig und besonders schön! Außerdem bringe ich stolze 3.185 Gramm auf die Waage. Hier können Sie mich in 3D von allen Seiten betrachten. &lt;br/&gt;&lt;br/&gt;
+And I am not only the greatest, I am unique and also a real beauty! And to top it all, I weigh in at a hefty 3185 grammes. You can look at me from all sides in 3-D.
 
 &lt;%
-story.showDelayed(&quot;BB-001&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="7" name="BB-A-002" tags="speaker-bowl-bot" position="150,225" size="100,100">Für meine Bemalung hat man eine besondere Technik verwendet, die bianco sopra bianco-Technik, also „weiß auf weiß“. Stell dir vor: Zarte Ornamente, in meinem Fall Ranken und Palmetten, wurden mit einer speziellen Glasur aufgetragen, die besonders viel Zinnoxid enthält. Dadurch heben sich die weißen Verzierungen wunderschön vom leicht gräulichen Untergrund ab. Echt raffiniert, oder?
+story.showDelayed(&quot;BBT-IMG-003&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="7" name="BBT-006" tags="speaker-bowl-bot" position="25,275" size="100,100">Wenn Sie mich so betrachten, haben Sie keine Ahnung, welch‘ eine bewegte Geschichte ich hinter mir habe! &lt;br/&gt;&lt;br/&gt;
+When you look at me it is hard to imagine what a turbulent life I have behind me. 
 
 &lt;%
-story.showDelayed(&quot;BB-A-003&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="8" name="BB-A-003" tags="speaker-bowl-bot" position="275,225" size="100,100">Aber nicht nur die Technik ist besonders. Nicola da Urbino, der &quot;Raffael der Majolika-Malerei&quot;, hat mich geschaffen. Er war der absolute Meister seines Fachs!
-Er hat sich für mich vom berühmten Maler Raffael inspirieren lassen und dessen Bildkompositionen auf Majolika übertragen. So etwas konnte nicht jeder!
+story.showDelayed(&quot;BBT-007&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="8" name="BBT-012" tags="speaker-bowl-bot" position="150,650" size="100,100">Wo sollen wir anfangen? &lt;br/&gt;&lt;br/&gt;
+Where should we start?
+
+[[Wann wurde es für Sie das erste Mal interessant?-&gt;BBT-013]]
+[[Wie sind Sie berühmt geworden?-&gt;BBT-015]]
+[[Wer hat Sie zum MK&amp;G gebracht?-&gt;SPK-006]]
+[[When did things first get interesting for you?-&gt;BBT-013]]
+[[How did you get famous?-&gt;BBT-015]]
+[[Who brought you to MK&amp;G?-&gt;SPK-006]]</tw-passagedata><tw-passagedata pid="9" name="BBT-009" tags="speaker-bowl-bot" position="400,275" size="100,100">Wenn ich spreche, erkennst Du das an meinem schicken Symbol: 🔘 &lt;br /&gt;&lt;br /&gt;
+You can tell when I am the one speaking by my icon: 🔘
 
 &lt;%
-story.showDelayed(&quot;BB-A-005&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="9" name="BB-A-005" tags="speaker-bowl-bot" position="400,225" size="100,100">Übrigens, mein Dekor ist im sogenannten Istoriato-Stil gehalten, der im 16. Jahrhundert total angesagt war. &lt;br/&gt;
-Dabei werden historische, mythologische oder biblische Szenen dargestellt – und ich zeige die Mannalese!
+story.showDelayed(&quot;BBT-010&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="10" name="BBT-007" tags="speaker-bowl-bot" position="150,275" size="100,100">Als Sonderanfertigung beauftragt, verschenkt, versteigert, vererbt, gebrochen, restauriert - nichts ist mir erspart geblieben, aber der Reihe nach... &lt;br /&gt;&lt;br /&gt;
+Specially commissioned as a one-off, given away, auctioned off, inherited, broken, repaired and restored – I have been spared nothing, but let’s take it step by step.
 
 &lt;%
-story.showDelayed(&quot;BB-A-IMG-001&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="10" name="BB-A-006" tags="speaker-bowl-bot" position="650,225" size="100,100">Na, bist du jetzt auch beeindruckt von so viel Kunstfertigkeit?
-
-[[Beeindruckend! Aber was sind der Istoriato-Stil und die Mannalese? Kannst Du mehr erzählen? -&gt;BB-A1-001]]
-[[Erzähl mir lieber, wer Dich in Auftrag gegegeben hat -&gt;BB-B-001]]</tw-passagedata><tw-passagedata pid="11" name="BB-A1-001" tags="speaker-bowl-bot" position="50,550" size="100,100">Gerne! Der Istoriato-Stil war eine ganz besondere Art der Majolika-Malerei, die im 16. Jahrhundert in Italien ihren Höhepunkt erreichte.&lt;br/&gt;
-Dabei wurden aufwendige Szenen aus der Geschichte, der Mythologie oder der Bibel dargestellt. Man nannte das dann &quot;Istoriato-Malerei&quot;, was so viel heißt wie &quot;Geschichte erzählen&quot;.&lt;br/&gt;
-Stell dir vor, ganze Geschichten auf Tellern und Schüsseln!
+story.showDelayed(&quot;BBT-009&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="11" name="BBT-010" tags="speaker-bowl-bot" position="525,275" size="100,100">Ein Sprecher &lt;span class=&quot;emoji-span&quot;&gt;🗣️&lt;/span&gt; unterstützt mich mit Daten, Fakten und wissenschaftlichem Know-how. &lt;br /&gt;&lt;br /&gt;
+A speaker &lt;span class=&quot;emoji-span&quot;&gt;🗣️&lt;/span&gt; will give me a hand with dates, facts and scholarly know-how.
 
 &lt;%
-story.showDelayed(&quot;BB-A1-IMG-001&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="12" name="DU-003" tags="speaker-bowl-bot" position="650,25" size="100,100">(Wähle eine der Optionen)
+story.showDelayed(&quot;BBT-011&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="12" name="BBT-011" tags="speaker-bowl-bot" position="25,400" size="100,100">Willst Du wissen, wie ich ins Museum gelangt bin? dann klicke dich unten ins Kapitel 2: &lt;br /&gt;&lt;br /&gt;
+Would you like to know how I ended up in this museum? Then click below for Chapter 2:
 
-[[A. Warum ich als Kunstwerk so besonders bin? -&gt;BB-A-001]]
-[[B. Wer mich in Auftrag gegeben hat und warum ich verschenkt wurde? -&gt;BB-B-001]]
-[[C. Wie ich auf die berühmte Jahrhundert-Auktion in Paris gekommen bin und wer alles auf mich geboten hat? -&gt;BB-C-001]]</tw-passagedata><tw-passagedata pid="13" name="BB-A1-002" tags="speaker-bowl-bot" position="300,550" size="100,100">Die Maler ließen sich von berühmten Künstlern der Zeit inspirieren und übertrugen deren Bildkompositionen auf die Keramik.&lt;br/&gt;
-Ich selbst zeige die Geschichte von der Mannalese aus der Bibel.&lt;br/&gt;
-Kennst du die?
-
-&lt;%
-story.showDelayed(&quot;BB-A1-003&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="14" name="BB-A1-003" tags="speaker-bowl-bot" position="425,550" size="100,100">Kurz gesagt geht es darum, dass Moses und sein Volk auf der Flucht durch die Wüste wandern und Gott ihnen wundersam Manna vom Himmel schickt, damit sie nicht verhungern.&lt;br/&gt;
-Das Manna ist also eine Art Lebensretter!
-
-&lt;%
-story.showDelayed(&quot;BB-A1-004&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="15" name="BB-A1-004" tags="speaker-bowl-bot" position="550,550" size="100,100">Nicola da Urbino hat die Szene so gestaltet, dass man sieht, wie gut organisiert das Volk das Manna sammelt.&lt;br/&gt;
-Das sollte wohl ein Vorbild sein, auch für Herrscher. Sie sollen sich um ihr Volk kümmern, so wie Moses es mit Gottes Hilfe tut.
+[[1: Prolog-&gt;SPK-001]]
+[[2: Wie kommt eine Schüssel ins Museum?-&gt;SPK-005]]
+[[3: Der Auftrag (Nicola da Urbino)-&gt;SPK-009]]
+[[4: Die Schüssel im Fokus-&gt;SPK-021]]
+[[5: Isabella d&#39;Este (Die Beschenkte)-&gt;SPK-031]]
+[[1: Prologue-&gt;SPK-001]]
+[[2: How does a bowl end up in a museum?-&gt;SPK-005]]
+[[3: The commission (Nicola da Urbino)-&gt;SPK-009]]
+[[4: Focus on the bowl-&gt;SPK-021]]
+[[5: Isabella d‘Este (The recipient)-&gt;SPK-031]]</tw-passagedata><tw-passagedata pid="13" name="BBT-026" tags="speaker-bowl-bot" position="25,1550" size="100,100">Den Zuschlag für mich erhält jedoch der steinreiche Diamantenmagnat Alfred Beit. Mit einem erzielten Preis von 26.500 Francs bin ich das drittteuerste Los der Auktion. &lt;br/&gt;&lt;br/&gt;
+I am awarded to the immensely rich diamond tycoon Alfred Beit. With a final bid of 26,500 francs, I am the third most expensive lot in the auction.
 
 &lt;%
-story.showDelayed(&quot;BB-A1-IMG-002&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="16" name="BB-A1-005" tags="speaker-bowl-bot" position="800,550" size="100,100">Übrigens, die Vorlage für meine Bemalung war ein Kupferstich nach einer Zeichnung von Raffael! &lt;br/&gt;
-Nicola da Urbino hat die Figuren aber etwas umgestellt, damit sie perfekt auf meinen Rand passen. Er war eben ein echter Meister!
-
-[[Erzähl mir lieber, wer Dich in Auftrag gegegeben hat -&gt;BB-B-001]]</tw-passagedata><tw-passagedata pid="17" name="BB-B-002" tags="speaker-bowl-bot" position="275,725" size="100,100">Eleonora war mit dem Herzog von Urbino verheiratet, und dort war die Majolika-Malerei zu der Zeit eine echt große Nummer. Wahrscheinlich wollte sie mit mir, einem Spitzenprodukt ihres Herzogtums, ein bisschen Werbung machen.
+story.showDelayed(&quot;BBT-027&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="14" name="BBT-016" tags="speaker-bowl-bot" position="150,900" size="100,100">Er ist stets auf der Suche nach qualitätvollen kunsthandwerklichen Objekten des Mittelalters und der Renaissance, die er in seinem Pariser Palais und auf den Weltausstellungen präsentiert. &lt;br/&gt;&lt;br/&gt;
+He is always on the lookout for high-quality works of decorative art from the Middle Ages and the Renaissance, which he puts on display in his mansion in Paris and at the World Exhibitions.
 
 &lt;%
-story.showDelayed(&quot;BB-B-003&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="18" name="BB-B-003" tags="speaker-bowl-bot" position="400,725" size="100,100">Sie hat mich dann nach Porto geschickt, Isabellas Landsitz. Damals war es nämlich ziemlich riskant, wertvolles Geschirr aus Edelmetall auf dem Land zu benutzen – viel zu große Diebstahlgefahr!&lt;br/&gt;
-Da war ich natürlich die perfekte Alternative.
+story.showDelayed(&quot;BBT-017&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="15" name="BBT-013" tags="speaker-bowl-bot" position="25,775" size="100,100">Nachdem es vierhundert Jahre lang recht ruhig um mich gewesen ist, wird es gegen Ende des 19. Jahrhunderts mal wieder so richtig spannend. &lt;br/&gt;&lt;br/&gt;
+After nothing much happened around me for four hundred years, things get quite exciting again towards the end of the 19th century. 
 
 &lt;%
-story.showDelayed(&quot;BB-B-004&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="19" name="BB-B-004" tags="speaker-bowl-bot" position="525,725" size="100,100">Ob Eleonora mit mir nur Isabellas Gunst gewinnen oder auch die Wirtschaft ihres Herzogtums ankurbeln wollte, weiß heute niemand mehr so genau. Isabella hatte ja unglaublich viele Kontakte – da hat sich die Nachricht von meiner Schönheit und Qualität bestimmt wie ein Lauffeuer verbreitet!
+story.showDelayed(&quot;BBT-IMG-003a&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="16" name="BBT-017" tags="speaker-bowl-bot" position="275,900" size="100,100">Seine Kundschaft sind internationale Museen und finanzkräftige Privatiers. Zum Zeitpunkt von Spitzers Tod befinden sich noch über 3.000 Objekte in seiner Sammlung. &lt;br/&gt;&lt;br/&gt;
+His customers are international museums and wealthy private individuals. There are still more than 3,000 objects in his collection at the time of Spitzer’s death.
+
+[[Wie wurden Sie zuerst bemerkt?-&gt;BBT-013]]
+[[Was passierte mit seiner Sammlung?-&gt;BBT-018]]
+[[How did you first get noticed?-&gt;BBT-013]]
+[[What happened to his collection?-&gt;BBT-018]]</tw-passagedata><tw-passagedata pid="17" name="BBT-018" tags="speaker-bowl-bot" position="25,1050" size="100,100">Die Nachricht der großen „Jahrhundert-Auktion“ geht um die Welt und entfacht einen Wettstreit auf dem internationalen Kunstmarkt. Wie ein Lauffeuer spricht es sich herum, dass auch ich bei dieser Auktion versteigert werden soll. &lt;br /&gt;&lt;br /&gt;
+The news of the “auction of the century” goes around the world and triggers intense rivalry on the international art market. The news that I am to be sold at the auction spreads like wildfire. The people are champing at the bit to bid for me.
 
 &lt;%
-story.showDelayed(&quot;BB-B-005&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="20" name="BB-B-005" tags="speaker-bowl-bot" position="650,725" size="100,100">Willst Du wissen, wie ich dann ins Museum gekommen bin?
+story.showDelayed(&quot;BBT-019&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="18" name="BBT-019" tags="speaker-bowl-bot" position="150,1050" size="100,100">Da stehen die Leute in den Startlöchern, um auf mich zu bieten. Kunstinteressierte, die ihre Privatsammlung erweitern möchten, konkurrieren mit den größten Museen. Sie überbieten sich gegenseitig auf dieser international mit Spannung erwarteten „Jahrhundert-Auktion&quot;. Die 3.000 Objekte werden versteigert und erzielen 9,1 Millionen Francs. &lt;br/&gt;&lt;br/&gt;
+Connoisseurs of art who want to expand their private collection are in competition with the most prestigious museums. They vie to outbid each other in this, the internationally eagerly awaited “auction of the century&quot;. The 3,000 objects are auctioned off and bring 9.1 million francs.
 
-[[Nein danke, ich habe genug erfahren. -&gt;BB-B1-IMG-001]]
-[[Ja, erzähl mir mehr. Da gab es eine Auktion…?  -&gt;BB-C-001]]</tw-passagedata><tw-passagedata pid="21" name="BB-C-002" tags="speaker-bowl-bot" position="275,1225" size="100,100">Nach seinem Tod wurde seine gesamte Sammlung versteigert – über 3.000 Objekte!&lt;br/&gt;
-Du kannst dir vorstellen, was da los war! Die ganze Welt sprach von dieser &quot;Jahrhundert-Auktion&quot;.
+[[War MK&amp;G zu diesem Zeitpunkt interessiert?-&gt;SPK-006]]
+[[Wie viel wurden Sie verkauft?-&gt;BBT-026]]
+[[Wer war der Gewinner der Auktion?-&gt;BBT-026]]
+[[Was MK&amp;G interested at this point?-&gt;SPK-006]]
+[[How much were you sold for?-&gt;BBT-026]]
+[[Who was the winning bidder?-&gt;BBT-026]]</tw-passagedata><tw-passagedata pid="19" name="BBT-020" tags="speaker-bowl-bot" position="275,1175" size="100,100">Auch Justus Brinckmann (1843–1915), Gründungsdirektor des 1877 eröffneten MK&amp;G, bekannt für seine „Keramik-Manie“, hat ein Auge auf mich geworfen. Er fährt extra meinetwegen nach Paris und versucht auf dieser Auktion auf mich zu bieten. Denn mein Ruf eilt mir voraus. &lt;br/&gt;&lt;br/&gt;
+Justus Brinckmann (1843–1915), too, the founding director of the MK&amp;G, which opened in 1877, who was well-known for his “pottery mania”, has set his sights on me. He travels especially to Paris because of me, and does everything he can to bid for me at the auction. My reputation precedes me wherever I go.
+
+[[Wie hat Brinckmann Sie zum MK&amp;G gebracht?-&gt;BBT-021]]
+[[Wie viel wurden Sie verkauft?-&gt;BBT-026]]
+[[Hat Brinckmann die Auktion gewonnen?-&gt;BBT-024]]
+[[How did Brinckmann get you to MK&amp;G?-&gt;BBT-021]]
+[[How much were you sold for?-&gt;BBT-026]]
+[[Did Brinckmann win the auction?-&gt;BBT-024]]</tw-passagedata><tw-passagedata pid="20" name="BBT-021" tags="speaker-bowl-bot" position="25,1300" size="100,100">Brinckmann lässt nichts unversucht, möglichst große Geldbeträge für die Auktion einzuwerben. Bereits Ende 1891 startet er eine entsprechende Kampagne. 1892 scheint das Unternehmen jedoch grundlegend gefährdet. &lt;br/&gt;&lt;br/&gt;
+Brinckmann leaves no stone unturned in his efforts to raise as much money as he can for the auction. He already starts his fundraising campaign at the end of 1891. In 1892, however, the project appears to have run into a fundamental obstacle.
 
 &lt;%
-story.showDelayed(&quot;BB-C-003&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="22" name="BB-C-003" tags="speaker-bowl-bot" position="400,1225" size="100,100">Sammler und Museen aus aller Herren Länder überboten sich gegenseitig – und ich war mittendrin!&lt;br/&gt;
-Justus Brinckmann, der Direktor des Museums für Kunst und Gewerbe in Hamburg, wollte mich unbedingt haben. Er hatte sogar extra Spenden gesammelt, um mich kaufen zu können..
+story.showDelayed(&quot;BBT-022&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="21" name="BBT-022" tags="speaker-bowl-bot" position="150,1300" size="100,100">Aufgrund einer in Hamburg wütenden Cholera-Epidemie kann der Staat keine Sondermittel bereitstellen. Doch Brinckmann gibt nicht auf. &lt;br/&gt;&lt;br/&gt;
+Due to a cholera epidemic raging in Hamburg, the government is unable to provide any special funds. But Brinckmann doesn’t give up.
 
 &lt;%
-story.showDelayed(&quot;BB-C-004&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="23" name="BB-C-004" tags="speaker-bowl-bot" position="525,1225" size="100,100">Aber leider, leider... er hatte gegen die anderen keine Chance! Die waren einfach zu reich!&lt;br/&gt;
-Am Ende ersteigerte mich der Diamantenmagnat Alfred Beit für die unglaubliche Summe von 26.500 Francs. Ich war das drittteuerste Stück der ganzen Auktion!
+story.showDelayed(&quot;BBT-023&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="22" name="BBT-023" tags="speaker-bowl-bot" position="275,1300" size="100,100">Neben öffentlichen Aufrufen in der Zeitung verfasst er hunderte von Bittbriefen und antichambriert darüber hinaus in zahlreichen Hamburger Villen. &lt;br/&gt;&lt;br/&gt;
+Besides public appeals in the newspapers he writes hundreds of letters of supplication and on top of that personally visits many Hamburg villas to petition their wealthy owners. In this way the indefatigable museum director manages to raise 50,000 francs, no small achievement.
 
-[[Wie bist Du schließlich ins Museum gekommen?  -&gt;BB-C1-001]]
-[[Wahnsinn, warum warst Du denn so besonders?  -&gt;BB-A-001]]</tw-passagedata><tw-passagedata pid="24" name="BB-C1-001" tags="speaker-bowl-bot" position="50,1425" size="100,100">Nachdem Alfred Beit mich auf der Auktion in Paris ersteigert hat, schien es zunächst, als würde ich nie nach Hamburg kommen. &quot; Doch zum Glück war Alfred Beit ein gebürtiger Hamburger und ein Freund von Justus Brinckmann, dem Direktor des Museums für Kunst und Gewerbe. In seinem Testament vermachte er mich dem Museum. Nach seinem Tod im Jahr 1906 schenkte mich seine Mutter, Laura Beit, dem Museum. So kam es, dass ich schließlich doch noch in der Hansestadt landete!&quot;
+[[Wie viel wurden Sie verkauft?-&gt;BBT-026]]
+[[Hat Brinckmann die Auktion gewonnen?-&gt;BBT-024]]
+[[How much were you sold for?-&gt;BBT-026]]
+[[Did Brinckmann win the auction?-&gt;BBT-024]]</tw-passagedata><tw-passagedata pid="23" name="BBT-024" tags="speaker-bowl-bot" position="25,1425" size="100,100">Brinckmann bietet im Rahmen seiner finanziellen Möglichkeiten eifrig auf der Auktion mit, doch da ist nichts zu machen, die anderen sind so wohlhabend, dass sie ihm alle Sachen vor der Nase wegschnappen. Er muss sich geschlagen geben. &lt;br/&gt;&lt;br/&gt;
+Within his budget, Brinckmann bids enthusiastically, but has no chance: the others are so wealthy that they snatch everything away under his nose. He has to admit defeat.
 
 &lt;%
-story.showDelayed(&quot;BB-C1-IMG-001&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="25" name="BB-C1-002" tags="speaker-bowl-bot" position="300,1425" size="100,100">„Justus Brinckmann war überglücklich, mich zu erhalten!*&lt;br/&gt;
-Er ließ sofort eine neue Vitrine anfertigen, um mich angemessen präsentieren zu können. Damals war ich das wertvollste Objekt, das dem Museum seit seiner Gründung geschenkt worden war. Und bis heute gehöre ich zu den Top Ten des Museums! Ist das nicht toll? Du kannst mich sogar in der Ausstellung finden!”
+story.showDelayed(&quot;BBT-025&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="24" name="BBT-025" tags="speaker-bowl-bot" position="150,1425" size="100,100">Immerhin gelingt es ihm, ein paar wertvolle wissenschaftliche Instrumente und einen kleineren, in Urbino gefertigten Majolika-Teller für das MK&amp;G zu ergattern. &lt;br/&gt;&lt;br/&gt;
+Still, he at least succeeds in acquiring a few valuable scientific instruments and a small majolica plate made in Urbino for the MK&amp;G.
 
-Beenden
 
-[[Warum ich als Kunstwerk so besonders bin? -&gt;BB-A-001]]
-[[Beeindruckend! Aber was sind der Istoriato-Stil und die Mannalese? Kannst Du mehr erzählen? -&gt;BB-A1-001]]
-[[Wer mich in Auftrag gegeben hat und warum ich verschenkt wurde? -&gt;BB-B-001]]
-[[Beenden -&gt;BB-B1-IMG-001]]</tw-passagedata><tw-passagedata pid="26" name="BB-B1-001" tags="speaker-bowl-bot" position="175,925" size="100,100">Es war mir eine Freude! Jetzt kennst du meine Geschichte, die von Kunst, Kultur und großen Persönlichkeiten erzählt. Ich hoffe, ich konnte dir zeigen, wie faszinierend meine Reise war. Komm mich doch mal im Museum besuchen – dann kannst du mich aus nächster Nähe bewundern. Mach’s gut und danke für dein Interesse!</tw-passagedata><tw-passagedata pid="27" name="BB-IMG-001" tags="speaker-bowl-bot" position="400,25" size="100,100">&lt;figure&gt;
-        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-10/main.jpg&quot; alt=&quot;Schüssel (piatto da pompa) mit Mannalese aus dem Service von Isabella d’Este, Mantua (1524) by Urbino, Nicola da / Veneziano, Agostino / Sanzio, Raffaello / Raimondi, Marcantonio.&quot; /&gt;
+[[Wie viel wurden Sie verkauft?-&gt;BBT-026]]
+[[Wer war der Gewinner der Auktion?-&gt;BBT-026]]
+[[How much were you sold for?-&gt;BBT-026]]
+[[Who was the winning bidder?-&gt;BBT-026]]</tw-passagedata><tw-passagedata pid="25" name="BBT-027" tags="speaker-bowl-bot" position="150,1550" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/alfred-beit-2c-auf-seinem-landsitz-tewin-waters-bei-welwyn-2c-grossbritannien-1904-2f1905-by-duehrkoop-2c-rudolph.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
     &lt;figcaption&gt;
-Schüssel (piatto da pompa) mit Mannalese aus dem Service von Isabella d’Este, Mantua (1524) by Urbino, Nicola da / Veneziano, Agostino / Sanzio, Raffaello / Raimondi, Marcantonio.
+   Alfred Beit auf seinem Landsitz Tewin Waters bei Welwyn Großbritannien (1904/1905) by Dührkoop, Rudolph
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+[[War MK&amp;G zu diesem Zeitpunkt nicht interessiert?-&gt;SPK-006]]
+[[Wer war Alfred Beit -&gt;SPK-008]]
+[[Was passierte als Nächstes?-&gt;BBT-028]]
+[[Was MK&amp;G not interested at this point?-&gt;SPK-006]]
+[[Who was Alfred Beit -&gt;SPK-008]]
+[[What happened next?-&gt;BBT-028]]</tw-passagedata><tw-passagedata pid="26" name="BBT-028" tags="speaker-bowl-bot" position="25,1800" size="100,100">So scheine ich für Hamburg verloren. Dass ich schließlich doch noch in die Hansestadt gelange, ist dem glücklichen Umstand zu verdanken, dass Alfred Beit gebürtiger Hamburger, ein Freund von Justus Brinckmann und „Fan“ des MK&amp;G ist. &lt;br/&gt;&lt;br/&gt;
+And so I seem to be lost to Hamburg. The fact that I eventually do land up in the Hanseatic city is due to the lucky circumstance that Alfred Beit was born in Hamburg and is a friend of Justus Brinckmann and a fan of the MK&amp;G.
+
+&lt;%
+story.showDelayed(&quot;BBT-029&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="27" name="BBT-029" tags="speaker-bowl-bot" position="150,1800" size="100,100">Der Londoner Diamantenhändler erwähnt mich in seinem Testament und vermacht mich dem Museum. &lt;br/&gt;&lt;br/&gt;
+The London-based diamond trader mentions me in his will and bequeaths me to the Museum.
+
+&lt;%
+story.showDelayed(&quot;BBT-030&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="28" name="BBT-031" tags="speaker-bowl-bot" position="25,1925" size="100,100">Justus Brinckmann bestellt sofort eine neue Vitrine, um mich auszustellen. Zu diesem Zeitpunkt bin ich das wertvollste Objekt, das dem MK&amp;G seit Museumsgründung (1874) gestiftet worden ist. Bis heute zähle ich zu den Top Ten des MK&amp;G. &lt;br/&gt;&lt;br/&gt;
+Justus Brinkmann immediately orders a new showcase to display me to best advantage. At this moment, I am the most valuable object donated to the MK&amp;G since the museum’s founding (1874). To the present day I still rank among the MK&amp;G’s &quot;Top Ten&quot;.
+
+&lt;%
+story.showDelayed(&quot;BBT-032&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="29" name="BBT-030" tags="speaker-bowl-bot" position="275,1800" size="100,100">1906 tritt der traurige Fall ein, und ich gelange als Vermächtnis des Verstorbenen durch Schenkung seiner Mutter Laura Beit ins MK&amp;G. &lt;br/&gt;&lt;br/&gt;
+His sad demise comes in 1906 and I come to the MK&amp;G as a bequest of the deceased by way of a donation from his mother, Laura Beit.
+
+[[Es muss gut gewesen sein, endlich Brinkmann kennenzulernen-&gt;BBT-031]]
+[[Mal sehen, wie Sie sich eingelebt haben-&gt;BBT-034]]
+[[It must have been good to finally meet Brinkmann-&gt;BBT-031]]
+[[Let&#39;s see how you settled in-&gt;BBT-034]]</tw-passagedata><tw-passagedata pid="30" name="BBT-030-short" tags="speaker-bowl-bot" position="400,1775" size="100,100">Kurz gesagt, 1906 tritt der traurige Fall ein, aber zum Glück stammte er aus Hamburg, und ich gelange als Vermächtnis des Verstorbenen durch Schenkung seiner Mutter Laura Beit ins MK&amp;G.&lt;br/&gt;&lt;br/&gt;
+In short, his sad demise comes in 1906, but luckily he was from Hamburg, and I come to the MK&amp;G as a bequest of the deceased by way of a donation from his mother, Laura Beit. 
+
+[[Es muss gut gewesen sein, endlich Brinkmann kennenzulernen-&gt;BBT-031]]
+[[Mal sehen, wie Sie sich eingelebt haben-&gt;BBT-034]]
+[[It must have been good to finally meet Brinkmann-&gt;BBT-031]]
+[[Let&#39;s see how you settled in-&gt;BBT-034]]</tw-passagedata><tw-passagedata pid="31" name="BBT-032" tags="speaker-bowl-bot" position="150,1925" size="100,100">Außer mir gelangen noch weitere siebzehn Majoliken über die Stiftung Beit ins MK&amp;G. Justus Brinckmann ist hoch erfreut, weil dieses Konvolut von Majoliken die wertvollste Stiftung ist, die dem MK&amp;G seit Gründung zuteilwird. &lt;br/&gt;&lt;br/&gt;
+Apart from me, seventeen other majolica ceramics come into the MK&amp;G via the Beit Foundation Justus Brinckmann is over the moon, since this set of majolicas is the most valuable donation the MK&amp;G has received since its founding. 
+
+&lt;%
+story.showDelayed(&quot;BBT-033&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="32" name="BBT-033" tags="speaker-bowl-bot" position="275,1925" size="100,100">Wie Alfred Beit in Zeiten des Kolonialismus zu so viel Geld gekommen ist, das steht allerdings auf einem anderen Blatt. &lt;br/&gt;&lt;br/&gt;
+How Alfred Beit came by so much money in the colonial era – well, that is a quite different kettle of fish.
+
+[[Wie war Ihr neues Zuhause?-&gt;BBT-034]]
+[[Das klingt nach einer Geschichte für einen anderen Tag-&gt;BBT-035]]
+[[How was your new home?-&gt;BBT-033]]
+[[That sounds like a story for another day-&gt;BBT-035]]</tw-passagedata><tw-passagedata pid="33" name="BBT-034" tags="speaker-bowl-bot" position="25,2050" size="100,100">Hier ist eine Auswahl von Majolika-Keramiken aus der Stiftung Beit in der Sammlung des MK&amp;G &lt;br/&gt;&lt;br/&gt;
+Here is a selection of majolica ceramics from the Beit Foundation the MK&amp;G collection
+
+
+&lt;%
+story.showDelayed(&quot;BBT-IMG-004&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="34" name="BBT-035" tags="speaker-bowl-bot" position="275,2050" size="100,100">Möchtest Du wissen, wer alles die Finger im Spiel hat, damit es mich und meine Geschwister, die 23 anderen Teile des Service, überhaupt gibt? &lt;br/&gt;&lt;br/&gt;
+Would you like to know all those who had a hand in bringing me and my siblings, the other 23 pieces in the service, into existence in the first place? Then click on Chapter 3:
+
+[[1: Prolog-&gt;SPK-001]]
+[[2: Wie kommt eine Schüssel ins Museum?-&gt;SPK-005]]
+[[3: Der Auftrag (Nicola da Urbino)-&gt;SPK-009]]
+[[4: Die Schüssel im Fokus-&gt;SPK-021]]
+[[5: Isabella d&#39;Este (Die Beschenkte)-&gt;SPK-031]]
+[[1: Prologue-&gt;SPK-001]]
+[[2: How does a bowl end up in a museum?-&gt;SPK-005]]
+[[3: The commission (Nicola da Urbino)-&gt;SPK-009]]
+[[4: Focus on the bowl-&gt;SPK-021]]
+[[5: Isabella d‘Este (The recipient)-&gt;SPK-031]]</tw-passagedata><tw-passagedata pid="35" name="BBT-014" tags="speaker-bowl-bot" position="275,775" size="100,100">Ich habe das große Glück nach Paris reisen zu dürfen. Hier rücke ich wieder in den Fokus der Öffentlichkeit. &lt;br/&gt;&lt;br/&gt;
+I have the great good fortune to go on a trip to Paris. And it is there that I become the focus of public attention once again.
+
+[[Wie sind Sie berühmt geworden?-&gt;BBT-015]]
+[[Wer hat Sie zum MK&amp;G gebracht?-&gt;SPK-006]]
+[[How did you get famous?-&gt;BBT-015]]
+[[Who brought you to MK&amp;G?-&gt;SPK-006]]</tw-passagedata><tw-passagedata pid="36" name="BBT-015" tags="speaker-bowl-bot" position="25,900" size="100,100">1893 bin ich nämlich ein wichtiger Bestandteil der Nachlass-Auktion der berühmten Sammlung von Friedrich Spitzer (1815–1890). Der in Wien gebürtige, seit 1852 in Paris ansässige Antiquitätenhändler bereist ganz Europa. &lt;br/&gt;&lt;br/&gt;
+That is because I am an important item in the famous collection of Friedrich Spitzer (1815–1890) when his estate is auctioned off in 1893. Born in Vienna and based since 1852 in Paris, the antique dealer travels all over Europe.
+
+&lt;%
+story.showDelayed(&quot;BBT-016&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="37" name="BBT-037" tags="speaker-bowl-bot" position="150,2525" size="100,100">Ich bin ein Geschenk. Dass es mich gibt, habe ich Eleonora Gonzaga zu verdanken, dem erstgeborenen Kind von Isabella d‘Este und Francesco II. Gonzaga. Durch Heirat mit Francesco Maria I. della Rovere, dem Neffen des Papstes Julius II., ist Eleonora seit 1509 Herzogin von Urbino. Hier erreicht die Majolika-Malerei zwischen 1520 und 1540 ihren Höhepunkt. &lt;br/&gt;&lt;br/&gt;
+I am a gift. I have her to thank for my creation. Eleonora has been Duchess of Urbino since 1509 through her marriage to Francesco Maria I della Rovere, the nephew of Pope Julius II. Majolica painting reaches its peak of excellence here between 1520 and 1540.
+
+&lt;%
+story.showDelayed(&quot;BBT-038&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="38" name="BBT-036" tags="speaker-bowl-bot" position="25,2525" size="100,100">Aha, das ist Eleonora Gonzaga zu verdanken, dem erstgeborenen Kind von Isabella d‘Este und Francesco II. Gonzaga. &lt;br/&gt;&lt;br/&gt;
+Aha this is Eleonora Gonzaga, the firstborn daughter of Isabella d‘Este and Francesco II Gonzaga
+
+&lt;%
+story.showDelayed(&quot;BBT-037&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="39" name="BBT-038" tags="speaker-bowl-bot" position="275,2525" size="100,100">1524 ist ein besonderes Jahr, in dem viel passiert: Am 14. Mai feiert Isabella ihren 50. Geburtstag. Im Spätsommer komme ich aus dem Brennofen. Ich bin Teil eines Majolika-Service für Isabellas Landsitz in Porto, fünf Kilometer nördlich von Mantua am Fluss Mincio gelegen. &lt;br/&gt;&lt;br/&gt;
+1524 is a very special year, in which a lot happens: Isabella celebrates her 50th birthday on 14 May. I come out of the firing kiln in the late summer. I am a part of the majolica service made for Isabella’s country estate at Porto, five kilometres to the north of Mantua on the River Mincio.
+
+[[Was passierte als Nächstes?-&gt;BBT-039]]
+[[Erzählen Sie mir zuerst von Isabella d&#39;Este-&gt;SPK-031]]
+[[What happened next?-&gt;BBT-039]]
+[[First tell me about Isabella d’Este-&gt;SPK-031]]</tw-passagedata><tw-passagedata pid="40" name="BBT-046" tags="speaker-bowl-bot" position="25,4050" size="100,100">Er hat eine Werkstatt in Urbino. &lt;br/&gt;&lt;br/&gt;
+He has his workshop in Urbino. 
+
+&lt;%
+story.showDelayed(&quot;BBT-047&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="41" name="BBT-047" tags="speaker-bowl-bot" position="150,4050" size="100,100">Das Hauptwerk von Nicola da Urbino ist zweifellos das Service für Isabella d’Este. Er ist zu dieser Zeit auf dem Zenit seiner Kunst. &lt;br/&gt;&lt;br/&gt;
+Nicola da Urbino’s magnus opus is unquestionably the service for Isabella d’ Este. At this time he is at the peak of his creative powers. 
+
+&lt;%
+story.showDelayed(&quot;BBT-048&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="42" name="BBT-048" tags="speaker-bowl-bot" position="275,4050" size="100,100">Nicola da Urbino wird der „Raffael der Majolika-Malerei“ genannt. &lt;br/&gt;&lt;br/&gt;
+Nicola da Urbino is known as the “Raffael of majolica painting. 
+
+[[Raffael! That&#39;s imperessive -&gt;BBT-051]]
+[[Wie erfahren wir von Nicolas Arbeit?-&gt;SPK-018]]
+[[Raffael! That&#39;s imperessive -&gt;BBT-051]]
+[[How do we know about Nicola&#39;s work?-&gt;SPK-018]]</tw-passagedata><tw-passagedata pid="43" name="BBT-049" tags="speaker-bowl-bot" position="25,4175" size="100,100">Eleonora Gonzaga, die Herzogin von Urbino, weiß also genau, was sie tut. Sie hat, wie ihre Mutter Isabella d‘ Este, ein gutes Gespür für außerordentlich begabte Kunstschaffende. &lt;br/&gt;&lt;br/&gt;
+Eleonora Gonzaga, the duchess of Urbino, therefore knows exactly what she is doing. Like her mother, Isabella d‘ Este, she has a good instinct for recognizing extraordinarily gifted artists.
+
+&lt;%
+story.showDelayed(&quot;BBT-050&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="44" name="BBT-050" tags="speaker-bowl-bot" position="150,4175" size="100,100">Daher beauftragt sie für Isabellas Service keinen geringeren als den in ihrem Herzogtum tätigen Majolika-Maler Nicola da Urbino: den besten Majolika-Maler der Zeit. &lt;br/&gt;&lt;br/&gt;
+That is why she commissions no less a figure for Isabella‘s service than the majolica painter Nicola da Urbino, the best majolica painter of his time, who is active in her duchy.
+
+[[Welche Themen hat er verwendet?-&gt;SPK-016]]
+[[Was ist die Verbindung zu Raffael -&gt;BBT-051]]
+[[What themes did he use?-&gt;SPK-016]]
+[[What is the connection to Raffael -&gt;BBT-051]]</tw-passagedata><tw-passagedata pid="45" name="BBT-045" tags="speaker-bowl-bot" position="150,3925" size="100,100">Nicola da Urbino (1480–1537/38) ist der beste Majolika-Maler seiner Zeit. &lt;br/&gt;&lt;br/&gt;
+Nicola da Urbino (1480–1537/38) is the best majolica painter of his time. 
+
+[[Was wissen wir noch über ihn?-&gt;BBT-046]]
+[[Was hat ihn inspiriert?-&gt;BBT-051]]
+[[What else do we know about him?-&gt;BBT-046]]
+[[What inspired him?-&gt;BBT-051]]</tw-passagedata><tw-passagedata pid="46" name="BBT-039" tags="speaker-bowl-bot" position="25,2775" size="100,100">Am 15. November 1524 kündigt die dreißigjährige Eleonora ihrer Mutter in einem Brief meine Ankunft an. &lt;br/&gt;&lt;br/&gt;
+On 15 November 1524 Eleonora, thirty years old, announces my arrival in a letter to her mother.
+
+[[Lassen Sie uns den Brief lesen-&gt;BBT-040]]
+[[Warum wählte Eleonora eine Schüssel als Geschenk für ihre Mutter aus?-&gt;BBT-042]]
+[[Let&#39;s read the letter -&gt;BBT-040]]
+[[Why did Eleonora choose a bowl as a gift to her mother? -&gt;BBT-042]]</tw-passagedata><tw-passagedata pid="47" name="BBT-040" tags="speaker-bowl-bot" position="25,2900" size="100,100">In der Absicht, Eure Excellence zu besuchen, mit einigen Erzeugnissen dieses Landes, die Euch gefallen könnten, und da ich zu der Zeit nichts Passendes fand, habe ich ein Majolika-Service für eine „credenza“ anfertigen lassen. Ich schicke es Eurer Excellence durch Battista, meinen Verwalter, den Überbringer dieses Briefes. Die Maestri dieses Landes haben einen gewissen Ruf für gute Arbeit, und wenn es Eurer Excellence gefallen sollte, würde ich mich freuen. Ihr könnt dieses Service in Porto nutzen, da es gut auf dem Lande passt. …. Es ist nämlich mein Wunsch, an nichts anderes zu denken, als Euch zu gefallen und Freude zu bereiten. Ich empfehle mich Pesaro XV. November MDXXIV. &lt;br/&gt;&lt;br/&gt;
+&quot;With a view to paying a visit to Your Excellency and with the intention to bring a few products of this land which might please you well, I however found nothing fitting at that time, so that I commissioned a majolica service for a “credenza” to be made. I am sending it to Your Excellency by the hand of my steward Battista, the bearer of this letter. The maestri of this land enjoy a certain reputation for excellent work, and if it should find Your Excellency’s favour, it would please me greatly. You can use this service at Porto, since it is very suitable for the countryside …. My sole wish is nothing else than to earn your favour and to give you pleasure.  I commend myself. Pesaro XV. November MDXXIV.&quot;
+
+[[Was ist eine &quot;Credenza&quot;?-&gt;BBT-041]]
+[[Warum wählte Eleonora eine Schüssel als Geschenk für ihre Mutter aus?-&gt;BBT-042]]
+[[What is a &quot;credenza&quot;?-&gt;BBT-041]]
+[[Why did Eleonora choose a bowl as a gift to her mother? -&gt;BBT-042]]</tw-passagedata><tw-passagedata pid="48" name="BBT-041" tags="speaker-bowl-bot" position="25,3025" size="100,100">Heute weiß kein Mensch mehr, was eine „Credenza“ ist: &lt;br/&gt;&lt;br/&gt;
+These days, nobody even knows what a “credenza“ is: 
+...ein Schaubüffet für kostbares Geschirr und Tafelgeräte, das in der Renaissance dazu dient, den Reichtum gastgebender Personen und ihre humanistische Bildung zur Schau zu stellen. &lt;br/&gt;&lt;br/&gt;
+...a representative buffet for precious crockery and tableware, which serves in the Renaissance to show off the hosts‘ wealth and their humanist culture.
+
+&lt;%
+story.showDelayed(&quot;SPK-010&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="49" name="BBT-051" tags="speaker-bowl-bot" position="25,4300" size="100,100">Es gelingt Nicola da Urbino Bildkompositionen des berühmten Malers Raffael (1483–1520), der übrigens auch aus Urbino stammt, für das Medium der Majolika zu erschließen. Am Puls der Zeit zu sein, ist der anspruchsvollen Kundschaft immer wichtig. &lt;br/&gt;&lt;br/&gt;
+Nicola da Urbino successfully adapts pictorial compositions of the famous painter Raffael (1483–1520), incidentally also a native of Urbino, for the medium of majolica. It is always of the utmost importance for his discerning customers to have their finger on the pulse of the age.
+
+[[Wie erfahren wir von Nicolas Arbeit?-&gt;SPK-018]]
+[[Welche anderen Themen sind in Nicolas Arbeit vorhanden?-&gt;SPK-016]]
+[[How do we know about Nicola&#39;s work?-&gt;SPK-018]]
+[[What other themes are present in Nicola&#39;s work?-&gt;SPK-016]]</tw-passagedata><tw-passagedata pid="50" name="BBT-IMG-009" tags="speaker-bowl-bot" position="150,3150" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/Screenshot%202024-06-25%20003505.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;
+
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-002&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="28" name="BB-002" tags="speaker-bowl-bot" position="525,25" size="100,100">Natürlich erzähle ich dir gerne mehr über meine bewegende Vergangenheit. Was genau interessiert dich? Möchtest du wissen:
+story.showDelayed(&quot;BBT-044&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="51" name="BBT-052" tags="speaker-bowl-bot" position="400,4450" size="100,100">Ich als von ihm gefertigte Schüssel bin jedenfalls sehr zufrieden mit der Art und Weise, wie geschickt Nicola da Urbino beim Motivtransfer der Mannalese vorgeht. Nicht umsonst wird er der „Raffael“ der Majolika-Malerei genannt. &lt;br/&gt;&lt;br/&gt;
+As a dish made by him at any rate, I am very happy with the ingenious way in which Nicola da Urbino transfers the motif of the gathering of the manna onto me. It is no coincidence that he is called the “Raffael of majolica painting&quot;.
+
+[[Wie erfahren wir von Nicolas Arbeit?-&gt;SPK-018]]
+[[Lassen Sie uns das Thema wechseln-&gt;BBT-053]]
+[[How do we know about Nicola&#39;s work?-&gt;SPK-018]]
+[[Let&#39;s change topic-&gt;BBT-053]]</tw-passagedata><tw-passagedata pid="52" name="BBT-042" tags="speaker-bowl-bot" position="25,3150" size="100,100">Bestimmt ist Eleonora insgeheim überzeugt, dass sie mit den gewählten Themen den Geschmack ihrer Mutter treffen, und damit einen willkommenen Anlass für gepflegte Konversation bieten wird. &lt;br/&gt;&lt;br/&gt;
+Eleonora must be secretly certain that she will appeal to her mother’s taste with the motifs she has chosen, so that they will provide a welcome topic for cultivated conversation.
 
 &lt;%
-story.showDelayed(&quot;DU-003&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="29" name="BB-A1-IMG-002" tags="speaker-bowl-bot" position="675,550" size="100,100">&lt;figure&gt;
-        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/manna.jpg&quot; alt=&quot;Mannalese aus dem Service von Isabella d’Este&quot; /&gt;
+story.showDelayed(&quot;BBT-IMG-009&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="53" name="BBT-044" tags="speaker-bowl-bot" position="275,3150" size="100,100">Jedenfalls lässt Eleonora das gemeinsame Wappen der Familien Este und Gonzaga an prominenter Stelle auf dem Geschirr anbringen, und kann dadurch bei ihrer Mutter besonders punkten. &lt;br/&gt;&lt;br/&gt;
+At any rate Eleonora has the joint coat of arms of the Este and Gonzaga families placed in a prominent position on the crockery, enabling her to score points in the eyes of her mother.
+
+&lt;%
+story.showDelayed(&quot;BBT-IMG-010&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="54" name="BBT-053" tags="speaker-bowl-bot" position="525,4425" size="100,100">Was möchtest du sonst noch wissen? &lt;br/&gt;&lt;br/&gt;
+What else would you like to know about?
+
+[[1: Prolog-&gt;SPK-001]]
+[[2: Wie kommt eine Schüssel ins Museum?-&gt;SPK-005]]
+[[3: Der Auftrag (Nicola da Urbino)-&gt;SPK-009]]
+[[4: Die Schüssel im Fokus-&gt;SPK-021]]
+[[5: Isabella d&#39;Este (Die Beschenkte)-&gt;SPK-031]]
+[[1: Prologue-&gt;SPK-001]]
+[[2: How does a bowl end up in a museum?-&gt;SPK-005]]
+[[3: The commission (Nicola da Urbino)-&gt;SPK-009]]
+[[4: Focus on the bowl-&gt;SPK-021]]
+[[5: Isabella d‘Este (The recipient)-&gt;SPK-031]]</tw-passagedata><tw-passagedata pid="55" name="BBT-057A" tags="speaker-bowl-bot" position="400,5125" size="100,100">Kennst du die Geschichte vom Manna in der Bibel? &lt;br/&gt;&lt;br/&gt;
+Do you know what the story of manna in the Bible is all about?
+
+[[1: Erzähl mir alles-&gt;BBT-058]]
+[[2: Ich bin bereits mit der Geschichte vertraut.-&gt;BBT-062-IMG]]
+[[1: Fill me in-&gt;BBT-058]]
+[[2: I&#39;m already familiar with the story-&gt;BBT-062-IMG]]</tw-passagedata><tw-passagedata pid="56" name="BBT-058" tags="speaker-bowl-bot" position="25,5250" size="100,100">Für alle, die nicht ganz bibelfest sind, erzähle ich die Begebenheit gerne in Kurzform... &lt;br/&gt;&lt;br/&gt;
+Okay, for all those of you who don’t know their Bible all that well, I’ll give a brief synopsis of the story...
+
+&lt;%
+story.showDelayed(&quot;BBT-059&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="57" name="BBT-062" tags="speaker-bowl-bot" position="150,5375" size="100,100">Auf der Schüssel ist der Moment dargestellt, in dem sich das Prozedere der Mannalese bereits eingespielt hat. Das Sammeln ist gut organisiert und in vollem Gange. Männer, Frauen und Kinder sind dabei, weiße Mannakörner vom Boden aufzulesen. Das ganze Volk macht mit, vom Kind bis zum Greis. &lt;br/&gt;&lt;br/&gt;
+The scene depicted on the bowl shows the point at which the process of harvesting the manna has already been established. It is well organized and everyone is busy at it. Men, women and children are gathering white manna from the ground. The entire tribe is involved, from little children to old men.
+
+[[Tell me more-&gt;BBT-063]]
+[[Erzählen Sie mir mehr-&gt;BBT-063]]
+[[How did he get this to work on a &#39;bowl&#39; format?-&gt;BBT-073]]
+[[Wie hat er das in einem &#39;Schüssel&#39;-Format umgesetzt?-&gt;BBT-073]]</tw-passagedata><tw-passagedata pid="58" name="BBT-063" tags="speaker-bowl-bot" position="275,5375" size="100,100">Mit der gewonnenen Erkenntnis, dass mit gegenseitiger Hilfe und der Einhaltung der Gebote das Überleben in der Wüste gesichert ist, lernt das Volk auf Gott zu vertrauen. &lt;br/&gt;&lt;br/&gt;
+With the lessons learned from this, that survival in the desert can only be assured when all work together and obey the instructions from above, the people learn to trust God.   
+
+&lt;%
+story.showDelayed(&quot;BBT-064&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="59" name="BBT-064" tags="speaker-bowl-bot" position="400,5375" size="100,100">Das Manna ist sowohl physische als auch geistige Nahrung – ein Zeichen, dass eine höhere Macht die Menschen beschützt und über sie wacht. &lt;br/&gt;&lt;br/&gt;
+The manna is both mental and physical sustenance – a sign that a higher power protects people and watches over them. 
+
+[[What is the special significance of manna in this case?-&gt;BBT-065]]
+[[Was ist die besondere Bedeutung des Manna in diesem Fall?-&gt;BBT-065]]
+[[How did he get this to work on a &#39;bowl&#39; format?-&gt;BBT-073]]
+[[Wie hat er das in einem &#39;Schüssel&#39;-Format umgesetzt?-&gt;BBT-073]]
+[[Let&#39;s look at a different aspect-&gt;BBT-101]]
+[[Betrachten wir einen anderen Aspekt.-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="60" name="BBT-065" tags="speaker-bowl-bot" position="150,5500" size="100,100">In der Renaissance hat die biblische Mannalese eine besondere Vorbildfunktion. Sie ist ein Appell an Herrschende, im Sinne des Humanismus (von lateinisch=humanitas), mit Anstand und Menschlichkeit vorausschauend zu regieren. &lt;br/&gt;&lt;br/&gt;
+The gathering of the manna fulfils a special exemplary function in the Renaissance. It is an appeal to rulers to govern with foresight, humanely and with propriety, in keeping with the humanist creed (from Latin=humanitas)
+
+&lt;%
+story.showDelayed(&quot;BBT-066&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="61" name="BBT-44A" tags="speaker-bowl-bot" position="25,3400" size="100,100">Denn so wird das Service zum Statussymbol. Ein Geschirr mit den persönlichen Wappen der Beschenkten oder mit denen der schenkenden Person wird in dieser Zeit außerordentlich geschätzt. 
+Es ist als diplomatisches und persönliches Geschenk insbesondere zwischen Frauen beliebt. &lt;br/&gt;&lt;br/&gt;
+Because this makes the service into a representative status symbol. The gift of a service with the personal coat of arms of the recipient or that of the giver is greatly appreciated in this period. It is therefore very popular as a diplomatic and personal gift, particularly between women.
+
+[[Gab es noch andere mögliche Motive?-&gt;SPK-012]]
+[[Hat Isabella Sie als Geschenk geschätzt?-&gt;SPK-013]]
+[[Were there other possible motives?-&gt;SPK-012]]
+[[Did Isabella appreciate you as a gift?-&gt;SPK-013]]</tw-passagedata><tw-passagedata pid="62" name="BBT-066" tags="speaker-bowl-bot" position="275,5500" size="100,100">Die Tatsache, dass das Thema der Mannalese für die größte Schüssel von Isabellas Service gewählt wird, verdeutlicht wie wichtig diese Botschaft ist. &lt;br/&gt;&lt;br/&gt;
+The fact that the gathering of the manna is chosen to decorate the biggest piece in Isabella‘s service emphasizes the importance of this message.
+
+
+&lt;%
+story.showDelayed(&quot;BBT-067&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="63" name="BBT-073" tags="speaker-bowl-bot" position="150,5775" size="100,100">Nicola da Urbino übernimmt auch den hochaufragenden Baum mit Etrogfrüchten sowie die provisorische Laubhütte, die während der Wanderung durch die Wüste Schutz bietet. &lt;br/&gt;&lt;br/&gt;
+Nicola da Urbino also takes over the tall tree with etrog fruits as well as the provisional booth leaf hut, which provides shelter during the trek through the desert.
+
+[[Erzählen Sie mir mehr-&gt;BBT-074]]
+[[Was ist mit dem Hintergrund?-&gt;BBT-075]]
+[[Betrachten wir einen anderen Aspekt.-&gt;BBT-101]]
+[[Tell me more-&gt;BBT-074]]
+[[What about the background?-&gt;BBT-075]]
+[[Let&#39;s look at a different aspect-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="64" name="BBT-074" tags="speaker-bowl-bot" position="25,5900" size="100,100">Rechts wählt Urbino für die Schüssel eine zeitgenössische Palastfassade, die mit Bauelementen wie einem angeschnittenen Dreiecksgiebel und Säulen mit Kompositkapitell Referenzen an die Antike erkennen lässt. Sie bietet einen würdigen Rahmen für eine der Impresa von Isabella. &lt;br/&gt;&lt;br/&gt;
+On the right-hand side, in contrast, Urbino chooses the facade of a contemporary palace for the bowl, which draws references to Classical Antiquity with architectural elements such as a truncated triangular pediment and pillars with composite capitals, thus providing a worthy setting for one of the impresas of Isabella d’Este.
+
+&lt;%
+story.showDelayed(&quot;BBT-075&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="65" name="BBT-075" tags="speaker-bowl-bot" position="150,5900" size="100,100">Der landschaftliche Hintergrund und der Himmel sind mit den für Nicola da Urbino charakteristischen orangeroten Horizontalstreifen und zwei spiralig eingerollten Wolkenballen gestaltet. Sie sind ein Markenzeichen des Majolika-Malers. &lt;br/&gt;&lt;br/&gt;
+The background landscape and the sky show the horizontal orange bands typical for Nicola da Urbino and two spirally involuted banks of cloud. These are a trademark of the majolica painter.
+
+&lt;%
+story.showDelayed(&quot;BBT-076&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="66" name="BBT-076" tags="speaker-bowl-bot" position="275,5900" size="100,100">Der Majolika-Maler hat weitere kleine Änderungen vorgenommen. Vielleicht macht es Dir ja Spaß sie zu suchen… &lt;br/&gt;&lt;br/&gt;
+The majolica painter made a few more minor alterations. Perhaps you would be interested to see if you can spot them… 
+
+&lt;%
+story.showDelayed(&quot;BBT-IMG-077&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="67" name="BBT-IMG-077" tags="speaker-bowl-bot" position="400,5900" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/bottom-half.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;figcaption&gt;
- Mannalese aus dem Service von Isabella d’Este
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;%
+story.showDelayed(&quot;BBT-IMG-077B&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="68" name="BBT-077" tags="speaker-bowl-bot" position="25,6025" size="100,100">Die bedeutendste inhaltliche Änderung, die Nicola da Urbino vornimmt, ist jedenfalls die Versetzung des bärtigen Mannes. Auf dem Stich ist dieser mit seinem Gefäß zu Moses gewandt, auf der Schüssel hingegen um 180 Grad nach rechts gedreht und mit besonders weit vorgestreckten Armen dargestellt. &lt;br/&gt;&lt;br/&gt;
+The most significant change in the contents made by Nicola da Urbino at any rate is the change in the position of the man with the beard. On the engraving, he is turned towards Moses with his basket while on the dish, he is rotated 180 degrees to the right, and portrayed stretching out his arms forwards.
+
+[[Explain the references-&gt;BBT-078]]
+[[Lassen Sie uns fortfahren-&gt;BBT-101]]
+[[Explain the references-&gt;BBT-078]]
+[[Let&#39;s move on-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="69" name="BBT-078" tags="speaker-bowl-bot" position="150,6025" size="100,100">Auf diese Weise rückt das Auffanggefäß für die Manna direkt unter das Wappen im Zentrum der Schüssel. Durch diesen Kunstgriff wird der Bezug zwischen dem Haus Gonzaga/Este und dem Wohl des ihnen anvertrauten Volkes betont. Nicht Moses ist der Ansprechpartner und Anführende, sondern die Regentin und Besitzerin des Service: Isabella d’Este. &lt;br/&gt;&lt;br/&gt;
+This puts the basket for receiving the manna directly underneath the coat of arms in the centre of the dish. By means of this artistic device, the reference drawn between the house of Gonzaga/Este and the prosperity of the people entrusted to their care is underlined. It is not Moses who is the addressee and the leader here, but the ruler and owner of the service, Isabella d’Este.
+
+&lt;%
+story.showDelayed(&quot;BBT-079&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="70" name="BBT-079" tags="speaker-bowl-bot" position="275,6025" size="100,100">Auf diese Weise erhält die Darstellung der Mannalese eine neue Bedeutung: Die biblische Geschichte wird zur Gegenwart. &lt;br/&gt;&lt;br/&gt;
+In this way the representation of the gathering of the manna takes on a new meaning: the biblical story is transposed into the present. 
+
+
+[[Lassen Sie uns Das Allianzwappen betrachten-&gt;SPK-024]]
+[[Was sagt uns die Bildsprache noch??-&gt;SPK-029]]
+[[Was ist mit Ihren Geschwistern?-&gt;SPK-030]]
+[[Let&#39;s look at the arms of alliance-&gt;SPK-024]]
+[[What else is the imagery telling us??-&gt;SPK-029]]
+[[What about your siblings?-&gt;SPK-030]]</tw-passagedata><tw-passagedata pid="71" name="BBT-054" tags="speaker-bowl-bot" position="150,5000" size="100,100">&lt;model-viewer alt=&quot;&quot; src=&quot;https://culturalinstitute-3d-serving.storage.googleapis.com/143824818/vgFschfhvbq7Dw/1707216809646/gltf/model.glb&quot; data-model-url=&quot;https://culturalinstitute-3d-serving.storage.googleapis.com/143824818/vgFschfhvbq7Dw/1707216809646/gltf/model.glb&quot; camera-controls=&quot;true&quot; 
+disable-zoom=&quot;true&quot; 
+min-camera-orbit=&quot;auto 0deg 0m&quot; 
+max-camera-orbit=&quot;auto 360deg auto&quot;
+interpolation-decay=&quot;200&quot; 
+autoplay=&quot;true&quot; 
+environment-image=&quot;https://storage.googleapis.com/culturalinstitute-3d-serving/resources/lightroom_14b_bright.hdr&quot; 
+loading=&quot;lazy&quot; 
+ar-status=&quot;not-presenting&quot; 
+interaction-prompt=&quot;auto&quot;  poster=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/bowl.png&quot;&gt;&lt;/model-viewer&gt;
+&lt;br /&gt;&lt;br /&gt;
+
+Wo sollen wir anfangen? &lt;br/&gt;&lt;br/&gt;
+Where shall we start?
+
+[[Mehr über Sie-&gt;BBT-055]]
+[[Der Übergang zu einem anderen Medium-&gt;SPK-022]]
+[[Das Allianzwappen-&gt;SPK-024]]
+[[Entschlüsselung und Insiderwissen-&gt;SPK-029]]
+[[Meine Geschwister auf der ganzen Welt-&gt;SPK-030]]
+[[More about you-&gt;BBT-055]]
+[[The transfer to a different medium-&gt;SPK-022]]
+[[The arms of alliance-&gt;SPK-024]]
+[[Decoding and insider knowledge-&gt;SPK-029]]
+[[My siblings around the globe-&gt;SPK-030]]</tw-passagedata><tw-passagedata pid="72" name="BBT-082" tags="speaker-bowl-bot" position="150,6550" size="100,100">Der Bezug des Majolika-Service zu Isabella d’Este wird nicht nur über das Allianzwappen, sondern auch durch sogenannte „Imprese“ hergestellt. &lt;br/&gt;&lt;br/&gt;
+The reference to Isabella d’Este’s majolica service is not only created by means of the arms of alliance, but also through so-called “imprese”.
+
+&lt;%
+story.showDelayed(&quot;BBT-082A&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="73" name="BBT-082A" tags="speaker-bowl-bot" position="275,6550" size="100,100">Dies sind individuell, für eine bestimmte Person und spezielle Anlässe entwickelte Symbole. &lt;br/&gt;&lt;br/&gt;
+These are individual symbols created specifically for a particular person and a special occasion.
+
+[[Was repräsentieren sie?-&gt;BBT-083]]
+[[Welche Imprese haben Sie?-&gt;BBT-085]]
+[[Betrachten wir einen anderen Aspekt.-&gt;BBT-101]]
+[[What do they represent?-&gt;BBT-083]]
+[[What imprese do you have?-&gt;BBT-085]]
+[[Let&#39;s look at a different aspect-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="74" name="BBT-084" tags="speaker-bowl-bot" position="150,6675" size="100,100">Für Isabella und ihren Mann sind insgesamt sieben Imprese überliefert, die alle in den unterschiedlichsten Kombinationen auf den 24 erhaltenen Tellern, Platten und Schüsseln des Service vorkommen. &lt;br/&gt;&lt;br/&gt;
+A total of seven imprese have been identified for Isabella and her husband, which all occur in varying combinations on the 24 surviving plates, platters and dishes and bowls of the service.
+
+[[Einschließlich Ihnen?-&gt;BBT-085]]
+[[Was machen Ihre überlebenden Geschwister?-&gt;SPK-030]]
+[[Betrachten wir einen anderen Aspekt.-&gt;BBT-101]]
+[[Including you?-&gt;BBT-085]]
+[[What are your surviving siblings up to?-&gt;SPK-030]]
+[[Let&#39;s look at a different aspect-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="75" name="BBT-085" tags="speaker-bowl-bot" position="25,6800" size="100,100">Bei mir sind drei Imprese angebrach &lt;br/&gt;&lt;br/&gt;
+Three imprese can be found on me: 
+
+[[Das Notenblatt mit Pausezeichen-&gt;BBT-086-IMG]]
+[[Der Leuchter-&gt;BBT-088-IMG]]
+[[Der Tiegel im Feuer-&gt;BBT-091-IMG]]
+[[The sheet of music with rests-&gt;BBT-086-IMG]]
+[[The candlestick-&gt;BBT-088-IMG]]
+[[The crucible in the fire-&gt;BBT-091-IMG]]</tw-passagedata><tw-passagedata pid="76" name="BBT-083" tags="speaker-bowl-bot" position="25,6675" size="100,100">Sie stehen für einen Leitgedanken, nach dem eine Person ihr Handeln ausrichten soll.  Aufgrund ihrer verschlüsselten Codierung können Imprese nur von Insidern entschlüsselt werden. &lt;br/&gt;&lt;br/&gt;
+They stand for a guiding principle which should inspire the actions of a person. Due to their encrypted coding, such imprese can only be decoded by insiders. 
+
+&lt;%
+story.showDelayed(&quot;BBT-084&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="77" name="BBT-086-IMG" tags="speaker-bowl-bot" position="25,6975" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/sheet-of-music.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;figcaption&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-A1-005&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="30" name="BB-A-IMG-001" tags="speaker-bowl-bot" position="525,225" size="100,100">&lt;figure&gt;
-        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-10/Screenshot%202024-10-16%20004924.jpg&quot; alt=&quot;Zentren der Majolika Produktion - Manufakturen in Italien&quot; /&gt;
+story.showDelayed(&quot;BBT-086&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="78" name="BBT-087" tags="speaker-bowl-bot" position="275,6975" size="100,100">Die beiden folgenden Imprese übernimmt Isabella d’Este von Ihrem Mann Francesco aus dem Hause Gonzaga: &lt;br/&gt;&lt;br/&gt;
+Isabella d’Este took over the two following imprese from her husband Francesco from the Gonzaga dynasty: 
+
+[[Der Leuchter-&gt;BBT-088-IMG]]
+[[Der Tiegel im Feuer-&gt;BBT-091-IMG]]
+[[The candlestick-&gt;BBT-088-IMG]]
+[[The crucible in the fire-&gt;BBT-091-IMG]]</tw-passagedata><tw-passagedata pid="79" name="BBT-088-IMG" tags="speaker-bowl-bot" position="25,7100" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/candlestick.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;figcaption&gt;
-Zentren der Majolika Produktion - Manufakturen in Italien
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-A-006&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="31" name="BB-A1-IMG-001" tags="speaker-bowl-bot" position="175,550" size="100,100">&lt;figure&gt;
-        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-10/Screenshot%202024-10-16%20010404.jpg&quot; alt=&quot;Verzamelen van het manna&quot; /&gt;
+story.showDelayed(&quot;BBT-088&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="80" name="BBT-090" tags="speaker-bowl-bot" position="400,7100" size="100,100">Die Wahl des Leuchters auf der Schüssel passt zum Thema der Mannalese. Sowohl das Volk auch die es führenden Personen können darauf vertrauen, dass Gott sie leiten wird. Für Isabella und ihren Mann bedeutet dies: so gut wie sich Moses mit Gottes Hilfe um sein Volk bemüht, sollen auch sie als Regierende für die Bedürfnisse der ihnen Anvertrauten Sorge tragen. &lt;br/&gt;&lt;br/&gt;
+The choice of the candlestick on the dish is a fitting attribute for the subject of the gathering of the manna. Both the people and their leaders can rely on God to light their way. For Isabella, this means: just as Moses strives, with God’s help, to do the best for his people, so should she, as ruler, care for the needs of those entrusted to her.  
+
+See also: 
+
+[[Das Notenblatt mit Pausen-&gt;BBT-086-IMG]]
+[[Der Tiegel im Feuer-&gt;BBT-091-IMG]]
+[[Was ist mit Ihren Geschwistern?-&gt;SPK-030]]
+[[The sheet of music with rests-&gt;BBT-086-IMG]]
+[[The crucible in the fire-&gt;BBT-091-IMG]]
+[[What about your siblings?-&gt;SPK-030]]</tw-passagedata><tw-passagedata pid="81" name="BBT-089" tags="speaker-bowl-bot" position="275,7100" size="100,100">Diese Devise bezieht sich auf ein Offizium der Osternacht. &lt;br/&gt;&lt;br/&gt;
+This motto refers to the office of the Easter Vigil.  
+
+&lt;%
+story.showDelayed(&quot;BBT-090&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="82" name="BBT-091-IMG" tags="speaker-bowl-bot" position="25,7225" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/rod-in-fire.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;figcaption&gt;
- Verzamelen van het manna
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-A1-002&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="32" name="BB-B-IMG-001" tags="speaker-bowl-bot" position="150,725" size="100,100">&lt;figure&gt;
-        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/portr-t-von-eleonora-gonzaga-herzogin-von-urbino-titian-1537-original-source-galleria-degli-uffizi.jpg&quot; alt=&quot;Porträt von Eleonora Gonzaga&quot; /&gt;
+story.showDelayed(&quot;BBT-092&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="83" name="BBT-092" tags="speaker-bowl-bot" position="275,7225" size="100,100">Auch für Isabella d’Este und Ihren Mann gilt: Welche Prüfung Gott ihnen auch auferlegen mag, sie werden die Bewährungsprobe annehmen, sich nicht vom Schicksal und Rückschlägen entmutigen lassen und niemals das Vertrauen in Gott verlieren. &lt;br/&gt;&lt;br/&gt;
+For Isabella d’Este and her husband, too, the maxim is: whatever trials God may impose on them, they will accept it to test their mettle, not be daunted by blows of fate and setbacks and never lose their trust in God.
+
+Siehe auch:
+Such as:
+
+[[Das Notenblatt mit Pausen-&gt;BBT-086-IMG]]
+[[Der Leuchter-&gt;BBT-088-IMG]]
+[[Was ist mit Ihren Geschwistern?-&gt;SPK-030]]
+[[Betrachten wir einen anderen Aspekt.-&gt;BBT-101]]
+[[The sheet of music with rests-&gt;BBT-086-IMG]]
+[[The candlestick-&gt;BBT-088-IMG]]
+[[What about your siblings?-&gt;SPK-030]]
+[[Let&#39;s look at a different aspect-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="84" name="BBT-094" tags="speaker-bowl-bot" position="275,7350" size="100,100">Um sie alle zu sehen, müsste ich einmal um die ganze Welt reisen: &lt;br/&gt;&lt;br/&gt;
+If I wanted to see them all I would have to travel once around the globe:
+
+&lt;%
+story.showDelayed(&quot;BBT-095&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="85" name="BBT-095" tags="speaker-bowl-bot" position="400,7350" size="100,100">Von St. Petersburg über Berlin nach London, Cambridge und Luton Ho &lt;br/&gt;&lt;br/&gt;
+From St. Petersburg via Berlin to London, Cambridge and Luton Hoo
+
+&lt;%
+story.showDelayed(&quot;BBT-096&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="86" name="BBT-093" tags="speaker-bowl-bot" position="150,7350" size="100,100">Ich vermisse meine (dreiundzwanzig) kleinen Geschwister… &lt;br/&gt;&lt;br/&gt;
+I miss my (twenty-three) little siblings…
+
+&lt;%
+story.showDelayed(&quot;BBT-094&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="87" name="BBT-096" tags="speaker-bowl-bot" position="525,7350" size="100,100">Von Paris nach New York, Boston und Philadelphia. &lt;br/&gt;&lt;br/&gt;
+From Paris to New York, Boston and Philadelphia.
+
+&lt;%
+story.showDelayed(&quot;BBT-097&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="88" name="BBT-097" tags="speaker-bowl-bot" position="650,7350" size="100,100">Nach Verona und Bologna &lt;br/&gt;&lt;br/&gt;
+To Verona and Bologna
+
+&lt;%
+story.showDelayed(&quot;BBT-098&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="89" name="BBT-098" tags="speaker-bowl-bot" position="775,7350" size="100,100">... und ein kleiner Sprung nach Melbourne. &lt;br/&gt;&lt;br/&gt;
+... and a quick jump over to Melbourne.
+
+&lt;%
+if(fromOtherSection &amp;&amp; fromOtherSection === true) {
+	fromOtherSection = false;
+	story.showDelayed(&quot;BBT-099-other&quot;);
+} else {
+	story.showDelayed(&quot;BBT-099&quot;);
+}
+%&gt;</tw-passagedata><tw-passagedata pid="90" name="BBT-103" tags="speaker-bowl-bot" position="525,7900" size="100,100">Wenn Sie denken, dass meine Markgräfin wirklich so aussah, dann hat Isabella genau das erreicht, was sie wollte. &lt;br/&gt;&lt;br/&gt;
+If you think that my margravine really looked like this, then Isabella has achieved just what she wanted.
+
+&lt;%
+story.showDelayed(&quot;BBT-104&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="91" name="BBT-105" tags="speaker-bowl-bot" position="775,7900" size="100,100">Dieses, von Isabella im Alter von 60 Jahren bei Tizian in Auftrag gegebene Porträt stellt sie so dar, wie sie von der Nachwelt erinnert werden will. &lt;br/&gt;&lt;br/&gt;
+This portrait commissioned by Isabella from Titian at the age of 60 shows her just how she wants to be remembered.
+
+[[Sie hat wirklich vorausgedacht, oder?-&gt;BBT-106]]
+[[She really thought ahead didn&#39;t she-&gt;BBT-106]]
+[[Wie sah das Gesamtbild aus?-&gt;BBT-109]]
+[[What was the full picture?-&gt;BBT-109]]</tw-passagedata><tw-passagedata pid="92" name="BBT-099" tags="speaker-bowl-bot" position="900,7350" size="100,100">Backpackers welcome… So viel Fliegerei ist nicht mehr in, also muss ich mich mit meiner Sehnsucht begnügen. Ich freue mich über jedes meiner Geschwister, das ich digital besuchen kann. &lt;br/&gt;&lt;br/&gt;
+Backpackers welcome … But flying such a lot is out of fashion today, so I will have to make do with longing for them and visit the others virtually. 
+
+&lt;%
+story.showDelayed(&quot;BBT-100&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="93" name="BBT-099-other" tags="speaker-bowl-bot" position="925,7475" size="100,100">Backpackers welcome… So viel Fliegerei ist nicht mehr in, also muss ich mich mit meiner Sehnsucht begnügen. Ich freue mich über jedes meiner Geschwister, das ich digital besuchen kann. &lt;br/&gt;&lt;br/&gt;
+Backpackers welcome … But flying such a lot is out of fashion today, so I will have to make do with longing for them and visit the others virtually. 
+
+[[Erzählen Sie mir mehr über Nicola da Urbino-&gt;SPK-015]]
+[[Tell me more about Nicola da Urbino-&gt;SPK-015]]
+[[Was hat Sie besonders gemacht?-&gt;SPK-016]]
+[[What made you special?-&gt;SPK-016]]</tw-passagedata><tw-passagedata pid="94" name="BBT-109" tags="speaker-bowl-bot" position="25,8150" size="100,100">ISABELLA D‘ ESTE’S DIFFERENT ROLES
+
+-	Born in 1474 in Ferrara, Margravine of Mantua since 1490, died in 1539 in Mantua
+
+-	Mother of eight children, ruler, networker, art collector, first lady, fashion icon and trendsetter 
+
+I can show her profile here if you like?
+
+[[Sicher-&gt;BBT-110]]
+[[Nein danke-&gt;BBT-116]]
+[[Lassen Sie uns das Thema wechseln-&gt;BBT-110]]
+[[Sure-&gt;BBT-110]]
+[[No thanks-&gt;BBT-116]]
+[[Let&#39;s change topic-&gt;BBT-110]]</tw-passagedata><tw-passagedata pid="95" name="BBT-100" tags="speaker-bowl-bot" position="1025,7325" size="100,100">Zurück zu anderen Abschnitten: &lt;br/&gt;&lt;br/&gt;
+Back to other sections: 
+
+[[1: Prolog-&gt;SPK-001]]
+[[2: Wie kommt eine Schüssel ins Museum?-&gt;SPK-005]]
+[[3: Der Auftrag (Nicola da Urbino)-&gt;SPK-009]]
+[[4: Die Schüssel im Fokus-&gt;SPK-021]]
+[[5: Isabella d&#39;Este (Die Beschenkte)-&gt;SPK-031]]
+
+[[1: Prologue-&gt;SPK-001]]
+[[2: How does a bowl end up in a museum?-&gt;SPK-005]]
+[[3: The commission (Nicola da Urbino)-&gt;SPK-009]]
+[[4: Focus on the bowl-&gt;SPK-021]]
+[[5: Isabella d‘Este (The recipient)-&gt;SPK-031]]</tw-passagedata><tw-passagedata pid="96" name="BBT-112" tags="speaker-bowl-bot" position="275,8275" size="100,100">ERFOLGSBILANZ 
+
+-	1530:  Isabella erzielt die Erhebung des Markgrafentums Mantua zum Herzogtum durch Kaiser Karl V
+ 
+-	ihr erster Sohn, Federico Gonzaga, wird dadurch zum Herzog
+
+-	1527: Isabella erwirkt für ihren zweiten Sohn, Ercole Gonzaga, die Ernennung zum Kardinal  
+
+-	1536: Ferrante I. Gonzaga, der dritte Sohn von Isabella, wird von Kaiser Karls V. zum Vizekönig von Sizilien ernannt 
+
+-	-	Mantua entwickelt sich zu einem der wichtigen Zentren des Humanismus in Norditalien
+&lt;br/&gt;&lt;br/&gt;
+
+
+SUCCESSES 
+
+-	1530: Isabella succeeds in having the Margravate of Mantua elevated to the status of a Duchy by Emperor Charles V; 
+
+-	her eldest son, Federico Gonzaga, becomes a Duke as a result 
+
+-	1527: Isabella obtains the appointment as cardinal for her second son, Ercole Gonzaga 
+
+-	1536: Ferrante I Gonzaga, Isabella’s third son, is appointed Viceroy of Sicily by Emperor Charles V 
+
+-	Mantua becomes one of the major centres of humanism in Northern Italy 
+
+[[Humanistischer Hintergrund-&gt;BBT-113]]
+[[Profil überspringen-&gt;BBT-116]]
+[[Humanistic Background-&gt;BBT-113]]
+[[Skip Profile-&gt;BBT-116]]</tw-passagedata><tw-passagedata pid="97" name="BBT-107" tags="speaker-bowl-bot" position="150,8025" size="100,100">ISABELLA D‘ ESTE, ENKELIN UND NICHTE DER KÖNIGE VON ARAGON, TOCHTER UND SCHWESTER DER HERZÖGE VON FERRARA, FRAU UND MUTTER DER MARKGRAFEN VON MANTUA &lt;br/&gt;&lt;br/&gt;
+ISABELLA D‘ ESTE, GRANDDAUGHTER AND NIECE OF THE KINGS OF ARAGON, DAUGHTER AND SISTER OF THE DUKES OF FERRARA, WIFE AND MOTHER OF THE MARGRAVES OF MANTUA
+
+&lt;%
+story.showDelayed(&quot;BBT-108&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="98" name="BBT-117" tags="speaker-bowl-bot" position="25,8525" size="100,100">Am 14. Mai 1474 ist in Ferrara die Freude groß. Das erste Kind von Ercole d’Este und Leonora von Aragon ist gerade geboren. Es ist ein Mädchen, das Isabella getauft wird. Am aristokratisch geprägten, kulturaffinen Hof von Ferrara genießt Isabella eine besonders sorgfältige Erziehung. &lt;br/&gt;&lt;br/&gt;
+On 14 May 1474 there is great rejoicing in Ferrara. The first child of Ercole d’Este and Leonora von Aragon has just been born. It is a girl, and she has been christened Isabella. Isabella receives a particularly thorough education at the court of Ferrara with its aristocratic traditions and openness to all forms of culture.
+
+&lt;%
+story.showDelayed(&quot;BBT-118&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="99" name="BBT-118" tags="speaker-bowl-bot" position="150,8525" size="100,100">Aufgrund ihrer fürstlichen Herkunft - ihre Mutter ist schließlich die Tochter des Königs von Neapel - ist Isabella selbstverständlich eine glänzende Partie. Schon als sie sechs Jahre alt ist, wird sie mit dem acht Jahre älteren Francesco Gonzaga, Sohn des Markgrafen von Mantua verlobt. &lt;br/&gt;&lt;br/&gt;
+Due to her royal birth – after all, her mother is the daughter of the King of Naples - Isabella is of course a splendid match. When she is only six years old, she is betrothed to Francesco Gonzaga, son of the margrave of Mantua, who is eight years older than her.
+
+
+[[Wie war ihre Ausbildung?-&gt;SPK-032]]
+[[Wann hat sie geheiratet?-&gt;SPK-033]]
+[[What about her training?-&gt;SPK-032]]
+[[When did she get married?-&gt;SPK-033]]
+[[Konnte sie ihren eigenen Interessen nachgehen?-&gt;BBT-145]]
+[[Did she pursure personal interests?-&gt;BBT-145]]</tw-passagedata><tw-passagedata pid="100" name="BBT-102" tags="speaker-bowl-bot" position="150,7900" size="100,100">Darf ich vorstellen: Isabella d‘Este: meine Markgräfin. &lt;br/&gt;&lt;br/&gt;
+May I introduce my margravine: Isabella d‘Este.
+
+&lt;%
+story.showDelayed(&quot;BBT-IMG-102&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="101" name="BBT-119" tags="speaker-bowl-bot" position="150,8675" size="100,100">Im Hinblick auf ihre künftige Stellung als Markgräfin von Mantua wird Isabella unterwiesen in Latein, griechischer und römischer Geschichte, liest klassische Literatur und beschäftigt sich mit Astrologie. &lt;br/&gt;&lt;br/&gt;
+To prepare her for her future role as margravine, Isabella receives tuition in Latin, Greek and Roman history, reads classical literature and studies astrology.
+
+&lt;%
+story.showDelayed(&quot;BBT-120&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="102" name="BBT-104" tags="speaker-bowl-bot" position="650,7900" size="100,100">Als Medienprofi weiß sie sich geschickt in Szene zu setzen.   &lt;br/&gt;&lt;br/&gt;
+As a media professional, she knows very well how to show herself from her best side.
+
+&lt;%
+story.showDelayed(&quot;BBT-105&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="103" name="BBT-106" tags="speaker-bowl-bot" position="25,8025" size="100,100">Isabella überlässt nichts dem Zufall: bereits 1522 lässt sie an prominenter Stelle im Palazzo Ducale in Mantua, an der Gartenmauer ihres Studiolo, in der Sprache des Humanismus folgende lateinische Inschrift anbringen: &lt;br/&gt;&lt;br/&gt;
+Isabella leaves nothing to chance: in 1522, she already has the following inscription in Latin, the language of humanism, put up on the garden wall of her studiolo where it can be seen by everyone:
+
+&lt;%
+story.showDelayed(&quot;BBT-107&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="104" name="BBT-121" tags="speaker-bowl-bot" position="25,8800" size="100,100">Isabella ist sich ihrer Verantwortung als künftige Regentin bewusst. Auch von ihrer Mutter wird sie entsprechend instruiert, fürsorglich und umsichtig zu regieren. &lt;br/&gt;&lt;br/&gt;
+Isabella is very much aware of her responsibilities as a future ruler. She is also appropriately instructed by her mother about how to govern in a solicitous and prudent manner
+
+&lt;%
+story.showDelayed(&quot;BBT-122&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="105" name="BBT-110" tags="speaker-bowl-bot" position="25,8275" size="100,100">REGENTIN 
+Isabella agiert souverän auf dem diplomatischen Parkett; zugunsten ihres Markgrafentums Mantua und ihrer Geburtsstadt Ferrara verstrickt sie sich nicht in die Intrigen ihrer Zeit &lt;br/&gt;&lt;br/&gt;
+
+
+RULER 
+
+Isabella navigates the diplomatic arena with effortless ease in the interests of her Margravate of Mantua and her home town of Ferrara and avoids becoming involved in the intrigues of the period 
+
+[[Netzwerkerin-&gt;BBT-111]]
+[[Profil überspringen-&gt;BBT-116]]
+[[Networker-&gt;BBT-111]]
+[[Skip Profile-&gt;BBT-116]]
+[[Tell me more-&gt;SPK-034]]
+[[Erzählen Sie mir mehr-&gt;SPK-034]]</tw-passagedata><tw-passagedata pid="106" name="BBT-123" tags="speaker-bowl-bot" position="25,8925" size="100,100">Ihr Verlobter, Francesco II. Gonzaga (1466, reg. 1484–1519), ist einer der berühmtesten Condottieri seiner Zeit, ein Söldnerführer, der für seine militärischen Dienste sehr gut bezahlt wird. &lt;br/&gt;&lt;br/&gt;
+Her fiancé, Francesco II Gonzaga (1466, ruled 1484–1519) is one of the most celebrated condottieri of his time, a commander of mercenary soldiers who is very well paid for his military services.
+
+&lt;%
+story.showDelayed(&quot;BBT-124&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="107" name="BBT-124" tags="speaker-bowl-bot" position="150,8925" size="100,100">Nach einer ausgezeichneten humanistischen Ausbildung in der berühmten, von Vittorino da Feltre in Mantua gegründeten Prinzenschule tritt er 1484 in den Dienst des Herzogtums Mailand ein. &lt;br/&gt;&lt;br/&gt;
+He is Isabella’s intellectual equal. After completing an excellent humanistic education in the famous school for princes founded by Vittorino da Feltre in Mantua, he enters the service of the Duchy of Milan in 1484.
+
+&lt;%
+story.showDelayed(&quot;BBT-125&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="108" name="BBT-111" tags="speaker-bowl-bot" position="150,8275" size="100,100">NETZWERKERIN 
+
+Isabella korrespondiert und verhandelt mit Königen, Kaisern und Päpsten: 
+
+- Ludwig XII. und Franz I., Könige von Frankreich 
+
+- Maximilian I. und Karl V., Kaiser des Heiligen Römischen Reiches
+
+- Alexander VI., Julius II., Leo X., Clemens VII., Römische Päpste 
+&lt;br/&gt;&lt;br/&gt;
+
+
+NETWORKER 
+
+Isabella maintains correspondence and negotiates with kings, emperors and popes:
+
+- Louis XII and Francois I, Kings of France 
+
+- Maximilian I and Charles V, Holy Roman Emperors
+
+- Alexander VI, Julius II, Leo X, Clemens VII, Popes in Rome 
+
+
+[[Erfolgsbilanz-&gt;BBT-112]]
+[[Profil überspringen-&gt;BBT-116]]
+[[Successes-&gt;BBT-112]]
+[[Skip Profile-&gt;BBT-116]]</tw-passagedata><tw-passagedata pid="109" name="BBT-125" tags="speaker-bowl-bot" position="275,8925" size="100,100">Viele weitere Einsätze in anderen Stadtstaaten Italiens wie Venedig, Neapel und Rom werden folgen. &lt;br/&gt;&lt;br/&gt;
+Many further military operations in other Italian city-states such as Venice, Naples and Rome are to follow.
+
+[[Wann hat sie geheiratet?-&gt;SPK-033]]
+[[Wie war ihr frühes Leben?-&gt;BBT-117]]
+[[When did she get married?-&gt;SPK-033]]
+[[How was her early life?-&gt;BBT-117]]
+[[Wie hat ihr Eheleben begonnen?-&gt;BBT-132]]
+[[How did ther married life start?-&gt;BBT-132]]</tw-passagedata><tw-passagedata pid="110" name="BBT-108" tags="speaker-bowl-bot" position="275,8025" size="100,100">Aber ich, die ich sie gut kenne, weiß, dass sie noch viel mehr ist. &lt;br/&gt;&lt;br/&gt;
+But I know her very well, and I know that there is much more to her than that.
+
+[[Welche verschiedenen Rollen hatte sie?-&gt;BBT-109]]
+[[Lassen Sie uns am Anfang beginnen -&gt;BBT-102A]]
+[[What were her different roles?-&gt;BBT-109]]
+[[Let&#39;s start at the begining -&gt;BBT-102A]]</tw-passagedata><tw-passagedata pid="111" name="BBT-126" tags="speaker-bowl-bot" position="150,9075" size="100,100">Nachdem jahrelang alles sorgfältig vorbereitet &lt;br/&gt;&lt;br/&gt;
+After years of preparation have been finalized down to the last detail and set in motion...
+
+&lt;%
+story.showDelayed(&quot;BBT-127&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="112" name="BBT-127" tags="speaker-bowl-bot" position="275,9075" size="100,100">... in die richtige Bahn gebracht und die Vertragsverhandlungen bezüglich der Mitgift zu aller Zufriedenheit abgeschlossen sind... &lt;br/&gt;&lt;br/&gt;
+... and the negotiations concerning the dowry have been completed to everyone’s satisfaction...
+
+&lt;%
+story.showDelayed(&quot;BBT-128&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="113" name="BBT-120" tags="speaker-bowl-bot" position="275,8675" size="100,100">Ihr besonders musikbegeisterter Vater sorgt dafür, dass sie eine erstklassige musikalische Ausbildung erhält. Sie spielt Flöte und Laute, bezaubert mit ihrer schönen Singstimme in glockenreinem Sopran und lernt die kultivierten höfischen Tänze der Zeit. &lt;br/&gt;&lt;br/&gt;
+Her father, a passionate music lover, ensures that she is given a first-class musical education. She plays the flute and the lute, captivates listeners with her beautiful soprano voice, clear as a bell, and learns the cultivated courtly dances of the period.
+
+[[Glück für einige -&gt;BBT-121]]
+[[Lucky for some -&gt;BBT-121]]
+[[Wie ist es ausgegangen?-&gt;BBT-142]]
+[[How did it turn out?-&gt;BBT-142]]
+[[Wie ist sie nach Mantua gekommen?-&gt;BBT-132]]
+[[How did she get to Mantua?-&gt;BBT-132]]</tw-passagedata><tw-passagedata pid="114" name="BBT-128" tags="speaker-bowl-bot" position="400,9075" size="100,100">... kann jetzt, am 10. Februar 1490 – zehn Jahre nach der offiziellen Verlobung – eine bombastische Hochzeit gefeiert werden: &lt;br/&gt;&lt;br/&gt;
+... now – it is 10 February 1490, ten years after the official engagement – the way is free to celebrate a bombastic wedding:
+ 
+&lt;%
+story.showDelayed(&quot;BBT-129&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="115" name="BBT-122" tags="speaker-bowl-bot" position="150,8800" size="100,100">Mit diesem Portfolio ist sie, im Alter von fast 16 Jahren, bestens vorbereitet, sowohl auf ihre künftigen repräsentativen als auch ihre politischen Aufgaben. &lt;br/&gt;&lt;br/&gt;
+
+
+With this portfolio, she is, at the age of 16, ideally equipped both for the representative and also the political tasks awaiting her.
+
+[[Was passierte als Nächstes?-&gt;BBT-123]]
+[[Wie ist es ausgegangen?-&gt;SPK-033]]
+[[Wie war ihr frühes Leben?-&gt;BBT-117]]
+[[What happened next?-&gt;BBT-123]]
+[[How did it turn out?-&gt;SPK-033]]
+[[How was her early life?-&gt;BBT-117]]</tw-passagedata><tw-passagedata pid="116" name="BBT-129" tags="speaker-bowl-bot" position="525,9075" size="100,100">• 8 Tage 
+
+• 60 Schiffe 
+
+• 17.000 geladene Gäste, darunter Excellenzen wie
+
+• die Botschafter von Neapel und Mailand
+
+• VIPs:
+
+• Papst Innozenz VIII.
+
+• Kaiser Maximilian I.
+
+• König Alfons II. von Neapel und König Charles VIII. von Frankreich
+
+• Bankette, Musik und nächtelange Bälle
+&lt;br/&gt;&lt;br/&gt;
+
+
+• 8 days
+
+• 60 ships
+
+• 17,000 invited guests, among them excellencies such as the ambassadors of Naples and Milan
+
+• VIPs:
+
+• Pope Innocent VIII   
+
+• Emperor Maximilian I
+
+• King Alfons II of Naples and King Charles VIII of France
+
+• Banquets, music and night-long balls 
+
+
+[[Was ist mit dem Kuchen?-&gt;BBT-131]]
+[[Irgendwelche anderen Höhepunkte?-&gt;BBT-130]]
+[[What about the cake?-&gt;BBT-131]]
+[[Any other highlights?-&gt;BBT-130]]
+[[Wie wurden sie bei der Ankunft begrüßt?-&gt;BBT-135]]
+[[How were the lucky couple greeted on arrival?-&gt;BBT-135]]</tw-passagedata><tw-passagedata pid="117" name="BBT-113" tags="speaker-bowl-bot" position="400,8275" size="100,100">HUMANISTISCHER BACKGROUND 
+
+-	Isabella kann sich fließend auf Latein unterhalten 
+
+-	wird geschätzt für ihren Charme und ihre Konversation 
+
+-	steht in Kontakt mit herausragenden Persönlichkeiten des Humanismus 
+
+-	schreibt über 28.000 Briefen 
+
+-	ist bestens vertraut mit der Literatur ihrer Zeit 
+
+-	liebt Musik, Dichtung und Kunst 
+
+-	ist vernetzt mit den besten Kunstschaffenden und Philosophierenden ihrer Zeit 
+&lt;br/&gt;&lt;br/&gt;
+
+HUMANISTIC BACKGROUND 
+
+-	Isabella can converse fluently in Latin 
+
+-	she is admired for her charm and cultivated conversation 
+
+-	she maintains contacts to outstanding figures of humanism 
+
+-	writes more than 28,000 letters 
+
+-	Is very familiar with the literature of her time 
+
+-	Is a connoisseur of music, poetry and art 
+
+-	networks with the best artists and philosophers of her time
+
+[[Kunstmäzenin-&gt;BBT-114]]
+[[Profil überspringen-&gt;BBT-116]]
+[[Patroness of the arts-&gt;BBT-114]]
+[[Skip Profile-&gt;BBT-116]]</tw-passagedata><tw-passagedata pid="118" name="BBT-130" tags="speaker-bowl-bot" position="25,9200" size="100,100">Der Auftakt der Hochzeitsfeierlichkeiten findet am 10. Februar 1490 in Ferrara statt:  Zu Ehren der Braut und der vornehmen Gesellschaft wird im großen Saal des Palazzo Ducale eine Komödie aufgeführt und ein Festessen serviert. Wie bereits bei der Verlobungsfeier wird kräftig aufgetischt. &lt;br/&gt;&lt;br/&gt;
+The prelude to the wedding celebrations starts on 10 February in Ferrara: a play is performed in honour of the bride and the distinguished company in the Great Hall of the Palazzo Ducale and a banquet is served. 
+
+[[Was ist mit dem Kuchen?-&gt;BBT-131]]
+[[What about the cake?-&gt;BBT-131]]
+[[How did she get to Mantua?-&gt;BBT-132]]
+[[Wie ist sie nach Mantua gekommen?-&gt;BBT-132]]
+[[Lassen Sie uns das Thema wechseln-&gt;BBT-100]]
+[[Let&#39;s change topic-&gt;BBT-100]]</tw-passagedata><tw-passagedata pid="119" name="BBT-114" tags="speaker-bowl-bot" position="525,8275" size="100,100">KUNSTMÄZENIN 
+
+Isabella ist vernetzt mit den besten Künstlern ihrer Zeit:
+
+-	Leonardo da Vinci skizziert die etwa 25jährige Isabella 
+
+-	Gian Cristoforo Romano fertigt 1498 eine Bronzemedaille mit dem Profilbild der Markgräfin
+
+-	Isabella verschenkt Repliken an Personen, die sie besonders schätzt wie Germaine de Foix, Ehefrau von König Ferdinand II. von Aragon
+
+-	Tizian malt von Isabella das oben gezeigte Wunschporträt 
+
+-	Andrea Mantegna ist Hofkünstler der Gonzaga in Mantua und fertigt u. a. Gemälde für Isabellas Studiolo
+
+&lt;br/&gt;&lt;br/&gt;
+
+
+PATRONESS OF THE ARTS 
+
+Isabella networks with the best artists of her time:  
+
+-	Leonardo da Vinci makes a sketch of Isabella at about the age of 25  
+
+-	Gian Cristoforo Romano casts a bronze medallion with the profile of the Margravine in 1498 
+
+-	Isabella gives away replicas to persons she particularly admires, such as Germaine de Foix, the wife of King Ferdinand II of Aragon 
+
+-	 Titian paints the portrait shown above at Isabella’s wish  
+
+-	Andrea Mantegna is court artist of the Gonzaga in Mantua and, among other things, provides paintings for Isabella’s studiolo 
+
+
+[[Kunstsammlerin-&gt;BBT-115]]
+[[Profil überspringen-&gt;BBT-116]]
+[[Art Collector-&gt;BBT-115]]
+[[Skip Profile-&gt;BBT-116]]</tw-passagedata><tw-passagedata pid="120" name="BBT-115" tags="speaker-bowl-bot" position="650,8275" size="100,100">KUNSTSAMMLERIN 
+
+-	Isabella ist die erste Frau, die ein Studiolo besitzt, das sie sogar selbst entwirft
+
+-	Die Besitzerin der größten Kunstsammlung ihrer Zeit  
+
+&lt;br/&gt;&lt;br/&gt;
+
+ART COLLECTOR 
+
+-	Isabella is the first woman to possess a studiolo, which she even designs herself 
+
+-	She has the most extensive art collection of her time  
+
+[[Wie hat sie das alles gemacht?-&gt;BBT-116]]
+[[Hat sie eine gute Ausbildung genossen?-&gt;SPK-032]]
+[[How did she do all this?-&gt;BBT-116]]
+[[She must have had a good education?-&gt;SPK-032]]
+[[Erzähl mir von ihrem Studiolo.-&gt;BBT-145]]
+[[Tell me about her studiolo-&gt;BBT-145]]</tw-passagedata><tw-passagedata pid="121" name="BBT-131" tags="speaker-bowl-bot" position="25,9325" size="100,100">Von der Stadt gestiftete Süßigkeiten in Form von Adlern, Ochsen, Bären, Affen, Vögeln, Einhörnern und anderen Fabelwesen werden dem Herzog von Ferrara und der illustren Gästeschar präsentiert. Der anschließende Ball dauert bis tief in die Nacht. Am nächsten Tag wird nahtlos weitergefeiert. &lt;br/&gt;&lt;br/&gt;
+As at the engagement celebrations, the tables are overflowing with choice delicacies: sugar creations shaped as eagles, oxen, bears, monkeys, unicorns and other mythical creatures is presented as a gift from the city to the Duke of Ferrara and the illustrious company of guests. The ball which follows lasts far into the night. The next day, the celebrations continue without interruption.  
+
+[[Was passierte als Nächstes?-&gt;BBT-138]]
+[[What happened next?-&gt;BBT-138]]
+[[How did she get to Mantua?-&gt;BBT-132]]
+[[Wie ist sie nach Mantua gekommen?-&gt;BBT-132]]
+[[Wie wurden sie bei der Ankunft begrüßt?-&gt;BBT-135]]
+[[How were the lucky couple greeted on arrival?-&gt;BBT-135]]</tw-passagedata><tw-passagedata pid="122" name="BBT-070" tags="speaker-bowl-bot" position="400,5650" size="100,100">Nicola muss die Leute herumschieben und sogar zwei um180 Grad drehen. &lt;br/&gt;&lt;br/&gt;
+To do it, Nicola needs to move the figures around a bit and even rotates two of them 180 degrees. 
+
+&lt;%
+story.showDelayed(&quot;BBT-071&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="123" name="BBT-071" tags="speaker-bowl-bot" position="525,5650" size="100,100">Es ist eine Meisterleistung, wie geschickt der Majolika-Maler die rechteckige Stichvorlage an das runde Format der Schüssel anpasst. &lt;br/&gt;&lt;br/&gt;
+It is the work of a master how deftly the majolica painter adjusts the rectangular format of the engraving to the round form of the dish.
+
+[[Erzählen Sie mir mehr-&gt;BBT-071]]
+[[Was ist mit dem Hintergrund?-&gt;BBT-075]]
+[[Betrachten wir einen anderen Aspekt.-&gt;BBT-101]]
+[[Tell me more-&gt;BBT-072]]
+[[What about the background?-&gt;BBT-075]]
+[[Let&#39;s look at a different aspect-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="124" name="BBT-072" tags="speaker-bowl-bot" position="25,5775" size="100,100">Die Vierergruppe von Moses, Aaron, Joshua und seiner Frau wird aufgrund des runden Formats etwas zusammengeschoben, ansonsten jedoch unverändert für die Schüssel übernommen. &lt;br/&gt;&lt;br/&gt;
+The group of four figures comprising Moses, Aaron, Joshua and his wife are somewhat compressed to fit into the round format, but are otherwise taken over unchanged for the the bowl.
+
+&lt;%
+story.showDelayed(&quot;BBT-073&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="125" name="BBT-067" tags="speaker-bowl-bot" position="400,5500" size="100,100">Das Service, das Eleonora ihrer Mutter 1524 schenkt, ist als Würdigung der bisherigen guten Regentschaft von Isabella zu verstehen. Der Mannalese kommt hierbei offensichtlich eine Schlüsselrolle zu. &lt;br/&gt;&lt;br/&gt;
+The service which Eleonora gives to her mother in 1524 can be understood as an acknowledgement of Isabella’s wise rule up to then. The gathering of the manna clearly plays a key role in this.
+
+
+&lt;%
+story.showDelayed(&quot;BBT-068&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="126" name="BBT-068" tags="speaker-bowl-bot" position="525,5500" size="100,100">Durch das Wappen ist klar, wer hier gewürdigt wird. &lt;br/&gt;&lt;br/&gt;
+The coat of arms makes it clear who is being honoured here.
+
+[[IErzählen Sie mir mehr about Isabella d’Este-&gt;SPK-031]]
+[[Erzählen Sie mir mehr about the coat of arms-&gt;SPK-022]]
+[[Wie hat Nicola da Urbino so viele Details auf eine Schüssel bekommen?-&gt;SPK-022]]
+[[ITell me more about Isabella d’Este-&gt;SPK-031]]
+[[Tell me more about the coat of arms-&gt;SPK-022]]
+[[How did Nicola da Urbino fit such detail on to a bowl?-&gt;SPK-022]]</tw-passagedata><tw-passagedata pid="127" name="BBT-IMG-003" tags="speaker-bowl-bot" position="775,150" size="100,100">&lt;model-viewer alt=&quot;&quot; src=&quot;https://culturalinstitute-3d-serving.storage.googleapis.com/143824818/vgFschfhvbq7Dw/1707216809646/gltf/model.glb&quot; data-model-url=&quot;https://culturalinstitute-3d-serving.storage.googleapis.com/143824818/vgFschfhvbq7Dw/1707216809646/gltf/model.glb&quot; camera-controls=&quot;true&quot; 
+disable-zoom=&quot;true&quot; 
+min-camera-orbit=&quot;auto 0deg 0m&quot; 
+max-camera-orbit=&quot;auto 360deg auto&quot;
+interpolation-decay=&quot;200&quot; 
+autoplay=&quot;true&quot; 
+environment-image=&quot;https://storage.googleapis.com/culturalinstitute-3d-serving/resources/lightroom_14b_bright.hdr&quot; 
+loading=&quot;lazy&quot; 
+ar-status=&quot;not-presenting&quot; 
+interaction-prompt=&quot;auto&quot;  poster=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/bowl.png&quot;&gt;&lt;/model-viewer&gt;
+
+  
+[[Sie sind wunderschön! -&gt;BBT-006]]  
+[[Lassen Sie uns anfangen! -&gt;BBT-008]]  
+[[You are beautiful! -&gt;BBT-006]]  
+[[Let&#39;s get started! -&gt;BBT-008]]</tw-passagedata><tw-passagedata pid="128" name="BBT-IMG-003a" tags="speaker-bowl-bot" position="150,775" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/Screenshot%202024-06-25%20000317.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
     &lt;figcaption&gt;
- Porträt von Eleonora Gonzaga
+    Weltausstellung Paris, Eiffelturm und Trocadero, Breuer, Hans, 1900
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-B-002&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="33" name="BB-B1-IMG-001" tags="speaker-bowl-bot" position="50,925" size="100,100">&lt;figure&gt;
-        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/selfie-image.jpg&quot; alt=&quot;Selfie der Schüssel aus dem Service von Isabella d’Este&quot; /&gt;
+story.showDelayed(&quot;BBT-014&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="129" name="BBT-IMG-004" tags="speaker-bowl-bot" position="150,2050" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-05/Picture5.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;figcaption&gt;
- Selfie der Schüssel aus dem Service von Isabella d’Este
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+&lt;%
+story.showDelayed(&quot;BBT-035&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="130" name="BBT-IMG-010" tags="speaker-bowl-bot" position="400,3150" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/Screenshot%202024-06-25%20003545.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;
+
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+[[Was hat diese Details hervorstechen lassen?-&gt;SPK-011]]
+[[Sie scheinen ziemlich sicher zu sein!-&gt;BBT-44A]]
+[[Hat sie tatsächlich Punkte bei ihrer Mutter erzielt?-&gt;SPK-013]]
+[[What made these details stand out?-&gt;SPK-011]]
+[[You seem quite certain!-&gt;BBT-44A]]
+[[Did she indeed score points in the eyes of her mother?-&gt;SPK-013]]</tw-passagedata><tw-passagedata pid="131" name="BBT-059" tags="speaker-bowl-bot" position="150,5250" size="100,100">Nachdem Moses und seine Landsleute Ägypten verlassen haben, befinden sie sich auf einem beschwerlichen Weg durch die Wüste und ihre Vorräte werden knapp. &lt;br/&gt;&lt;br/&gt;
+After Moses and his people have left Egypt, they find themselves on a taxing journey through the desert, and their rations are running out.
+
+&lt;%
+story.showDelayed(&quot;BBT-060&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="132" name="BBT-060" tags="speaker-bowl-bot" position="275,5250" size="100,100">Sie fürchten den Hungertod und wenden sich verzweifelt an Moses, ihren Anführenden, der begleitet wird von seinem Bruder Aaron dem Hohepriester, gefolgt von Joshua und dessen Frau. &lt;br/&gt;&lt;br/&gt;
+They are in fear of dying of starvation and turn to Moses in their desperation, their leader, who is accompanied by his brother Aaron the high priest, followed by Joshua and his wife. 
+
+&lt;%
+story.showDelayed(&quot;BBT-061&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="133" name="BBT-061" tags="speaker-bowl-bot" position="400,5250" size="100,100">Gott, greift ein und sagt zu Moses: „Ich werde Euch Brot vom Himmel regnen lassen.“ So geschieht es auch. Am nächsten Morgen liegt rings um das Lager eine Art Tau, das Manna, weiß wie Koriandersamen und süß wie Honigkuchen. Alle sollen nur so viel Manna sammeln, wie sie für den täglichen Bedarf benötigen. Die Menschen hören jedoch nicht darauf und legen Vorräte an. Am nächsten Morgen ist das Manna jedoch verdorben, und es muss frisches gesammelt werden. &lt;br/&gt;&lt;br/&gt;
+God intervenes and says to Moses: “Behold, I shall rain bread from Heaven for you.” And so it happens. The next morning, a kind of dew lies on the ground around the camp, it is manna, as white as coriander seeds and as sweet as honey-cakes. Everyone is only to gather enough manna for their daily needs. But the people pay no attention to the instruction and hoard it for themselves. The next morning, the manna is worm-ridden and spoiled, and they must gather it afresh.    
+
+[[Erzählen Sie mir mehr about the scene-&gt;BBT-062-IMG]]
+[[Manna klingt interessant.-&gt;BBT-065-IMG]]
+[[Tell me more about the scene-&gt;BBT-062-IMG]]
+[[Manna sounds interesting-&gt;BBT-065-IMG]]</tw-passagedata><tw-passagedata pid="134" name="SPK-006" tags="speaker-speaker" position="25,1175" size="100,100">EINE SPONSORING-STRATEGIE DES MUSEUMSLEITERS &lt;br/&gt;&lt;br/&gt;
+A MUSEUM DIRECTOR’S SPONSORING STRATEGY
+
+&lt;%
+story.showDelayed(&quot;SPK-007&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="135" name="SPK-007" tags="speaker-speaker" position="150,1175" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/Justus-Brinckmann-1901.webp&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;
+    Justus Brinckmann (1901) by Leopold Graf von Kalckreuth
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-B1-001&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="34" name="BB-C1-IMG-001" tags="speaker-bowl-bot" position="175,1425" size="100,100">&lt;figure&gt;
-        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/Justus-Brinckmann-1901.webp&quot; alt=&quot;Justus Brinckmann (1901) by Leopold Graf von Kalckreuth&quot; /&gt;
+story.showDelayed(&quot;BBT-020&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="136" name="SPK-008" tags="speaker-speaker" position="25,1675" size="100,100">Profile: Alfred Beit  &lt;br /&gt; &lt;br /&gt;
+• 1853 geboren Hamburg, ab 1875 in Südafrika, 1888 Hauptwohnsitz in London, seit 1898 britischer Staatsbürger, gestorben 1906 &lt;br /&gt;
+• Deutsch-britischer-südafrikanischer Gold- und Diamantenmagnat &lt;br /&gt;
+• Besitzer eigener Minen in Südafrika  &lt;br /&gt;
+• Mäzen &lt;br /&gt;
+• von Justus Brinckmann bei Kunstankäufen beraten, wie auch von Wilhelm Bode in Berlin &lt;br /&gt;
+• 1889 erste Gabe an das MK&amp;G, ab 1901 regelmäßig Stiftungen von Beit: Keramiken, Gläser, Lederhelme, Bestecke und Ofenkacheln aus dem 14. bis 17. Jahrhundert &lt;br /&gt;
+• 1893 Erwerb der Majolika-Schüssel aus dem Service der Isabella D‘ Este auf Jahrhundert-Auktion in Paris für 26.500 Francs 
+&lt;br /&gt; &lt;br /&gt;
+
+
+Profile: Alfred Beit  &lt;br /&gt; &lt;br /&gt;
+
+• 1853 born in Hamburg, from 1875 in South Africa, 1888 has his main residence in London, since 1898 a British national, died 1906 German-British-South African gold and diamond trader &lt;br /&gt;
+• Owner of a number of mines in South Africa  &lt;br /&gt;
+• Patron of the arts  &lt;br /&gt;
+• Advised by Justus Brinckmann when buying art objects, as well as by Wilhelm Bode in Berlin  &lt;br /&gt;
+• 1889 first donation to the MK&amp;G, from 1901 onwards regular endowments from Beit: ceramics, glass vessels, leather helmets, cutlery and oven tiles from the 14th to 17th centuries.  &lt;br /&gt;
+• 1893 purchase of the majolica dish from Isabella D‘ Este’s service at the auction of the century in Paris for 26,500 francs  &lt;br /&gt;
+
+[[What happens next?-&gt;BBT-028]]
+[[But you got to MK&amp;G in the end?-&gt;BBT-030-short]]</tw-passagedata><tw-passagedata pid="137" name="SPK-001" tags="speaker-speaker" position="150,25" size="100,100">Alles beginnt, als ein prestigeträchtiges Kunstwerk auf einer Auktion in Paris auftaucht: Die Majolika-Schüssel aus dem Service von Isabella d&#39;Este, der berühmtesten Frau der Renaissance. &lt;br/&gt;&lt;br/&gt;
+It all begins when a prestigious work of art turns up at an auction in Paris: the majolica bowl from the service belonging to Isabella d&#39;Este, the most famous woman of the Renaissance.
+
+&lt;model-viewer id=&quot;orbit-demo&quot; alt=&quot;&quot; src=&quot;https://culturalinstitute-3d-serving.storage.googleapis.com/143824818/vgFschfhvbq7Dw/1707216809646/gltf/model.glb&quot; data-model-url=&quot;https://culturalinstitute-3d-serving.storage.googleapis.com/143824818/vgFschfhvbq7Dw/1707216809646/gltf/model.glb&quot; camera-controls=&quot;false&quot; disable-zoom=&quot;true&quot; min-camera-orbit=&quot;auto 0deg 0m&quot; max-camera-orbit=&quot;auto 360deg 20000m&quot; camera-orbit=&quot;10deg 80deg 900m&quot; interpolation-decay=&quot;1&quot; autoplay=&quot;true&quot; environment-image=&quot;&quot; loading=&quot;eager&quot; ar-status=&quot;not-presenting&quot; interaction-prompt=&quot;none&quot; poster=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-05/Picture1.jpg&quot; style=&quot;pointer-events: none;display:none;&quot;&gt;&lt;/model-viewer&gt;
+
+&lt;%
+
+var fromOtherSection = false;
+
+story.showDelayed(&quot;SPK-002&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="138" name="SPK-003" tags="speaker-speaker" position="400,25" size="100,100">Es grenzt an ein Wunder, dass diese einzigartige Seltenheit schließlich ausgerechnet in das Museum für Kunst und Gewerbe Hamburg gelangt. &lt;br/&gt;&lt;br/&gt;
+It is little short of a miracle that this unique rarity eventually ends up in the Museum für Kunst und Gewerbe in Hamburg, of all places.
+
+&lt;%
+story.showDelayed(&quot;SPK-004&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="139" name="BBT-101" tags="speaker-bowl-bot" position="1125,5000" size="100,100">Was möchten Sie als Nächstes fokussieren? &lt;br/&gt;&lt;br/&gt;
+What would you like to focus on next?
+
+[[Mehr über Sie-&gt;BBT-054]]
+[[Der Übergang zu einem neuen Medium-&gt;SPK-022]]
+[[Das Allianzwappen-&gt;SPK-024]]
+[[Entschlüsselung (arkanes Insiderwissen)-&gt;SPK-029]]
+[[Ihre Geschwister auf der ganzen Welt-&gt;SPK-030]]
+
+[[Lassen Sie uns das Thema wechseln-&gt;BBT-053]]
+
+[[More about you-&gt;BBT-054]]
+[[The transfer to a new medium-&gt;SPK-022]]
+[[The arms of alliance-&gt;SPK-024]]
+[[Decoding (arcane insider knowledge)-&gt;SPK-029]]
+[[Your siblings around the globe-&gt;SPK-030]]
+
+[[Let&#39;s change topic-&gt;BBT-053]]</tw-passagedata><tw-passagedata pid="140" name="SPK-002" tags="speaker-speaker" position="275,25" size="100,100">Die Nachricht geht um die Welt und entfacht einen internationalen Wettstreit um ihren Besitz. &lt;br/&gt;&lt;br/&gt;
+The news spreads like wildfire and ignites an international battle to possess it. 
+
+&lt;%
+story.showDelayed(&quot;SPK-003&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="141" name="SPK-004" tags="speaker-speaker" position="525,25" size="100,100">Wer möchte die Schüssel kennenlernen? &lt;br/&gt;&lt;br/&gt;
+Who wants to meet the bowl?
+
+[[Ich bin ein Kind (noch nicht bereit)-&gt;BBT-001]]
+[[Ich bin erwachsen-&gt;BBT-001]]
+[[I&#39;m a child (not ready yet)-&gt;BBT-001]]
+[[I&#39;m a grown-up-&gt;BBT-001]]</tw-passagedata><tw-passagedata pid="142" name="SPK-005" tags="speaker-speaker" position="25,650" size="100,100">WIE KOMMT EINE SCHÜSSEL INS MUSEUM? &lt;br/&gt;&lt;br/&gt;
+HOW DOES A BOWL END UP IN A MUSEUM?
+
+&lt;%
+story.showDelayed(&quot;BBT-012&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="143" name="SPK-009" tags="speaker-speaker" position="25,2400" size="100,100">DER AUFTRAG &lt;br/&gt;
+Ein repräsentatives statussymbol
+&lt;br/&gt;&lt;br/&gt;
+THE COMMISSION &lt;br/&gt;
+A status symbol for representative purposes
+
+&lt;%
+story.showDelayed(&quot;SPK-IMG-006&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="144" name="SPK-015" tags="speaker-speaker" position="25,3925" size="100,100">NICOLA DA URBINO
+Der beste Majolika-Maler seiner Zeit
+&lt;br/&gt;&lt;br/&gt;
+NICOLA DA URBINO 
+The best majolica painter of his time
+
+&lt;%
+story.showDelayed(&quot;BBT-045&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="145" name="SPK-020" tags="speaker-speaker" position="300,4575" size="100,100">Es sind nur fünf Majoliken bekannt, die Nicolas Vornamen oder sein Monogramm tragen, manchmal ergänzt durch den Zusatz „da Urbino“. Eines dieser „signierten“ Werke ist das Service für Isabellas Sohn Federico II. Gonzaga aus der späten Schaffensphase von Nicola da Urbino. &lt;br/&gt;&lt;br/&gt;
+Only five majolicas which bear Nicola’s first name or his monogram, sometimes with the suffix “da Urbino” added, are known.  One of these “autographed” works is the service for Isabella’s son Federico II Gonzaga from Nicola da Urbino’s late period.
+
+[[Welche Rolle spielte Eleonora Gonzaga bei Ihrer Entstehung?-&gt;BBT-037]]
+[[Welche Themen sind in Nicolas Arbeit vorhanden?-&gt;SPK-016]]
+[[Was wissen wir sonst noch über Nicola?-&gt;BBT-046]]
+[[Lassen Sie uns das Thema wechseln-&gt;BBT-053]]
+[[What role did Eleonora Gonzaga play in your creation?-&gt;BBT-037]]
+[[What themes are present in Nicola&#39;s work?-&gt;SPK-016]]
+[[What else do we know about Nicola?-&gt;BBT-046]]
+[[Let&#39;s change topic-&gt;BBT-053]]</tw-passagedata><tw-passagedata pid="146" name="SPK-010" tags="speaker-speaker" position="150,3025" size="100,100">Aus Angst vor Diebstahl wird im 16. Jahrhundert übrigens nicht nur davon abgeraten, kostbares Tafelgeschirr aus Edelmetall auf den Landsitzen zu benutzen, es wird von Papst Pius II. regelrecht verboten. Eleonora trifft hier also eine geschickte Wahl. Auch die zuerst von ihr als Geschenk für Isabella in Erwägung gezogenen Juwelen wären auf dem Lande ziemlich fehl am Platz. Sie hätten Begehrlichkeiten und Raubgefahr mit sich bringen können. &lt;br/&gt;&lt;br/&gt;
+Incidentally, the use of exquisite tableware made of precious metals on country estates was not only discouraged in the 16th century for fear of it being stolen, Pope Pius II actually banned it outright.“ Eleonora thus makes a judicious choice here. The jewels which she had at first considered as a gift for Isabella would also be rather out of place on a country estate. They would only have been an object of covetousness and perhaps tempted thieves.  
+
+[[Warum sonst wäre eine Schüssel ein gutes Geschenk?-&gt;BBT-042]]
+[[Hat Isabella Sie als Geschenk geschätzt?-&gt;SPK-013]]
+[[Why else would a bowl be a good gift?-&gt;BBT-042]]
+[[Did Isabella appreciate you as a gift?-&gt;SPK-013]]</tw-passagedata><tw-passagedata pid="147" name="SPK-011" tags="speaker-speaker" position="25,3275" size="100,100">Die herausragende Qualität der Majolika-Produktion in der Werkstatt des Majolika-Malers Nicola da Urbino ist ein wichtiger, florierender Wirtschaftsfaktor. Mit ihrem Geschenk wirbt Eleonora auf geschickte Weise für ein handwerkliches Spitzenprodukt, ein innovatives Erzeugnis ihres Herzogtums. Das Service für Isabella ist eine einzigartige Sonderanfertigung. &lt;br/&gt;&lt;br/&gt;
+The outstanding quality of the majolica produced in the workshop of the majolica painter Nicola da Urbino is an important and flourishing economic factor. Eleonora is here deftly making the case for a cutting-edge product of craftsmanship, an innovative creation produced in her duchy. The service for Isabella is a specially customized one-off, quite unique
+
+&lt;%
+story.showDelayed(&quot;BBT-44A&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="148" name="SPK-013" tags="speaker-speaker" position="25,3775" size="100,100">Isabellas Service findet so großen Anklang, dass ihr Sohn, Friderico Gonzaga II. (1500, reg. 1519–1540) und seine Frau Margarita Paleologa (1510–1566), im Jahr 1533 ebenfalls ein Service bei Nicola da Urbino bestellen. Zu diesem Zeitpunkt ist Nicola da Urbino allerdings nicht mehr auf der Höhe seines Schaffens. Die Qualität dieses Service erreicht daher nicht das Niveau von Isabellas einzigartigem Service-Ensemble. &lt;br/&gt;&lt;br/&gt;
+Isabella’s service is so well received that her son, Federico Gonzaga II (1500, reigns 1519–1540) and his wife Margarita Paleologa (1510–1566), also order a service from Nicola da Urbino in 1533. Nicola da Urbino, however, is no longer at the peak of his creative powers at this time. 
+
+&lt;%
+story.showDelayed(&quot;SPK-014&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="149" name="SPK-012" tags="speaker-speaker" position="25,3650" size="100,100">Aus heutiger Sicht scheint der Gedanke naheliegend, zu hinterfragen, ob Eleonora mit ihrem Geschenk „nur“ um die Gunst ihrer Mutter wirbt. Sie könnte zugleich wirtschaftliche Interessen verfolgen und Isabellas „Networking“ für eine Promotion der Majolika-Produktion ihres Herzogtums nutzen. Denn Isabella steht mit so vielen in- und ausländischen Persönlichkeiten in Kontakt, dass sich die Nachricht von der herausragenden Qualität des Service schnell herumsprechen dürfte und hoffentlich für volle Auftragsbücher sorgen wird. &lt;br/&gt;&lt;br/&gt;
+From today’s perspective, it seems logical to ask ourselves whether Eleonora is “only” seeking to get into her mother’s good books with her gift. She might also at the same time be pursuing economic interests and taking advantage of Isabella’s “networking“ matrix to promote the majolica production of her duchy. The fact is that Isabella has contacts to so many personalities, both in Italy and abroad, that word of the outstanding quality of the service is guaranteed to spread very quickly, hopefully ensuring full order books.
+
+[[Aber wurde sie trotzdem gut aufgenommen?-&gt;SPK-013]]
+[[Über guten Geschmack lässt sich nicht streiten-&gt;BBT-049]]
+[[But was she still well received?-&gt;SPK-013]]
+[[You can&#39;t argue with good taste-&gt;BBT-049]]</tw-passagedata><tw-passagedata pid="150" name="SPK-014" tags="speaker-speaker" position="150,3775" size="100,100">Die Qualität dieses Service erreicht daher nicht das Niveau von Isabellas einzigartigem Service-Ensemble. &lt;br/&gt;&lt;br/&gt;
+The quality of this service therefore falls short of the standard achieved in Isabella’s matchless service ensemble.
+
+[[Erzählen Sie mir mehr über Nicola da Urbino-&gt;SPK-015]]
+[[Was hat Sie besonders gemacht?-&gt;SPK-016]]
+[[Erzähl mir mehr über deine Geschwister-&gt;SPK-030-other]]
+[[Tell me about Nicola da Urbino-&gt;SPK-015]]
+[[What made you special?-&gt;SPK-016]]
+[[Tell me more about your siblings-&gt;SPK-030-other]]</tw-passagedata><tw-passagedata pid="151" name="SPK-018" tags="speaker-speaker" position="25,4575" size="100,100">Von Nicola da Urbino sind so wenige Dokumente überliefert, dass seine Lebensdaten nicht gesichert sind. Er wird sogar bis ins späte 20. Jahrhundert (konkret bis in die 1980er Jahre) mit einem anderen Maler, Nicola Pellipario, verwechselt. &lt;br/&gt;&lt;br/&gt;
+The documentary evidence about Nicola da Urbino which has come down to us is so sparse that we do not even have any established  biographical data on him. Well into the late 20th century (specifically into the 1980s) he is still being confused with another painter, Nicola Pellipario. 
+
+&lt;%
+story.showDelayed(&quot;SPK-019&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="152" name="SPK-019" tags="speaker-speaker" position="150,4575" size="100,100">Da generell nur wenige Majolika-Teller auf der Rückseite signiert oder so bezeichnet sind, dass Rückschlüsse auf bestimmte Maler gezogen werden können, bleiben diese meist namenlos. Wenn Schriftstücke unauffindbar sind, ist eine Zuschreibung nur über stilistische Vergleiche möglich. &lt;br/&gt;&lt;br/&gt;
+Since generally only a very few majolica plates are signed on the back or are so clearly designated that they can be traced to a particular painter, they mostly remain anonymous. If no written records can be found, they can only be attributed on the basis of stylistic comparison. 
+
+&lt;%
+story.showDelayed(&quot;SPK-020&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="153" name="BBT-055" tags="speaker-bowl-bot" position="25,5125" size="100,100">Endlich bin ich dran! &lt;br/&gt;&lt;br/&gt;
+At last! Now it’s my turn! 
+
+&lt;%
+story.showDelayed(&quot;BBT-056&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="154" name="SPK-016" tags="speaker-speaker" position="25,4450" size="100,100">THEMEN, MOTIVE, VORLAGEN &lt;br/&gt;
+Das Bildprogramm von Majolika-Servicen
+&lt;br/&gt;&lt;br/&gt;
+THEMES, MOTIFS, TEMPLATES &lt;br/&gt;
+The visual programme of majolica services
+
+&lt;%
+story.showDelayed(&quot;SPK-017&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="155" name="BBT-056" tags="speaker-bowl-bot" position="150,5125" size="100,100">Für mich wählt Nicola da Urbino die Darstellung der Mannalese aus der Bibel (2. Mos. 16, 19–20). &lt;br/&gt;&lt;br/&gt;
+Nicola da Urbino chose the scene of the gathering of the manna from the Bible (Exodus 16, 19–20) for my decoration. 
+
+&lt;%
+story.showDelayed(&quot;BBT-057&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="156" name="SPK-017" tags="speaker-speaker" position="150,4450" size="100,100">Viele seiner Themen entnimmt Nicola da Urbino den Metamorphosen des Ovid. Möglicherweise besitzt er ein Exemplar des Ovid Moralisé, das 1497 in Venedig erscheint und lässt sich von dessen Illustrationen inspirieren. Für Darstellungen aus der römischen Geschichte dienen Holzschnitte illustrierter Ausgaben als Vorlage, wie zum Beispiel die den zehn Bücher des Titus Livius, die 1493 in Venedig auf Italienisch publiziert und im 16. Jahrhundert weit verbreitet sind. &lt;br/&gt;&lt;br/&gt;
+Nicola da Urbino takes many of his themes from Ovid’s “Metamorphoses”. Perhaps he possesses a printed copy of “Ovid Moralisé”, published in Venice in 1497, and draws his inspiration from the illustrations in it. Woodcuts from illustrated editions often serve as the template for the depiction of stories from Roman history, such as the ten books by Titus Livius which are published in Italian in Venice in 1493 and are widely read in the 16th century.  
+
+&lt;%
+story.showDelayed(&quot;BBT-052&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="157" name="BBT-057" tags="speaker-bowl-bot" position="275,5125" size="100,100">Dieses Thema, das für die größte Schüssel von Isabellas Service gewählt wird, hat eine wichtige Vorbildfunktion. &lt;br/&gt;&lt;br/&gt;
+And this theme, chosen for the biggest dish in Isabella‘s service, has an important function as an exemplary tale.
+
+&lt;%
+story.showDelayed(&quot;BBT-057A&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="158" name="SPK-021" tags="speaker-speaker" position="25,5000" size="100,100">BÜHNE FREI FÜR DIE PROTAGONISTIN &lt;br/&gt;
+Die Schüssel im Fokus &lt;br/&gt;&lt;br/&gt;
+CLEAR THE STAGE FOR OUR PROTAGONIST &lt;br/&gt;
+Focus on the bowl 
+
+&lt;%
+story.showDelayed(&quot;BBT-054&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="159" name="SPK-025" tags="speaker-speaker" position="150,6175" size="100,100">Das Allianzwappen im Zentrum der Schüssel wird von zwei Putti gehalten. &lt;br/&gt;&lt;br/&gt;
+The arms of alliance in the centre of the bowl is held by two cupids. 
+
+&lt;%
+story.showDelayed(&quot;SPK-026&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="160" name="SPK-026" tags="speaker-speaker" position="275,6175" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/arms-of-alliance.jpg&quot; alt=&quot;&quot; /&gt;
     &lt;figcaption&gt;
- Justus Brinckmann (1901) by Leopold Graf von Kalckreuth
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-C1-002&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="35" name="BB-C-IMG-001" tags="speaker-bowl-bot" position="150,1225" size="100,100">&lt;figure&gt;
-        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/Screenshot%202024-06-25%20000317.jpg&quot; alt=&quot;Weltausstellung Paris, Eiffelturm und Trocadero&quot; /&gt;
+story.showDelayed(&quot;SPK-027a&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="161" name="SPK-027a" tags="speaker-speaker" position="400,6175" size="100,100">Ein Allianzwappen ist die Darstellung von zwei Wappen, deren Träger durch eine Allianz verbunden sind. Die Familien Este aus dem Herzogtum Ferrara und die Familie Gonzaga aus der Markgrafenschaft Mantua sind durch die Heirat von Francesco Gonzaga und Isabella d’Este miteinander verbunden. &lt;br/&gt;&lt;br/&gt;
+An arms of alliance is the representation of two coats of arms whose bearers are linked by an alliance. The families of the Este from the Duchy of Ferrara and the Gonzaga from the Margravate of Mantua are connected through the marriage of Francesco Gonzaga and Isabella d’Este. 
+
+[[Erzählen Sie mir mehr-&gt;SPK-028]]
+[[Was hat Bowl Bot zu sagen?-&gt;BBT-080]]
+[[Betrachten wir einen anderen Aspekt.-&gt;BBT-101]]
+[[Tell me more-&gt;SPK-028]]
+[[What does Bowl Bot have to say?-&gt;BBT-080]]
+[[Let&#39;s look at a different aspect-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="162" name="SPK-028" tags="speaker-speaker" position="25,6300" size="100,100">Links im Bild (und auf der Schüssel) befindet sich das Wappen der Gonzaga, rechts das Wappen der Este. &lt;br/&gt;&lt;br/&gt;
+On the left of the illustration (also on the bowl) is the coat of arms of the Gonzaga, on the right that of the Este. 
+
+[[Was denken Sie, Bowl Bot?-&gt;BBT-080]]
+[[Was sagt uns die Bildsprache noch??-&gt;SPK-029]]
+[[What are your thoughts Bowl Bot?-&gt;BBT-080]]
+[[What else is the imagery telling us??-&gt;SPK-029]]</tw-passagedata><tw-passagedata pid="163" name="BBT-080" tags="speaker-bowl-bot" position="25,6425" size="100,100">Es ist klar, dass Eleonora als Auftraggeberin der Schüssel für Ihre Mutter Isabella das Allianzwappen beider Familien an prominenter Stelle im Zentrum der Schüssel wünscht. &lt;br/&gt;&lt;br/&gt;
+It goes without saying that Eleonora, as the person who commissioned the service for her mother Isabella, wishes to have the arms of alliance of both families in a prominent position in the centre of the dish.
+
+&lt;%
+story.showDelayed(&quot;BBT-081&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="164" name="SPK-029" tags="speaker-speaker" position="25,6550" size="100,100">DECODING – GEHEIMWISSEN FÜR INSIDER &lt;br/&gt;
+Der verborgene Sinn der Imprese &lt;br/&gt;&lt;br/&gt;
+DECODING – ARCANE INSIDER KNOWLEDGE &lt;br/&gt;
+The hidden meaning of the imprese
+
+&lt;%
+story.showDelayed(&quot;BBT-082&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="165" name="BBT-081" tags="speaker-bowl-bot" position="150,6425" size="100,100">Das Allianzwappen befindet sich zwar auf allen Teilen von Isabellas Service, sitzt jedoch nicht immer mittig. Die Platzierung ihres „Logos“ hängt von Form und Dekor des jeweiligen Stückes ab. &lt;br/&gt;&lt;br/&gt;
+The arms of alliance is present on all the items in Isabella’s service, it is true, but not always placed in the centre. The positioning of her “logo” depends on the form and the decorative scheme of the piece in question.
+
+[[Was sagt uns die Bildsprache noch??-&gt;SPK-029]]
+[[Was ist mit Ihren Geschwistern?-&gt;SPK-030]]
+[[What else is the imagery telling us??-&gt;SPK-029]]
+[[What about your siblings?-&gt;SPK-030]]</tw-passagedata><tw-passagedata pid="166" name="SPK-032" tags="speaker-speaker" position="25,8675" size="100,100">AUSBILDUNG AM ARBEITSPLATZ &lt;br/&gt;&lt;br/&gt;
+
+TRAINING ON THE JOB
+
+&lt;%
+story.showDelayed(&quot;BBT-119&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="167" name="BBT-102A" tags="speaker-bowl-bot" position="400,7900" size="100,100">Soll ich Dir etwas verraten? &lt;br/&gt;&lt;br/&gt;
+Shall I tell you a secret?
+
+&lt;%
+story.showDelayed(&quot;BBT-103&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="168" name="SPK-024" tags="speaker-speaker" position="25,6175" size="100,100">DAS ALLIANZWAPPEN &lt;br/&gt;
+von Isabella d‘Este und Francesco Gonzaga &lt;br/&gt;&lt;br/&gt;
+
+THE ARMS OF ALLIANCE&lt;br /&gt;
+of Isabella D‘ Este and Francesco Gonzaga 
+
+&lt;%
+story.showDelayed(&quot;SPK-025&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="169" name="BBT-116" tags="speaker-bowl-bot" position="25,8400" size="100,100">Wenn Du wissen willst, wie sie das alles erreicht hat, erzähle ich Dir das gerne etwas ausführlicher. &lt;br/&gt;&lt;br/&gt;
+If you would like to know how she achieved all this, I‘ll be glad to go into a bit more detail.
+
+[[Ja sicher! Beginnen Sie am Anfang.-&gt;BBT-117]]
+[[Sie muss sehr geschickt gewesen sein?-&gt;SPK-032]]
+[[Ich wette, sie hatte eine spektakuläre Hochzeit.-&gt;SPK-033]]
+[[Sure! Begin at the begining-&gt;BBT-117]]
+[[She must have been very skilled?-&gt;SPK-032]]
+[[I bet she had a spectaular wedding-&gt;SPK-033]]</tw-passagedata><tw-passagedata pid="170" name="SPK-033" tags="speaker-speaker" position="25,9075" size="100,100">DIE HOCHZEIT &lt;br/&gt;&lt;br/&gt;
+THE WEDDING
+
+&lt;%
+story.showDelayed(&quot;BBT-126&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="171" name="SPK-022" tags="speaker-speaker" position="25,5650" size="100,100">MEDIENTRANSFER &lt;br/&gt;
+Der Umgang mit der Vorlage &lt;br/&gt;&lt;br/&gt;
+TRANSFER TO A NEW MEDIUM&lt;br /&gt;
+The treatment of the template
+&lt;%
+story.showDelayed(&quot;SPK-023&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="172" name="SPK-023" tags="speaker-speaker" position="150,5650" size="100,100">Der Majolika-Maler Nicola da Urbino nutzt als Vorlage für die Umsetzung der Mannalese auf dem Rand der Schüssel einen Kupferstich von Agostino Veneziano (1490–1540) bzw. Marcantonio Raimondi (1475–1534) nach einer Bildkomposition des berühmtesten Malers der Zeit: Raffaello Santi da Urbino. &lt;br/&gt;&lt;br/&gt;
+As his template for the realization of the scene of the gathering of the manna on the edge of the bowl, the majolica painter Nicola da Urbino uses an engraving by Agostino Veneziano or Marcantonio Raimondi after a visual composition by the most famous painter of the age, Raffaello Santi da Urbino. 
+
+&lt;%
+story.showDelayed(&quot;BBT-069&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="173" name="BBT-069" tags="speaker-bowl-bot" position="275,5650" size="100,100">Da steht Nicola da Urbino, der beste der Besten, vor diesem Stich und fragt sich, wie er diese Vorlage auf dem Rand der Schüssel unterbringen kann. &lt;br/&gt;&lt;br/&gt;
+There he stands in front of the engraving, Nicola da Urbino, the best of the best, wondering how he can transfer this template onto the edge of the dish. 
+
+&lt;%
+story.showDelayed(&quot;BBT-070&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="174" name="SPK-030" tags="speaker-speaker" position="25,7350" size="100,100">AROUND THE GLOBE &lt;br/&gt;
+Wo ist der Rest? Von Urbino in die ganze Welt &lt;br/&gt;&lt;br/&gt;
+
+AROUND THE GLOBE  &lt;br/&gt;
+Where are the rest of them? From Urbino across the world
+
+&lt;%
+fromOtherSection = false;
+story.showDelayed(&quot;BBT-093&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="175" name="SPK-030-other" tags="speaker-bowl-bot" position="50,7475" size="100,100">Ich vermisse meine (dreiundzwanzig) kleinen Geschwister... &lt;br/&gt;&lt;br/&gt;
+I miss my (twenty-three) little siblings...
+
+&lt;%
+
+fromOtherSection = true;
+
+story.showDelayed(&quot;BBT-094&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="176" name="SPK-031" tags="speaker-speaker" position="25,7900" size="100,100">ISABELLA D’ESTE₋DIE BESCHENKTE &lt;br/&gt;
+Die bedeutendste Frau der Renaissance &lt;br/&gt;&lt;br/&gt;
+
+ISABELLA D’ESTE THE RECIPIENT &lt;br/&gt;
+The most famous woman of the renaissance
+
+&lt;%
+story.showDelayed(&quot;BBT-102&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="177" name="SPK-IMG-006" tags="speaker-speaker" position="150,2400" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-06/portr-t-von-eleonora-gonzaga-herzogin-von-urbino-titian-1537-original-source-galleria-degli-uffizi.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
     &lt;figcaption&gt;
- Weltausstellung Paris, Eiffelturm und Trocadero
+   Porträt von Eleonora Gonzaga, Herzogin von Urbino, Titian, 1537, Original source: Galleria degli Uffizi (DOUBLE CHECK RIGHTS)
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+[[Ist diese Person wichtig?-&gt;BBT-036]]
+[[Wer hat dich gemacht?-&gt;SPK-015]]
+[[Is this person someone important?-&gt;BBT-036]]
+[[Who made you?-&gt;SPK-015]]</tw-passagedata><tw-passagedata pid="178" name="StorySettings" tags="" position="25,25" size="100,100">zoom:1
+ifid:bc005b30-7d1f-486f-98c8-eca7babc216d</tw-passagedata><tw-passagedata pid="179" name="BBT-062-IMG" tags="speaker-bowl-bot" position="25,5375" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/manna.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;figcaption&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;%
-story.showDelayed(&quot;BB-C-002&quot;);
+story.showDelayed(&quot;BBT-062&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="180" name="BBT-065-IMG" tags="speaker-bowl-bot" position="25,5500" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/manna.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;figcaption&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;%
+story.showDelayed(&quot;BBT-065&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="181" name="BBT-086" tags="speaker-bowl-bot" position="150,6975" size="100,100">Die früheste Impresa ist ein Schriftband, das nur Notenlinien, Schlüssel, Tempo- und Pausenzeichen enthält. Die eigentlichen Noten fehlen. Dies bietet Spielraum für verschiedene Deutungen: wie „Im Schweigen liegt die Kraft“ oder „Reden ist Silber, Schweigen ist Gold“. &lt;br/&gt;&lt;br/&gt;
+The earliest impresa is a sheet of music, but with only the staves, the clef, tempo indications and rests. The notes themselves are missing. This leaves room for a number of interpretations:  for instance, “in silence lies strength” or “silence is golden, speech is but silver”. 
+
+&lt;%
+story.showDelayed(&quot;BBT-087&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="182" name="BBT-088" tags="speaker-bowl-bot" position="150,7100" size="100,100">Diese Impresa mit der Darstellung eines Leuchters kann nur mit Kenntnis des zugehörigen lateinischen Kommentars entschlüsselt werden: „sufficit unum in tenebris“=“Ein Licht reicht in der Dunkelheit“. &lt;br/&gt;&lt;br/&gt;
+This Impresa showing a candlestick can only be decoded when we know the accompanying Latin commentary: “sufficit unum in tenebris“= “one light is enough in the darkness”. 
+
+&lt;%
+story.showDelayed(&quot;BBT-089&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="183" name="BBT-091" tags="speaker-bowl-bot" position="150,7225" size="100,100">Zu dieser Impresa eines „Tiegels mit einem goldenen Stab im Feuer“ gehört der lateinische Leitsatz: „Probasti me, domine, et cognovisti“=„Prüfe mich, Herr und erkenne mich.“ Die Aufforderung, jegliche Prüfung auf sich zu nehmen, ergänzt die Botschaft der Mannalese. &lt;br/&gt;&lt;br/&gt;
+The Latin maxim for this impresa showing a “crucible with a golden rod in the fire“  is: “Probasti me, domine, et cognovisti“= &quot;Search me, O God, and know my heart.“ The exhortation to take on oneself any trial that may come completes the message of the gathering of the manna.
+
+&lt;%
+story.showDelayed(&quot;BBT-092&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="184" name="BBT-161" tags="speaker-bowl-bot" position="800,10450" size="100,100">And now it’s time fo me, the bowl, to say goodbye digitally, but not before I have invited you to visit the MK&amp;G, because I am still at my most beautiful in the original, even if I do say it myself!&lt;br/&gt;&lt;br/&gt;
+Ich, die Schüssel, verabschiede mich digital an dieser Stelle, jedoch nicht ohne zu einem Besuch i MK&amp;G einzuladen, denn im Original bin ich doch immer noch am Schönsten!
+ 
+&lt;%
+story.showDelayed(&quot;BBT-IMG-161&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="185" name="BBT-162" tags="speaker-bowl-bot" position="1050,10450" size="100,100">Und es gibt einen Selfie-Spot, den Du gerne nutzen kannst. Ich freue mich über Posts auf Instagram und ans MK&amp;G…&lt;br/&gt;&lt;br/&gt;
+
+And there is a selfie spot there that you are very welcome to use. You can make me happy with lots of posts on Instagram and to the MK&amp;G ...
+ 
+&lt;%
+story.showDelayed(&quot;BBT-163&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="186" name="BBT-163" tags="speaker-bowl-bot" position="1175,10450" size="100,100">Why not browse through the MK&amp;G Online Collection and put together your own collection: Renaissance Objects in the MK&amp;G.
+
+[[Lassen Sie uns andere Abschnitte noch einmal ansehen-&gt;BBT-100]]
+[[Let&#39;s see other sections again-&gt;BBT-100]]
+[[Chat beenden-&gt;BBT-100]]
+[[Exit the chat-&gt;BBT-100]]</tw-passagedata><tw-passagedata pid="187" name="BBT-132" tags="speaker-bowl-bot" position="25,9450" size="100,100">Während Francesco zu Pferd nach Mantua zurückkehrt, um alles für die Ankunft seiner Braut vorzubereiten, tritt Isabella ihre Reise nach Mantua am 12. Februar an.&lt;br/&gt;&lt;br/&gt;
+
+While Francesco returns to Mantua on horseback to prepare everything for the arrival of his bride, Isabella sets out on her journey to Mantua on 12 February.
+
+&lt;%
+story.showDelayed(&quot;BBT-133&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="188" name="BBT-133" tags="speaker-bowl-bot" position="150,9450" size="100,100">Dem Anlass entsprechend ist sie in feinsten Goldbrokat gekleidet. Isabella reitet auf einem prunkvoll aufgezäumten Schimmel durch die mit Blumenzweigen geschmückten Straßen Ferraras zum Prunkschiff, das sie nach Mantua bringen soll. &lt;br/&gt;&lt;br/&gt;
+
+In keeping with the occasion, she is dressed in the finest gold brocade. Isabella rides through the streets of Ferrara, decorated with sprigs of flowers, on a magnificently harnessed white horse to the splendidly decked out ship which is to take to her Mantua.
+
+&lt;%
+story.showDelayed(&quot;BBT-134&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="189" name="BBT-134" tags="speaker-bowl-bot" position="275,9450" size="100,100">Begleitet wird sie von ihrer Familie und dem gesamten Hofstaat, darunter auch der Herzog von Urbino, Isabellas Patenonkel. &lt;br/&gt;&lt;br/&gt;
+
+She is accompanied by her family and the entire court, including the Duke of Urbino, Isabella’s godfather.
+
+
+[[Was passiert, wenn sie dort ankommen?-&gt;BBT-135]]
+[[What happens when they get there?-&gt;BBT-135]]
+[[Wie liefen die restlichen Feiern?-&gt;BBT-138]]
+[[How did the rest of the celebrations go?-&gt;BBT-138]]
+[[Lassen Sie uns das Thema wechseln-&gt;BBT-100]]
+[[Let&#39;s change topic-&gt;BBT-100]]</tw-passagedata><tw-passagedata pid="190" name="BBT-135" tags="speaker-bowl-bot" position="25,9575" size="100,100">Am 15. Februar 1490 treffen Francesco und Isabella mit ihrer Eskorte in Mantua ein. 
+Das Brautpaar wird mit Fanfaren zum Residenzsitz im Kastell geleitet, wo es bereits vom Herzog von Urbino und vielen Edelleuten erwartet wird.&lt;br/&gt;&lt;br/&gt;
+
+
+Francesco and Isabella arrive with their escort in Mantua on 15 February 1490. The bridal couple is conducted to the ducal residence in the castle with fanfares, where it is already awaited by the Duke of Urbino and a throng of nobility.
+
+&lt;%
+story.showDelayed(&quot;BBT-136&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="191" name="BBT-136" tags="speaker-bowl-bot" position="150,9575" size="100,100">In honor of Isabella, a grand reception takes place, followed by a banquet and dancing.&lt;br/&gt;&lt;br/&gt;
+
+An opulent reception in honour of Isabella takes place, followed by a banquet and dancing.
+
+[[Wollen wir mal eine kleine Pause einlegen und uns mit Musik einstimmen?-&gt;BBT-137]]
+[[Shall we take a break with a little music?-&gt;BBT-137]]
+[[Überspringe die Musik.-&gt;BBT-138]]
+[[Skip music-&gt;BBT-138]]</tw-passagedata><tw-passagedata pid="192" name="BBT-137" tags="speaker-bowl-bot" position="25,9700" size="100,100">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/Wl4wAiotXQ0?si=rQteg9jYZzMLw1uf&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;false&quot;&gt;&lt;/iframe&gt;
+
+
+[[Das reicht jetzt!-&gt;BBT-138]]
+[[Enough!-&gt;BBT-138]]
+[[Wonderbar-&gt;BBT-138]]
+[[Wonderful-&gt;BBT-138]]</tw-passagedata><tw-passagedata pid="193" name="BBT-138" tags="speaker-bowl-bot" position="25,9825" size="100,100">Es wird nicht nur diniert und getanzt: Auf dem Platz vor dem Palazzo Ducale findet ein großes Kostümfest stat. &lt;br/&gt;&lt;br/&gt;
+
+It’s not all just eating and dancing: a huge fancy dress party takes place on the square in front of the Palazzo Ducale.
+
+&lt;%
+story.showDelayed(&quot;BBT-139&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="194" name="BBT-139" tags="speaker-bowl-bot" position="150,9825" size="100,100">Ebenfalls geboten wird ein Turnier, bei welchem sich Francesco und zwanzig seiner Hofleute mit goldenen Lanzen bewaffnet messen.&lt;br/&gt;&lt;br/&gt;
+
+There is also a tournament at which Francesco and twenty of his courtiers compete, jousting with golden lances.
+
+&lt;%
+story.showDelayed(&quot;BBT-140&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="195" name="BBT-140" tags="speaker-bowl-bot" position="275,9825" size="100,100">Wie zu erwarten wird Francesco als Bräutigam und Markgraf von Mantua von den Juroren zum Sieger gekürt. Surprise, surprise…&lt;br/&gt;&lt;br/&gt;
+
+Francesco as the bridegroom and Margrave of Mantua is declared the winner by the jurors. Surprise, surprise…
+
+&lt;%
+story.showDelayed(&quot;BBT-141&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="196" name="BBT-141" tags="speaker-bowl-bot" position="400,9825" size="100,100">Am 23. Februar kehrt der Brautvater Ercole d‘ Este nach Ferrara zurück. Isabellas Mutter Eleonora bleibt noch drei Tage länger in Mantua, um ihrer Tochter zu helfen sich am Hof der Gonzaga einzuleben.&lt;br/&gt;&lt;br/&gt;
+
+On 23 February the bride’s father, Ercole d‘ Este, returns to Ferrara. Isabella‘s mother Eleonora stays on for three days in Mantua to help her daughter to settle in at the court of the Gonzaga.
+
+
+[[Gehen wir weiter-&gt;SPK-034]]
+[[Let&#39;s move on-&gt;SPK-034]]
+[[Erzählen Sie mir mehr über die Hochzeit-&gt;SPK-033]]
+[[Tell me more about the wedding-&gt;SPK-033]]</tw-passagedata><tw-passagedata pid="197" name="BBT-143" tags="speaker-bowl-bot" position="150,10075" size="100,100">Zwei Monate nach dem Tod ihrer Mutter, zu Silvester 1493, bringt Isabella ihr erstes Kind zur Welt: Ein Mädchen, das nach seiner gerade erst verstorbenen Großmutter Eleonora benannt wird.&lt;br/&gt;&lt;br/&gt;
+
+Two months after her mother’s death, on New Year’s Eve 1493, Isabella gives birth to her first child: it is a girl, who is named Eleonora after her only recently deceased grandmother. 
+
+
+&lt;%
+story.showDelayed(&quot;BBT-144&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="198" name="SPK-034" tags="speaker-speaker" position="25,9950" size="100,100">Kaum verheiratet - Isabella ist gerade erst 17 Jahre jung – tritt der Ernstfall ein: 1491, bereits ein Jahr nach ihrer Hochzeit, muss sich Isabella neuen Aufgaben stellen und erstmals die Regierungsgeschäfte in Mantua übernehmen.&lt;br/&gt;&lt;br/&gt;
+
+Hardly is she married - Isabella has just turned 17 – than life begins in earnest: in 1491, only one year after her wedding, Isabella already has to shoulder new responsibilities and take over the business of governing Mantua for the first time.
+
+[[Wie hat sie sich an das Familienleben in Mantua gewöhnt?-&gt;BBT-142]]
+[[How did she adjust to home life in Mantua?-&gt;BBT-142]]
+[[Konnte sie ihren eigenen Interessen nachgehen?-&gt;BBT-145]]
+[[Was she able to pursue her own interests?-&gt;BBT-145]]</tw-passagedata><tw-passagedata pid="199" name="BBT-142" tags="speaker-bowl-bot" position="25,10075" size="100,100">Isabella kann jetzt die schon im Kindesalter von ihrer Mutter Eleonora erteilten Ratschläge in die Praxis umsetzen. Leider ist den Beiden nicht mehr viel gemeinsame Zeit vergönnt: Eleonora stirbt 1493 im Alter von 43 Jahren.&lt;br/&gt;&lt;br/&gt;
+
+Isabella can now put the advice she already received from her mother as a child into practice. Sadly, there is only a little time together left to the two of them: Eleonora dies in 1493 at the age of 43.
+
+
+&lt;%
+story.showDelayed(&quot;BBT-143&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="200" name="BBT-145" tags="speaker-bowl-bot" position="25,10200" size="100,100">Frisch verheiratet ist Isabella fest entschlossen ein Studiolo einzurichten und sich damit ihren großen Traum zu erfüllen.&lt;br/&gt;&lt;br/&gt;
+
+Just married, Isabella is firmly decided to set up a studiolo, thus realizing her greatest dream.
+
+[[Was ist ein Studiolo?-&gt;BBT-146]]
+[[What is a studiolo?-&gt;BBT-146]]
+[[Tell me more-&gt;BBT-148]]
+[[Erzählen Sie mir mehr-&gt;BBT-148]]
+
+</tw-passagedata><tw-passagedata pid="201" name="BBT-144" tags="speaker-bowl-bot" position="275,10075" size="100,100">Und eben diese Eleonora wird mich, die Schüssel, und die anderen Teile des Service, in Auftrag geben.&lt;br/&gt;&lt;br/&gt;
+
+And it is just this Eleonora who will go on to commission me, the bowl, and the other items in the service.
+
+[[Damit ist die Geschichte schön abgeschlossen-&gt;BBT-161]]
+[[That ties up the story nicely-&gt;BBT-161]]
+[[Konnte sie ihren eigenen Interessen nachgehen?-&gt;BBT-145]]
+[[Was she able to pursue her own interests?-&gt;BBT-145]]</tw-passagedata><tw-passagedata pid="202" name="BBT-146" tags="speaker-bowl-bot" position="25,10325" size="100,100">Für alle, die kein italienisch sprechen: ein Studiolo ist ein Rückzugsort, in dem studiert und ungestört meditiert werden kann.&lt;br/&gt;&lt;br/&gt;
+
+For all those who don’t speak Italian, a studiolo is a place of retreat where someone can study and meditate undisturbed.
+
+
+&lt;%
+story.showDelayed(&quot;BBT-147&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="203" name="BBT-147" tags="speaker-bowl-bot" position="150,10325" size="100,100">Im 14. Jahrhundert ist dieses Privileg allein Päpsten, Geistlichen und weltlichen hohen Würdenträgern vorbehalten.&lt;br/&gt;&lt;br/&gt;
+
+In the 14th century this is a privilege only reserved for popes, the clergy and high secular dignitaries.
+ 
+
+[[Was hat ihr Studiolo besonders gemacht?-&gt;BBT-148]]
+[[What was special about her studiolo?-&gt;BBT-148]]
+[[Wie war ihr Familienleben?-&gt;BBT-142]]
+[[What about her home life?-&gt;BBT-142]]</tw-passagedata><tw-passagedata pid="204" name="BBT-148" tags="speaker-bowl-bot" position="25,10450" size="100,100">Isabella d’Este ist die erste Frau, die sich ein Studiolo einrichten lässt.&lt;br/&gt;&lt;br/&gt;
+
+Isabella d’Este is the first woman to set up a studiolo.
+
+&lt;%
+story.showDelayed(&quot;BBT-149&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="205" name="BBT-151" tags="speaker-bowl-bot" position="400,10450" size="100,100">&lt;iframe src=&quot;https://player.vimeo.com/video/178788050?h=5a4def0740&amp;color=dba622&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+
+[[Lassen Sie uns fortfahren-&gt;BBT-161]]
+[[Let&#39;s move on-&gt;BBT-161]]</tw-passagedata><tw-passagedata pid="206" name="BBT-149" tags="speaker-bowl-bot" position="150,10450" size="100,100">Vorbilder sind das Studiolo ihres Onkels Leonello d’Este in der Villa di Belfiore bei Ferrara (fertiggestellt 1448) sowie die beiden Studioli Ihres Onkels Federico Montefeltro, eines in Urbino (1476) und das andere im Palazzo Ducale in Gubbio (1478/82).&lt;br/&gt;&lt;br/&gt;
+
+Her models are the studiolo of her uncle Leonello d’Este in the Villa di Belfiore near Ferrara (completed in 1448) and the two studioli of her uncle Federico Montefeltro, one of them in Urbino (1476) and the other in the Palazzo Ducale in Gubbio (1478/82). 
+
+&lt;%
+story.showDelayed(&quot;BBT-150&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="207" name="BBT-150" tags="speaker-bowl-bot" position="275,10450" size="100,100">Hier findest Du eine Rekonstruktion von Isabellas erstem Studiolo: &lt;br/&gt;&lt;br/&gt;
+
+You can find a reconstruction of Isabella’s first studiolo here: 
+
+
+&lt;%
+story.showDelayed(&quot;BBT-151&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="208" name="BBT-IMG-077B" tags="speaker-bowl-bot" position="525,5900" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/manna-2.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;figcaption&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+[[Erzählen Sie mir die Unterschiede-&gt;BBT-077]]
+[[Lassen Sie uns fortfahren-&gt;BBT-101]]
+[[Tell me the differences-&gt;BBT-077]]
+[[Let&#39;s move on-&gt;BBT-101]]</tw-passagedata><tw-passagedata pid="209" name="BBT-IMG-161" tags="speaker-bowl-bot" position="925,10450" size="100,100">&lt;figure&gt;
+        &lt;img src=&quot;https://drijnrdx.other-surface.com/sites/default/files/2024-07/selfie-image.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;figcaption&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;%
+story.showDelayed(&quot;BBT-162&quot;);
+%&gt;</tw-passagedata><tw-passagedata pid="210" name="BBT-IMG-102" tags="speaker-bowl-bot" position="275,7900" size="100,100">LICENSED IMAGE NEEDED
+
+&lt;%
+story.showDelayed(&quot;BBT-102A&quot;);
 %&gt;</tw-passagedata></tw-storydata>
 
     <!-- Modal -->

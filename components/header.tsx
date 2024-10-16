@@ -29,11 +29,17 @@ export interface HeaderProps {
   currentObject?: string
   additionalContent?: any
   chatMode?: boolean
+  handleExitModal?: (b: boolean) => void
+  exitModalOpen?: boolean
 }
 
 export function Header({ 
-  menus, blocks, additionalContent, mainObject, currentObject, chatMode 
+  menus, blocks, additionalContent, mainObject, currentObject, 
+  chatMode, handleExitModal, exitModalOpen, ...props 
 }: HeaderProps) {
+
+  const { t } = useTranslation()
+
   const [showMenu, setShowMenu] = React.useState<Boolean>(false)
   const multiMode = blocks?.mainSiteSettings?.field_multi_object_mode || false
   const titleOverride = blocks?.mainSiteSettings?.field_site_title_override || null  
@@ -55,7 +61,9 @@ export function Header({
           </div>
           <div className="flex justify-start md:justify-center h-8 ">
             {chatMode && i18n.language === "en" ? (
-              <div className="px-4 py-3 -mt-1 xl:mt-2 xl2: font-sans text-xl text-black rounded-2xl shadow-lg bg-white/75 inline-flex m-0 absolute md:ms-20 lg:ms-0 max-w-sm sm:max-w-md md:max-w-sm lg:max-w-md xl:max-w-3xl 2xl:max-w-4xl">
+              <div 
+              className="invisible md:visible px-4 py-3 -mt-1 xl:mt-2 xl2: font-sans text-xl text-black rounded-2xl shadow-lg bg-white/75 inline-flex m-0 absolute md:ms-20 lg:ms-0 max-w-sm sm:max-w-md md:max-w-sm lg:max-w-md xl:max-w-3xl 2xl:max-w-4xl"
+              >
                 You are chatting with:&nbsp;<span className="uppercase">🔘 Bowl Bot</span>
               </div>
             ) : null}
@@ -68,14 +76,14 @@ export function Header({
       <div className={classNames(
         "container relative flex-wrap items-center justify-between pt-0 lg:pt-0 transition-all",
         {
-          "pb-2 lg:pb-0": chatMode,
+          "pb-10 lg:pb-0": chatMode,
           "pb-6 lg:pb-10": !chatMode,
         } 
       )}>
         <div className={classNames(
         "",
           {
-            "invisible md:visible": chatMode,
+            "": chatMode,
             "": !chatMode,
           } 
         )}>
@@ -132,6 +140,22 @@ export function Header({
           >
             <path d="M3 12h18M3 6h18M3 18h18" />
           </svg>
+        </button>
+      
+        <button
+          type="button"
+          className={classNames(
+            'absolute', 'card-link', 'text-white', 'bg-black', 
+            'px-3', 'right-2', 'lg:right-6', 'me-1', 'top-14', 'lg:top-16',
+            {
+              "hidden": (showMenu || !chatMode),
+              "block": !showMenu,
+            } 
+          )}
+          onClick={() => handleExitModal(true)}
+          data-twe-target="#exampleModalCenter"
+        >
+          {t("exit-chat")}
         </button>
         <div
           className={classNames(

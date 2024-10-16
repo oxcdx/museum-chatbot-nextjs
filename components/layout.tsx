@@ -15,9 +15,15 @@ export interface LayoutProps extends HeaderProps, FooterProps {
   currentObject?: string
   additionalContent?: Record<string, unknown>
   chatMode?: boolean
+  handleExitModal?: (b: boolean) => void
+  exitModalOpen?: boolean
 }
 
-export function Layout({ meta, menus, blocks, mainObject, currentObject, additionalContent, children, chatMode }: LayoutProps) {
+export function Layout({ 
+  meta, menus, blocks, mainObject, currentObject, additionalContent, 
+  children, chatMode, handleExitModal, exitModalOpen
+}: LayoutProps) {
+  
   return (
     <>
       <Meta {...meta} />
@@ -33,6 +39,8 @@ export function Layout({ meta, menus, blocks, mainObject, currentObject, additio
           currentObject={currentObject}
           additionalContent={additionalContent} 
           chatMode={chatMode}
+          handleExitModal={handleExitModal}
+          exitModalOpen={exitModalOpen}
         />
 
         {/* how do i pass blocks to children */}

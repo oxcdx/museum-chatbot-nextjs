@@ -52,6 +52,10 @@
 	"your-search-yielded-no-results": "Your search yielded no results.",
 
   "start-chat": "Start the Chat",
+  "exit-chat": "Exit",
+  "exit-chat-short-question": "Exit chat?",
+  "confirm-exit": "Are you sure you want to exit the chat?",
+  "cancel": "Cancel",
   "learn-more-online-collection": "Learn more in our online collection",
   "back-to-collection": "Back to Collection",
   "choose-object": "Choose one of the following objects to start a conversation with."

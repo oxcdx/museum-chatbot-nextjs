@@ -3,6 +3,7 @@ import { useRouter } from "next/router"
 import classNames from "classnames"
 
 import config from "site.config"
+import { pathMapping } from "../utils/path-mapping"
 
 export function LocaleSwitcher({ ...props }) {
   const { locales, asPath, locale: currentLocale } = useRouter()  
@@ -10,6 +11,15 @@ export function LocaleSwitcher({ ...props }) {
   if (!locales || locales.length < 2) {
     return null
   }
+
+  const getLocalizedPath = (path, targetLocale) => {
+    for (const [key, value] of Object.entries(pathMapping)) {
+      if (value[currentLocale] === path) {
+        return value[targetLocale];
+      }
+    }
+    return path; // Fallback to the same path if no mapping is found
+  };
 
   return (
     <nav {...props}>
@@ -21,7 +31,12 @@ export function LocaleSwitcher({ ...props }) {
               locale === currentLocale ? "border-b" : ""
             )}
           >
-            <Link href={asPath} locale={locale} passHref legacyBehavior={true}>
+            <Link 
+              href={getLocalizedPath(asPath, locale)}
+              locale={locale} 
+              passHref 
+              legacyBehavior={true}
+            >
               <a
                 data-cy={`local-switcher-${locale}`}
                 className={classNames(
