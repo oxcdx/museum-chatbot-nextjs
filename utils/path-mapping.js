@@ -7,4 +7,12 @@ export const pathMapping = {
     en: '/bowl-isabella-destes-majolica-service?chat=true',
     de: '/die-schuessel-aus-dem-majolika-service-der-isabella-deste?chat=true',
   },
+  '/bowl-isabella-destes-majolica-service-first-long-version-2-languages': {
+    en: '/bowl-isabella-destes-majolica-service-first-long-version-2-languages',
+    de: '/die-schuessel-aus-dem-majolika-service-der-isabella-deste-erste-lange-version-2-sprachen',
+  },
+  '/bowl-isabella-destes-majolica-service-first-long-version-2-languages?chat=true': {
+    en: '/bowl-isabella-destes-majolica-service-first-long-version-2-languages?chat=true',
+    de: '/die-schuessel-aus-dem-majolika-service-der-isabella-deste-erste-lange-version-2-sprachen?chat=true',
+  },
 };

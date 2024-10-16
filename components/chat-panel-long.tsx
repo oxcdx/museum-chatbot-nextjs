@@ -16,6 +16,8 @@ interface ChatPanelProps {
 
 export function ChatPanelLong({ chatMode, ...props }: ChatPanelProps) {
   const chatHistoryRef = useRef(null)
+  const passageRef = useRef(null)
+  const userResponsePanelRef = useRef(null)
   
   const scriptRef = useRef(null)
   const script2Ref = useRef(null)
@@ -204,6 +206,10 @@ export function ChatPanelLong({ chatMode, ...props }: ChatPanelProps) {
     return () => {
       setStartedOnce(false);
       window.isScriptActive = false;
+      // Clear the content in chat history ref
+      if (chatHistoryRef.current) chatHistoryRef.current.innerHTML = '';
+      if (passageRef.current) passageRef.current.innerHTML = '';
+      if (userResponsePanelRef.current) userResponsePanelRef.current.innerHTML = '';
       removeScriptByRef(scriptRef);
       removeScriptByRef(script2Ref);
 
@@ -239,8 +245,8 @@ export function ChatPanelLong({ chatMode, ...props }: ChatPanelProps) {
     <NonSSRWrapper>
       <div className="chat-panel col-lg-6 minh-full bg-light">
         
-        <div ref={chatHistoryRef} id="phistory" className="chat-history"></div>
-        <div id="passage"></div>
+      <div ref={chatHistoryRef} id="phistory" className="chat-history"></div>
+      <div ref={passageRef} id="passage"></div>
         <div id="animation-container">
           <div className="chat-passage-wrapper">
             <div className="chat-passage">
@@ -252,7 +258,7 @@ export function ChatPanelLong({ chatMode, ...props }: ChatPanelProps) {
             </div>
           </div>
         </div>
-        <div className="user-response-panel fixed-bottom bg-light-grayish-orange">
+        <div ref={userResponsePanelRef} className="user-response-panel fixed-bottom bg-light-grayish-orange">
           <hr />
           <div id="user-response-hint" className="user-response-hint content-container"></div>
           <div id="user-response-panel" className="user-reponse-wrapper"></div>
