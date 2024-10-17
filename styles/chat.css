@@ -594,6 +594,9 @@ body.modal-open nav.navbar {
 .chat-passage p {
   font-size: 18px;
 }
+.chat-passage, .chat-passage div {
+  font-size: 18px;
+}
 @media (min-width: 576px) {
   .chat-passage {
     max-width: calc(100% - 100px);

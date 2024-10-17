@@ -5809,7 +5809,7 @@
                     return;
                   }
                 
-                  console.log('targetName:', targetName); // Log the targetName
+                  // console.log('targetName:', targetName); // Log the targetName
                 
                   if ($(e.target).closest('#phistory').length == 0) {
                     this.movePassageToHistory();
@@ -5981,9 +5981,47 @@
                  **/
             
                 if (window.isScriptActive) {
-                  $('#passage')
-                    .append(passageElem)
-                    .fadeIn('slow');
+                  // $('#passage')
+                  //   .append(passageElem)
+                  //   .fadeIn('slow');
+
+                  // Create an empty div (for chat name to appear)
+                  var emptyDiv = $('<div></div>');
+
+                  // Append the passage element to the passage container
+                  $('#passage').append(passageElem);
+
+                  // Prepend the empty div to be the first item inside .chat-passage within passageElem
+                  $(passageElem).find('.chat-passage').prepend(emptyDiv);
+
+                  // Run your logic after append but before fadeIn
+                  var chatPassages = $('#passage .chat-passage[data-speaker="bowl-bot"]');
+
+                  
+                  chatPassages.each(function() {
+                    // Find all divs with the .variation class
+                    var variations = $(this).find('div.variation');
+
+                    //filter out variations with .simple-lang class
+                    if (window.simpleLang === true) {
+                      variations = variations.filter('.simple-lang');
+                    } else {
+                      variations = variations.not('.simple-lang');
+                    }
+
+                    // Check if there are any variations
+                    if (variations.length > 0) {
+                      // Generate a random number within the limits
+                      var randomIndex = Math.floor(Math.random() * variations.length);
+
+                      // Remove the d-none class from the randomly selected element
+                      variations.eq(randomIndex).removeClass('hidden');
+
+                    }
+                  });
+
+                  // Fade in the passage element
+                  $('#passage').fadeIn('slow');
                 } else {
                   //console.log('Script has been unloaded, stopping passage append.');
                 }

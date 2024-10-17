@@ -2,6 +2,7 @@
 import { useEffect, useState, useRef } from 'react'
 import $ from 'jquery'
 import Router from "next/router"
+import { useRouter } from "next/router"
 import Script from 'next/script'
 
 import NonSSRWrapper from "components/non-ssr-wrapper"
@@ -15,6 +16,8 @@ interface ChatPanelProps {
 }
 
 export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
+  const router = useRouter()
+
   const chatHistoryRef = useRef(null)
   const passageRef = useRef(null)
   const userResponsePanelRef = useRef(null)
@@ -26,6 +29,8 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
 
   const [startedOnce, setStartedOnce] = useState<boolean>(false)
   const [windowDefined, setWindowDefined] = useState<boolean>(false)
+
+  const [chatString, setChatString] = useState<string>('/chatContent.html')
 
   useEffect(() => {
     let intervalId;
@@ -57,8 +62,14 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
     // If chatMode is false, return
     // if (!chatMode) return;
 
+    //if router url includes 'bowl-isabella-destes-majolica-service' or 'die-schuessel-aus-dem-majolika-service-der-isabella-deste' load a differnet .html file
+    if (router.asPath.includes('bowl-isabella-destes-majolica-service') || router.asPath.includes('die-schuessel-aus-dem-majolika-service-der-isabella-deste')) {
+      // Fetch the HTML content from a file
+      setChatString('/chatContent-de-simple.html')
+    }
+
     // Fetch the HTML content from a file
-    fetch('/chatContent.html')
+    fetch(chatString)
       .then(response => response.text())
       .then(data => {
         // get only the tw-story element and minify it
