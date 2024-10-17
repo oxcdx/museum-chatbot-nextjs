@@ -44,6 +44,13 @@ export default function IndexPage({
   // in a useEffect, check if blocks.multiMode is true
   // if blocks.multiMode is false, then shallow route to the url of the first promotedObject node
   useEffect(() => {
+    
+    
+    if (typeof window !== 'undefined') {
+      // Set a global window variable isScriptActive to true
+      window.isScriptActive = false;
+    }
+
     if (multiMode === false && mainObject) {
       router.push(mainObject)
     }

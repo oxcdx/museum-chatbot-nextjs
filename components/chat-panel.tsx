@@ -1,5 +1,5 @@
 //@ts-nocheck
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, use } from 'react'
 import $ from 'jquery'
 import Router from "next/router"
 import { useRouter } from "next/router"
@@ -30,7 +30,7 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
   const [startedOnce, setStartedOnce] = useState<boolean>(false)
   const [windowDefined, setWindowDefined] = useState<boolean>(false)
 
-  const [chatString, setChatString] = useState<string>('/chatContent.html')
+  const [chatString, setChatString] = useState<string>('/chatContent-de-simple.html')
 
   useEffect(() => {
     let intervalId;
@@ -63,25 +63,39 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
     // if (!chatMode) return;
 
     //if router url includes 'bowl-isabella-destes-majolica-service' or 'die-schuessel-aus-dem-majolika-service-der-isabella-deste' load a differnet .html file
-    if (router.asPath.includes('bowl-isabella-destes-majolica-service') || router.asPath.includes('die-schuessel-aus-dem-majolika-service-der-isabella-deste')) {
+    if (router.asPath.includes('ai-assisted-version-english-only')) {
       // Fetch the HTML content from a file
-      setChatString('/chatContent-de-simple.html')
+      fetch('/chatContent.html')
+        .then(response => response.text())
+        .then(data => {
+          // get only the tw-story element and minify it
+          const start = data.indexOf('<tw-storydata');
+          const end = data.indexOf('</tw-storydata>') + 15;
+          data = data.substring(start, end);
+          
+          setHtmlContent(data);
+        })
+        .catch(error => {
+          console.error('Failed to load HTML content', error);
+        });
+    }else {
+      // Fetch the HTML content from a file
+      fetch('/chatContent-de-simple.html')
+        .then(response => response.text())
+        .then(data => {
+          // get only the tw-story element and minify it
+          const start = data.indexOf('<tw-storydata');
+          const end = data.indexOf('</tw-storydata>') + 15;
+          data = data.substring(start, end);
+          
+          setHtmlContent(data);
+        })
+        .catch(error => {
+          console.error('Failed to load HTML content', error);
+        });
     }
 
-    // Fetch the HTML content from a file
-    fetch(chatString)
-      .then(response => response.text())
-      .then(data => {
-        // get only the tw-story element and minify it
-        const start = data.indexOf('<tw-storydata');
-        const end = data.indexOf('</tw-storydata>') + 15;
-        data = data.substring(start, end);
-        
-        setHtmlContent(data);
-      })
-      .catch(error => {
-        console.error('Failed to load HTML content', error);
-      });
+    
   }, [chatMode])
 
   useEffect(() => {
@@ -91,13 +105,15 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
       return;
     }
 
-    if (!startedOnce && htmlContent?.length) {
+    if (!startedOnce && htmlContent !== '') {
 
       if (!scriptRef.current) {
         scriptRef.current = document.createElement('script');
         scriptRef.current.src = '/js/custom-trialogue-ox-edit.js';
         scriptRef.current.async = true;
       }
+
+      resetStory();
 
       if (!script2Ref.current) {
         script2Ref.current = document.createElement('script');
@@ -203,6 +219,28 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
       setStartedOnce(true);
     }
 
+    return () => {
+      window.isScriptActive = false;
+      resetStory();
+      setStartedOnce(false);
+    }
+  }, [chatMode, htmlContent])
+
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      window.isScriptActive = false;
+    };
+
+    // Add event listener for beforeunload
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+
+  useEffect(() => {
     // Function to remove script by ref
     const removeScriptByRef = (scriptRef) => {
       const script = scriptRef.current;
@@ -236,7 +274,6 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
     };
 
     return () => {
-      setStartedOnce(false);
       window.isScriptActive = false;
       // Clear the content in chat history ref
       if (chatHistoryRef.current) chatHistoryRef.current.innerHTML = '';
@@ -259,13 +296,23 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
       if (window?.customTrialogueData?.passages) {
         window.customTrialogueData.passages = [];
       }
+
+      // if(window?.passage) {
+      //   window.passage = null;
+      // }
     }
-  }, [chatMode, htmlContent])
+  }, [chatMode])
+
+
 
   //safely log window.customTrialogueData.passages
   // if (window?.customTrialogueData?.passages) {
   //   console.log(window.customTrialogueData.passages);
   // }
+
+  // console.log('windowScriptActive', window.isScriptActive);
+  // console.log('window.passage', window.passage);
+  
 
   const resetStory = () => {
     if (window.storyInstance) {
@@ -291,15 +338,16 @@ export function ChatPanel({ chatMode, ...props }: ChatPanelProps) {
             </div>
           </div>
         </div>
-        <div ref={userResponsePanelRef} className="user-response-panel fixed-bottom bg-light-grayish-orange">
+        <div className="user-response-panel fixed-bottom bg-light-grayish-orange">
           <hr />
           <div id="user-response-hint" className="user-response-hint content-container"></div>
-          <div id="user-response-panel" className="user-reponse-wrapper"></div>
+          <div ref={userResponsePanelRef} id="user-response-panel" className="user-reponse-wrapper"></div>
         </div>
       </div>
       ) : null}
-      {/* <Script src="/js/custom-trialogue.js" async /> */}
-      <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      {(htmlContent !== '') ? (
+          <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        ) : null}
     </NonSSRWrapper>
   ) : null;
 }

@@ -15,4 +15,12 @@ export const pathMapping = {
     en: '/bowl-isabella-destes-majolica-service-first-long-version-2-languages?chat=true',
     de: '/die-schuessel-aus-dem-majolika-service-der-isabella-deste-erste-lange-version-2-sprachen?chat=true',
   },
+  '/bowl-isabella-destes-majolica-service-ai-assisted-version-english-only': {
+    en: '/bowl-isabella-destes-majolica-service-ai-assisted-version-english-only',
+    de: '/bowl-isabella-destes-majolica-service-ai-assisted-version-english-only',
+  },
+  '/bowl-isabella-destes-majolica-service-ai-assisted-version-english-only?chat=true': {
+    en: '/bowl-isabella-destes-majolica-service-ai-assisted-version-english-only?chat=true',
+    de: '/bowl-isabella-destes-majolica-service-ai-assisted-version-english-only?chat=true',
+  },
 };

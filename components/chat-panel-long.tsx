@@ -204,7 +204,60 @@ export function ChatPanelLong({ chatMode, ...props }: ChatPanelProps) {
     
 
     return () => {
+      window.isScriptActive = false;
+      resetStory();
       setStartedOnce(false);
+    }
+  }, [chatMode])
+
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      window.isScriptActive = false;
+    };
+
+    // Add event listener for beforeunload
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Function to remove script by ref
+    const removeScriptByRef = (scriptRef) => {
+      const script = scriptRef.current;
+      if (script && script.parentNode) {
+        // Stop any functions that the script is running
+        if (script.id === 'ox-script-1') {
+          // Clear intervals
+          if (window.pIntervalId) {
+            clearInterval(window.pIntervalId);
+            window.pIntervalId = null;
+          }
+
+          // Remove event listeners
+          const responsePanel = document.getElementById('user-response-panel');
+          if (responsePanel && window.eventFunction) {
+            responsePanel.removeEventListener('click', window.eventFunction);
+            window.eventFunction = null;
+          }
+
+          // Disconnect MutationObserver
+          if (window.observer) {
+            window.observer.disconnect();
+            window.observer = null;
+          }
+        }
+
+        // Remove the script from the DOM
+        script.parentNode.removeChild(script);
+        scriptRef.current = null; // Reset the ref to null
+      }
+    };
+
+    return () => {
       window.isScriptActive = false;
       // Clear the content in chat history ref
       if (chatHistoryRef.current) chatHistoryRef.current.innerHTML = '';
@@ -227,6 +280,10 @@ export function ChatPanelLong({ chatMode, ...props }: ChatPanelProps) {
       if (window?.customTrialogueData?.passages) {
         window.customTrialogueData.passages = [];
       }
+
+      // if(window?.passage) {
+      //   window.passage = null;
+      // }
     }
   }, [chatMode])
 
@@ -258,10 +315,10 @@ export function ChatPanelLong({ chatMode, ...props }: ChatPanelProps) {
             </div>
           </div>
         </div>
-        <div ref={userResponsePanelRef} className="user-response-panel fixed-bottom bg-light-grayish-orange">
+        <div className="user-response-panel fixed-bottom bg-light-grayish-orange">
           <hr />
           <div id="user-response-hint" className="user-response-hint content-container"></div>
-          <div id="user-response-panel" className="user-reponse-wrapper"></div>
+          <div ref={userResponsePanelRef} id="user-response-panel" className="user-reponse-wrapper"></div>
         </div>
       </div>
       {/* <Script src="/js/custom-trialogue.js" async /> */}

@@ -5916,71 +5916,76 @@
               **/
             
               show: function(idOrName, noHistory, noMove) {
-                var passage = this.passage(idOrName);
-            
-                if (!passage) {
-                  throw new Error(
-                    'There is no passage with the ID or name "' + idOrName + '"'
-                  );
-                }
-            
-                /**
-                 Triggered whenever a passage is about to be replaced onscreen with another.
-                 The passage being hidden is stored in the passage property of the event.
-            
-                 @event hidepassage
-                **/
-            
-                $.event.trigger('hidepassage', { passage: window.passage });
-            
-                /**
-                 Triggered whenever a passage is about to be shown onscreen.
-                 The passage being displayed is stored in the passage property of the event.
-            
-                 @event showpassage
-                **/
-            
-                $.event.trigger('showpassage', { passage: passage });
-            
-                /**
-                 Save the old passage html to the passage history.
-                 **/
-            
-                if (!noMove) {
-                  this.movePassageToHistory();
-                }
-            
-                /**
-                 Create passage element
-                 **/
-            
-                window.passage = passage;
-            
-                var speaker = this.getPassageSpeaker(passage);
-            
-                var passageElem;
-                if (speaker == 'undefined') {
-                  passageElem = $('<div class="meta-passage">' + passage.render() + '</div>');
-                } else {
-                  passageElem = $(
-                    '<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + passage.tags.join(' ') + '">' + 
-                        '<div data-speaker="' + speaker + '" class="chat-passage">' + 
-                        passage.render() + 
-                      '</div>' +
-                    '</div>'
-                  );  
-                }
                 
-                if (!noHistory) {
-                  this.recent.push(passage.id);
-                  this.recent_dom.push(passageElem[0]);
-                }
-            
-                /**
-                 Add passage element to passage container element
-                 **/
-            
                 if (window.isScriptActive) {
+                  var passage = this.passage(idOrName);
+              
+                  if (!passage) {
+                    // throw new Error(
+                    //   'There is no passage with the ID or name "' + idOrName + '"'
+                    // );
+                    // try to reinitialise the story
+                    this.reset();
+                    console.log('There is no passage with the ID or name "' + idOrName + '"');
+                  }
+              
+                  /**
+                   Triggered whenever a passage is about to be replaced onscreen with another.
+                  The passage being hidden is stored in the passage property of the event.
+              
+                  @event hidepassage
+                  **/
+              
+                  $.event.trigger('hidepassage', { passage: window.passage });
+              
+                  /**
+                   Triggered whenever a passage is about to be shown onscreen.
+                  The passage being displayed is stored in the passage property of the event.
+              
+                  @event showpassage
+                  **/
+              
+                  $.event.trigger('showpassage', { passage: passage });
+              
+                  /**
+                   Save the old passage html to the passage history.
+                  **/
+              
+                  if (!noMove) {
+                    this.movePassageToHistory();
+                  }
+              
+                  /**
+                   Create passage element
+                  **/
+              
+                  window.passage = passage;
+              
+                  var speaker = this.getPassageSpeaker(passage);
+              
+                  var passageElem;
+                  if (!passage) {
+                  } else if (speaker == 'undefined') {
+                    passageElem = $('<div class="meta-passage">' + passage.render() + '</div>');
+                  } else {
+                    passageElem = $(
+                      '<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + passage.tags.join(' ') + '">' + 
+                          '<div data-speaker="' + speaker + '" class="chat-passage">' + 
+                          passage.render() + 
+                        '</div>' +
+                      '</div>'
+                    );  
+                  }
+                  
+                  if (!noHistory) {
+                    this.recent.push(passage.id);
+                    this.recent_dom.push(passageElem[0]);
+                  }
+              
+                  /**
+                   Add passage element to passage container element
+                  **/
+            
                   // $('#passage')
                   //   .append(passageElem)
                   //   .fadeIn('slow');
@@ -5999,6 +6004,10 @@
 
                   
                   chatPassages.each(function() {
+                    
+                    if (window.isScriptActive === false) {
+                      return
+                    }
                     // Find all divs with the .variation class
                     var variations = $(this).find('div.variation');
 
@@ -6026,11 +6035,14 @@
                   //console.log('Script has been unloaded, stopping passage append.');
                 }
                 
-                this.showUserResponses();
                 
-                this.scrollChatIntoView();
-            
-                this.pcolophon();
+                if (window.isScriptActive) {
+                  this.showUserResponses();
+                  
+                  this.scrollChatIntoView();
+              
+                  this.pcolophon();
+                }
             
                 /**
                  Triggered after a passage has been shown onscreen, and is now
@@ -6046,8 +6058,13 @@
               /**
                move current passage to history
                **/
+              
               movePassageToHistory: function () {
                 // $('#passage').hide();
+                
+                if (window.isScriptActive === false) {
+                  return
+                }
                 
                 this.emptyPassageLinks();
             
@@ -6058,7 +6075,12 @@
                render passage links as UserResponses in UserResponsePanel
                **/
               showUserResponses: function () {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 _.each(passage.links, function (link) {
+                  // console.log('link:', link);
+                  
                   // check if link already exists
                   // if ($('a[data-passage="' + _.escape(link.target) + '"]').length > 0) {
                   //   return;
@@ -6080,6 +6102,9 @@
                **/
             
               clearUserResponses: function () {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 // remove UserResponse links
                 $('#user-response-panel').empty();
               },
@@ -6089,6 +6114,9 @@
                **/
             
               showUserPassage: function (text) {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 this.history = this.history.concat(this.recent);
                 this.history_dom = this.history_dom.concat(this.recent_dom);
                 this.recent = [];
@@ -6116,6 +6144,9 @@
                **/
             
               scrollChatIntoView: function () {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 var d = document.documentElement;
                 var offset = d.scrollTop + window.innerHeight;
                 var height = d.offsetHeight;
@@ -6125,6 +6156,9 @@
                 if (!scrollingNow && height - offset > 40) {
                   scrollingNow = true;
                   setTimeout(function() {
+                    if (window.isScriptActive === false) {
+                      return
+                    }
                     $('html, body').animate({scrollTop: $('.chat-panel').height()}, 1000);
                     scrollingNow = false;
                   }, 1000); // Delay by 1 second (1000 milliseconds)
@@ -6138,6 +6172,9 @@
               **/
               
               pcolophon: function() {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 if ($.inArray('End', window.passage.tags) > -1 && this.passage('StoryColophon') != null) {
                   $(this.passage('StoryColophon').render()).hide().appendTo("#passage").fadeIn('slow');
                 }
@@ -6150,6 +6187,9 @@
               **/
               
               pcopy: function() {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 if (parseInt(window.passage.id,10)){
                   // (I used .remove() here to remove any event handlers, which shouldn't persist.)
                   var removed = $('#passage').children().remove();
@@ -6165,6 +6205,9 @@
               **/
               
               emptyPassageLinks: function() {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 passage.links = [];
               },
             
@@ -6178,6 +6221,9 @@
               **/
               
               getPassageSpeaker: function(passage) {
+                if (window.isScriptActive === false || !passage) {
+                  return;
+                }
                 if (!String.prototype.startsWith) {
                   String.prototype.startsWith = function(search, pos) {
                     return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
@@ -6201,6 +6247,9 @@
               **/
             
               render: function(idOrName) {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 var passage = this.passage(idOrName);
             
                 if (!passage) {
@@ -6219,6 +6268,12 @@
               **/
             
               showDelayed: function (idOrName, noHistory, noMove) {
+                if (window.isScriptActive === false) {
+                  return
+                }
+                if (window.isScriptActive === false) {
+                  return;
+                }
                 var typingDelayRatio = 0.3;
                 var delayMS = this.getPassageDelay(idOrName);
             
@@ -6254,6 +6309,9 @@
               **/
             
               getPassageDelay: function (idOrName) {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 var target = this.passage(idOrName);
                 var targetSourceTextLength = $('<div></div>').html(target.source).text().length;
                 var targetUserResponseLength = _.reduce(
@@ -6266,7 +6324,7 @@
                 var targetTextLength = targetSourceTextLength - targetUserResponseLength;
                 var msPerChar = 20;
                 var delayMS = targetTextLength * msPerChar;
-                var delayThresholded = !window.isScriptActive ? 0 : Math.min(delayMS, this.maxPassageDelay);
+                var delayThresholded = window.isScriptActive === false ? 0 : Math.min(delayMS, this.maxPassageDelay);
                 return delayThresholded;
               },
             
@@ -6278,6 +6336,9 @@
               **/
             
               showTyping: function (idOrName) {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 var speaker = this.getPassageSpeaker(this.passage(idOrName));
                 $('#animation-container .chat-passage-wrapper').attr('data-speaker', speaker);
                 $('#animation-container .chat-passage-wrapper .chat-passage').attr('data-speaker', speaker);
@@ -6293,6 +6354,9 @@
               **/
             
               hideTyping: function (idOrName) {
+                if (window.isScriptActive === false) {
+                  return
+                }
                 $('#animation-container').hide();
               },
             
@@ -6305,6 +6369,11 @@
             
               saveHash: function()
               {	
+                
+                if (window.isScriptActive === false) {
+                  return
+                }
+
                 return LZString.compressToBase64(JSON.stringify({ state: this.state, history: this.history }));
               },
             
@@ -6322,6 +6391,10 @@
             
                  @event save
                 **/
+               
+                if (window.isScriptActive === false) {
+                  return
+                }
             
                 $.event.trigger('save');
                 window.location.hash = this.saveHash();
