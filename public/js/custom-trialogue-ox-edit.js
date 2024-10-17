@@ -5666,7 +5666,7 @@
                @type Number
               **/
             
-              this.maxPassageDelay = 2600;
+              this.maxPassageDelay = 4000;
             
               var p = window.customTrialogueData.passages;
             
@@ -6226,7 +6226,7 @@
                   0
                 );
                 var targetTextLength = targetSourceTextLength - targetUserResponseLength;
-                var msPerChar = 10;
+                var msPerChar = 20;
                 var delayMS = targetTextLength * msPerChar;
                 var delayThresholded = !window.isScriptActive ? 0 : Math.min(delayMS, this.maxPassageDelay);
                 return delayThresholded;
