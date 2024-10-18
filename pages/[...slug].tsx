@@ -54,7 +54,7 @@ export default function ResourcePage({
   const router = useRouter()
   // add a useState to store whether chat mode is active
   const [chatMode, setChatMode] = useState<boolean>(false)
-  const [safeToToggle, setSafeToToggle] = useState<boolean>(true)
+  const [safeToToggle, setSafeToToggle] = useState<boolean>(false)
 
   const [exitModalOpen, setExitModalOpen] = useState(false)
 
@@ -62,6 +62,12 @@ export default function ResourcePage({
     setExitModalOpen(b)
   }
 
+  useEffect(() => {
+    if (safeToToggle) return
+    setTimeout(() => {
+      setSafeToToggle(true)
+    }, 2000)
+  }, [])
   // useEffect to chack if the route has ?chat=true
   // if the route has ?chat=true, set chat mode to true
   // if the route doesnt have ?chat=true, set chat mode to false
