@@ -60,16 +60,18 @@ export function Header({
           <div className="hidden md:block">
           </div>
           <div className="flex justify-start md:justify-center h-8 ">
-            {chatMode && i18n.language === "en" ? (
+            {/* disable while english version not relevant */}
+            {/* {chatMode && i18n.language === "en" ? (
               <div 
               className="invisible md:visible px-4 py-3 -mt-1 xl:mt-2 xl2: font-sans text-xl text-black rounded-2xl shadow-lg bg-white/75 inline-flex m-0 absolute md:ms-20 lg:ms-0 max-w-sm sm:max-w-md md:max-w-sm lg:max-w-md xl:max-w-3xl 2xl:max-w-4xl"
               >
                 You are chatting with:&nbsp;<span className="uppercase">🔘 Bowl Bot</span>
               </div>
-            ) : null}
+            ) : null} */}
           </div>
           <div className="flex justify-end">
-            <LocaleSwitcher />
+            {/* disable locale switche, not needed for now */}
+            {/* <LocaleSwitcher /> */}
           </div>
         </div>
       </div>

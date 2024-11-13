@@ -87,9 +87,9 @@ export default function IndexPage({
             <div className="py-10 font-sans text-3xl ">
               <FormattedText text={welcomeText.body.processed} />
             </div>
-            <div className="p-6 font-sans text-2xl text-black rounded-2xl bg-white/75 inline-block mb-12 shadow-lg">
+            {/* <div className="p-6 font-sans text-2xl text-black rounded-2xl bg-white/75 inline-block mb-12 shadow-lg">
               <FormattedText text={welcomeText.field_choose_an_object_text} />
-            </div>
+            </div> */}
             <div className="grid gap-8 sm:grid-cols-2">
               {promotedObjects.map((node) => (
                 <NodeObjectCard node={node} key={node.id} />

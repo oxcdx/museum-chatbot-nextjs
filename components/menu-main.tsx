@@ -57,7 +57,8 @@ export function MenuMain({ items, blocks, mainObject, additionalContent, ...prop
             </Link>
           </li>
         ) : null}
-        <li>
+        {/* no about page yet */}
+        {/* <li>
           <a href="#"
             className={classNames(
               "text-xl border-b-[3px] flex border-b-transparent transition-colors",
@@ -68,7 +69,7 @@ export function MenuMain({ items, blocks, mainObject, additionalContent, ...prop
           >
             About
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="https://www.mkg-hamburg.de/"
             target="_blank"

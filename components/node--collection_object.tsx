@@ -100,7 +100,8 @@ export function NodeObject({
                     {t("start-chat")}
                   </button>
                   </div>
-                  <div className="flex justify-end pt-6">
+                  {/* no link to online collection yet */}
+                  {/* <div className="flex justify-end pt-6">
                     <a
                       type="button"
                       className="second-card-link"
@@ -108,7 +109,7 @@ export function NodeObject({
                       {t("learn-more-online-collection")}
                       <LinkExternal className="ms-2 w-6 h-6" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
